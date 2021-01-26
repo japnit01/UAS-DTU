@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UAS-DTU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+
+  <script>    
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems,{});
+      });
+ 
+
+    </script>
+  
+  <style>
+    @media only screen and (min-width: 993px){
+      nav a.sidenav-trigger {
+      display: block;
+      }
+    }
+
+  </style>
+
+  <nav class="transparent" style="height: 5rem;"> 
+      <!-- navbar content here  --> 
+      <div class="nav-wrapper transparent">
+        
+          <ul class="left">
+            <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0.5rem;"><i class="material-icons" style="font-size:2rem; color: black;">menu</i></a></li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <ul>
+            <li style="padding-left:2rem;"><a href="#"><img src="logo.png" alt="" style="width:65%; padding-top: 0.8rem;"></a></li>
+          </ul>
+          <ul class="right" style="padding-right: 12rem; margin-top: -0.3rem;">
+            <li style="color: black;"> <span style="font-size:2rem;"> Unmanned Aerial System </span> <div style="margin-top:-2.8rem; padding-left:0.2rem;">Delhi Technological University</div></li>
+          </ul>
         </div>
-      </nav>
+  </nav>
+
+  <ul class="sidenav" id="slide_out">
+    <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li>
+    <li style="padding:1rem 0rem 2rem 1rem; margin-right:-0.5rem;"><a href=""><img src="logo.png" alt="" style="width:80%;"></a></li>
+    <hr style="margin: 1rem 0.8rem 1rem 0.8rem;">
+    <li><a href="#" class="active"><i class="material-icons">home</i> Home</a></li>
+    <li><a href="#"><i class="material-icons">info</i>  About Us</a></li>
+    <li><a href="#"><i class="material-icons">airplanemode_active</i>Systems</a></li>
+    <li><a href="#"><i class="material-icons">group</i>Team</a></li>
+    <li><a href="#"><i class="material-icons">emoji_events</i>Achievements</a></li>
+    <li><a href="#"><i class="material-icons">email</i>Contact Us</a></li>
+  </ul>
+
+  
+  </script>
