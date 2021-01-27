@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use( express.static( "public" ));
 
 app.get("/",(req,res)=>{
-    res.render("home")
+    const signal = 1;
+    res.render("home",{signal:signal});
 });
 
 app.get("/hangar",(req,res)=>{

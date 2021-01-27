@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UAS-DTU</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
 </head>
@@ -22,41 +23,63 @@
     </script>
   
   <style>
+    .main-wrapper{
+      position: relative;
+
+    }
+
+    .menu-holder{
+      position: absolute;
+      z-index: 9999;
+    } 
+
     @media only screen and (min-width: 993px){
       nav a.sidenav-trigger {
       display: block;
       }
     }
+    
+    .sidenav {
+      line-height: 1rem;
+    }
 
+    .sidenav li>a{
+        color: white;
+    }
+
+    .sidenav li>a>i.material-icons{
+      color: white;
+    }
   </style>
-
-  <nav class="transparent" style="height: 5rem;"> 
-      <!-- navbar content here  --> 
-      <div class="nav-wrapper transparent">
-        
-          <ul class="left">
-            <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0.5rem;"><i class="material-icons" style="font-size:2rem; color: black;">menu</i></a></li>
-          </ul>
-          <ul>
-            <li style="padding-left:2rem;"><a href="#"><img src="logo.png" alt="" style="width:65%; padding-top: 0.8rem;"></a></li>
-          </ul>
-          <ul class="right" style="padding-right: 12rem; margin-top: -0.3rem;">
-            <li style="color: black;"> <span style="font-size:2rem;"> Unmanned Aerial System </span> <div style="margin-top:-2.8rem; padding-left:0.2rem;">Delhi Technological University</div></li>
-          </ul>
-        </div>
-  </nav>
-
-  <ul class="sidenav" id="slide_out">
-    <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li>
-    <li style="padding:1rem 0rem 2rem 1rem; margin-right:-0.5rem;"><a href=""><img src="logo.png" alt="" style="width:80%;"></a></li>
-    <hr style="margin: 1rem 0.8rem 1rem 0.8rem;">
-    <li><a href="#" class="active"><i class="material-icons">home</i> Home</a></li>
-    <li><a href="#"><i class="material-icons">info</i>  About Us</a></li>
-    <li><a href="#"><i class="material-icons">airplanemode_active</i>Systems</a></li>
-    <li><a href="#"><i class="material-icons">group</i>Team</a></li>
-    <li><a href="#"><i class="material-icons">emoji_events</i>Achievements</a></li>
-    <li><a href="#"><i class="material-icons">email</i>Contact Us</a></li>
-  </ul>
-
   
-  </script>
+  <div class="main-wrapper">
+
+    <div class="menu-holder" style="width:100%">
+      <nav  class="transparent"  style="height: 5rem; box-shadow: none;"> 
+          <!-- navbar content here  --> 
+          <div class="nav-wrapper">
+            
+              <ul class="left">
+                <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0.5rem;"><i class="material-icons" style="font-size:2rem;  color: white;">menu</i></a></li>
+              </ul>
+              <ul>
+                <li style="padding-left:2rem;"><a href="#"><img src="logo.png" alt="" style="width:65%; padding-top: 0.8rem;"></a></li>
+              </ul>
+              <ul class="hide-on-med-and-down right" style="padding-right: 12rem; margin-top: -0.3rem;">
+                <li style="color: white;"> <span style="font-size:2rem; font-weight: 600;">Unmanned Aerial System </span> <div style="margin-top:-2.8rem; padding-left:0.2rem; font-size: 1.2rem;">Delhi   Technological   University</div></li>
+              </ul>
+            </div>
+      </nav>
+
+      <ul class="sidenav #37474f blue-grey darken-3" id="slide_out">
+        <!-- <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li> -->
+        <li style="padding:3rem 0rem 2rem 1rem; margin-right:-0.5rem;"><a href=""><img src="logo.png" alt="" style="width:80%;"></a></li>
+        <hr style="margin: 1rem 2.5rem 1rem 2rem;">
+        <li><a href="#" class="active"><i class="material-icons">home</i> Home</a></li>
+        <li><a href="#"><i class="material-icons">info</i>  About Us</a></li>
+        <li><a href="#"><i class="material-icons">airplanemode_active</i>Systems</a></li>
+        <li><a href="#"><i class="material-icons">group</i>Team</a></li>
+        <li><a href="#"><i class="material-icons">emoji_events</i>Achievements</a></li>
+        <li><a href="#"><i class="material-icons">email</i>Contact Us</a></li>
+      </ul>
+    </div>  
