@@ -1,1 +1,24 @@
+<%-include("partials/header")%>
 
+<style>
+    .osm-btn:hover {
+        color: #000000 !important;
+        background-color: #ffffff !important;
+    }
+</style>
+
+<% for(let h of hangar) { %>
+    <div style="font-size: 0; color: #ffffff; text-shadow: 0 0 7px #00000088;">
+        <div style="<%= 'position: absolute; padding: 0 50px; width: 50%;' + h.side + ' : 0;' %>">
+            <h2 style="text-transform: uppercase; font-weight: 800;"><%= h.title %></h2>
+            <div style="font-size: 16px;">
+                <%= h.desc %><br>
+            </div><br style="font-size: 24px;">
+            <a style="padding: 15px 40px; border: 2px solid #ffffff; font-size: 14px; font-weight: 700; color: #ffffff; background-color: transparent; transition: .3s all;" class="osm-btn">READ MORE</a>
+        </div>
+
+        <img src="<%= h.src %>" width="100%">
+    </div>
+<% } %> 
+
+<%-include("partials/footer")%>
