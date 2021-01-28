@@ -14,36 +14,48 @@ app.get("/",(req,res)=>{
     res.render("home",{signal:signal});
 });
 
+app.get("/members", (req, res) => {
+    res.render("members", {
+        members: {
+            "2019": [
+                {
+                    name: 'Harsh'
+                }
+            ]
+        }
+    });
+});
+
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
             {
                 src: "./tarrot.png",
-                title: "Aarush X1",
+                name: "Aarush X1",
                 desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
                 side: "left"
             },
             {
                 src: "./optimized-btni.png",
-                title: "Aarush X2",
+                name: "Aarush X2",
                 desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
                 side: "left"
             },
             {
                 src: "./tarrot.png",
-                title: "Tarrot",
+                name: "Tarrot",
                 desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
                 side: "right"
             },
             {
                 src: "./optimized-btni.png",
-                title: "Aarush X2",
+                name: "Aarush X2",
                 desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
                 side: "left"
             },
             {
                 src: "./tarrot.png",
-                title: "Tarrot",
+                name: "Tarrot",
                 desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
                 side: "right"
             }
