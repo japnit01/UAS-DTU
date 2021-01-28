@@ -17,10 +17,152 @@ app.get("/",(req,res)=>{
 app.get("/members", (req, res) => {
     res.render("members", {
         members: {
-            "2019": [
+            "2k19": [
                 {
-                    name: 'Harsh'
+                    name: "HARSH PANWAR",
+                    rank: "Project Manager"
+                },
+                {
+                    name: "SUVI VARSHNEY",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "AKSHATH SINGHAL",
+                    rank: "Student Advisor"
                 }
+            ],
+            "2k18": [
+                {
+                    name: "Pransh Rana",
+                    rank: "Project Manager"
+                },
+                {
+                    name: "Akash Garg",
+                    rank: "Student Advisor "
+                },
+                {
+                    name: "Harsh Raj Chauhan",
+                    rank: "Student Advisor "
+                },
+                {
+                    name: "Rishabh Dagur",
+                    rank: "Student Advisor "
+                }
+            ],
+            "2k17": [
+                {
+                    name: "Rohan Pratap Singh ",
+                    rank: "Student Advisor"
+                }
+            ],
+            "2k16": [
+                {
+                    name: "A.L.G Prasad",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Divya Sanghi",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Parth Chopra",
+                    rank: "Student Advisor"
+                }
+            ],
+            "2k15": [
+                {
+                    name: "Devesh Sharma",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Shivam Gautam ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Vipul Aggarwal",
+                    rank: "Student Advisor"
+                }
+            ],
+            "2k14": [
+                {
+                    name: "Bhavya Narain Gupta  ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Harsh Aggarwal",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Lakshay Chauhan ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Shivang Baweja ",
+                    rank: "Student Advisor"
+                }
+            ],
+            "2k13": [
+                {
+                    name: "Jayant Malani ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "KVSR Hareen",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Raghvendra Gautam",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Rishi Raj Chopra",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Vaibhav Chauhan",
+                    rank: "Student Advisor"
+                }
+            ],
+            "2k12": [
+                {
+                    name: "Gaurav Gupta",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Kumar Shaurya Shankar ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Nihar Khurana ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Subhashish Sasmal ",
+                    rank: "Student Advisor"
+                }
+            ],
+            "2k11": [
+                {
+                    name: "Abhay Kaul  ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Arjit Arora ",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Gautam Madaan",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Rochak Chadha",
+                    rank: "Student Advisor"
+                },
+                {
+                    name: "Sahil Kapoor ",
+                    rank: "Student Advisor"
+                },
+                
             ]
         }
     });

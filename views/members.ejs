@@ -1,5 +1,46 @@
 <%-include("partials/header")%>
 
+<style>
+    nav.transparent {
+        position: fixed !important;
+        top: 0;
+    }
+    .main {
+        padding: 50px;
+    }
+    .round-card {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin: 0 20px;
+    }
+    .round-card span {
+        position: absolute;
+        display: inline-block;
+        color: #ffffff;
+        width: 300px;
+        text-align: center;
+        transform: translateX(-100%);
+    }
+</style>
 
+<div class="main">
+<% members["2k13"].map(m => { %>
+    <span class="round-card">
+        <img src="/av1.jpg" height="300" width="300" style="position: relative; z-index: -1; border-radius: 50%;">
+        <span style="top: 100px;">name here</span>
+        <span style="top: 120px;">rank here</span>
+    </span>
+<% }) %>
+</div>
+
+<script>
+    let main = document.querySelector('.main');
+    let nav = document.querySelector('.transparent');
+
+    let shift = window.getComputedStyle(nav).getPropertyValue('height');
+    // console.log(shift);
+    main.style.marginTop = shift;
+</script>
 
 <%-include("partials/footer")%>
