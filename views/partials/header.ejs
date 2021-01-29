@@ -17,9 +17,11 @@
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems,{});
       });
- 
-
-    </script>
+    
+    $(document).ready(function(){
+      $('.collapsible').collapsible();
+    });
+  </script>
   
   <style>
     .main-wrapper{
@@ -75,8 +77,21 @@
         <hr style="margin: 1rem 2.5rem 1rem 2rem;">
         <li><a href="#" class="active"><i class="material-icons">home</i> Home</a></li>
         <li><a href="#"><i class="material-icons">info</i>  About Us</a></li>
-        <li><a href="#"><i class="material-icons">airplanemode_active</i>Systems</a></li>
-        <li><a href="#"><i class="material-icons">group</i>Team</a></li>
+        <li><a href="/hangar"><i class="material-icons">airplanemode_active</i>Hangar</a></li>
+        <li>
+          <ul class="collapsible" style="color: white; padding-left: 1rem;">
+          <li>
+            <div class="collapsible-header"><i class="material-icons" style="margin-right: 1.8rem;">group</i>Team</div>
+            <div class="collapsible-body"> 
+              <ul  style="background: black; padding-left: 5rem;">
+                  <li>Mentors</li>
+                  <li>Current Members</li>
+                  <li>Past Members</li>
+              </ul>
+            </div>
+          </li>
+          </ul>
+        </li>
         <li><a href="#"><i class="material-icons">emoji_events</i>Achievements</a></li>
         <li><a href="#"><i class="material-icons">email</i>Contact Us</a></li>
       </ul>
