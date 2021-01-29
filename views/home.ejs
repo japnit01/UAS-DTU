@@ -83,7 +83,7 @@ $(document).ready(function(){
 
 <div class="Achievements">
 <h4 style="text-align: center; padding-top: 4rem; padding-bottom: 2rem; margin-top: 0;">Achievements</h4>
-    <div class="row" style="margin:1rem 2rem 1rem 2rem">
+    <div class="row" style="margin:1rem 3rem 1rem 3rem">
         <div class="col s12 m6 l4">
           <div class="card">
             <div class="card-image">
@@ -126,16 +126,102 @@ $(document).ready(function(){
 </div>
 
 <style>
-    #system{
+    #parallax{
       background-image: url("dronedark.jpg");
+      background-repeat: no-repeat;
       background-size: cover;
-      height: 35rem;
+      background-attachment: fixed;
+      background-position: center;
+      height: 40rem;
     }
 </style>
-<div id="system">
-    <h4 style="text-align: center; padding-top: 4rem; padding-bottom: 2rem; margin-top: 0;">Systems</h4>
+<div id="parallax">
+  <h2 style="color: white; position: absolute; top: 53%; left: 50%; transform: translate(-50%, -50%)">SYSTEMS</h2>
 </div>
 
-<h1>sfvdfvdqfg</h1>
+<style>
+  #system{
+    position: relative;
+    margin:2rem 0 0 0;
+  }
+
+  #system .row{
+    margin-bottom:0;
+    background: black;
+  }
+
+  #system .col:hover h3{
+    visibility: visible;
+  }
+
+  #system .col:hover{
+    opacity:0.8;
+    transition: opacity .5s ease;
+    visibility: visible;
+  }
+
+  #system .col{
+    padding: 0 0 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+  }
+  #system .col>h3{
+    color: white;
+    text-align: center;
+    visibility: hidden;
+  }
+
+  #col1{
+    background-image: url("aether.png");
+  }
+  
+  #col2{
+    background-image: url("gaia.jpeg");
+  }
+  #col3{
+    background-image: url("48.jpg");
+  }
+  #col4{
+    background-image: url("hero.jpg")
+  }
+</style>
+
+<div id="system" style="margin:0 0 0 0;">
+  <div class="row" id="row1" style="height: 22rem;">
+    <div class="col l8 m7 s7" id="col1">
+      <h3 style="text-align: center; ">Aether</h3>
+    </div>
+    <div class="col l4 m5 s5" id="col2">
+      <h3>Gaia</h3>
+    </div>
+  </div>
+  <div class="row" id="row2" style="height: 20rem;">
+    <div class="col l5 m5 s5" id="col3">
+      <h3>Tarrot</h3>
+    </div>
+    <div class="col l7 m7 s7" id="col4">
+      <h3>Aarush</h3>
+    </div>
+  </div>
+</div>
+
+<style>
+  .upcoming_events{
+    margin-left: 8rem;
+    margin-top: 12rem;
+  }
+</style>
+
+<div class="upcoming_events" style="height: 20rem; text-align: left;">
+  <h2 style="font-weight: 500;">Upcoming Events</h2>
+  <a class="waves-effect waves-light btn-large">Button</a>
+</div>
+
+<div class="sponsors" style="text-align: center;">
+      <h3>Sponsors</h3>
+</div>
 </div>
 <%-include("partials/footer")%>
