@@ -4,34 +4,38 @@
     nav.transparent {
         position: fixed !important;
         top: 0;
+        background-color: #000000 !important;
     }
-    .main {
-        padding: 50px;
+    .outer {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    .round-card {
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
-        margin: 0 20px;
-    }
-    .round-card span {
-        position: absolute;
-        display: inline-block;
-        color: #ffffff;
-        width: 300px;
+    .box {
+        width: 27%;
+        min-width: 300px;
+        flex-shrink: 1;
         text-align: center;
-        transform: translateX(-100%);
+        margin: 40px 20px;
+        box-sizing: border-box;
+        background-color: #ffffff;
     }
 </style>
 
-<div class="main">
-<% members["2k13"].map(m => { %>
-    <span class="round-card">
-        <img src="/av1.jpg" height="300" width="300" style="position: relative; z-index: -1; border-radius: 50%;">
-        <span style="top: 100px;">name here</span>
-        <span style="top: 120px;">rank here</span>
-    </span>
-<% }) %>
+<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+    <div class="outer">
+        <% members["2k18"].map(m => { %>
+        <div class="box">
+            <div class="ctn" style="transform: translateY(-20%);">
+                <img src="/UAS-Past/<%= m.src %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>
+                <div><%= m.rank %></div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
 </div>
 
 <script>
