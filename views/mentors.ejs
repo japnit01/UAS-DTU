@@ -1,0 +1,50 @@
+<%-include("partials/header")%>
+
+<style>
+    nav.transparent {
+        position: fixed !important;
+        top: 0;
+        background-color: #000000 !important;
+    }
+    .outer {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box {
+        width: 27%;
+        min-width: 300px;
+        flex-shrink: 1;
+        text-align: center;
+        margin: 40px 20px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+    }
+</style>
+
+<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+    <div class="outer">
+        <% mentors.map(m => { %>
+        <div class="box">
+            <div class="ctn" style="transform: translateY(-20%);">
+                <img src="/UAS-Past/<%= m.src %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>
+                <div><%= m.rank %></div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+<script>
+    let main = document.querySelector('.main');
+    let nav = document.querySelector('.transparent');
+
+    let shift = window.getComputedStyle(nav).getPropertyValue('height');
+    // console.log(shift);
+    main.style.marginTop = shift;
+</script>
+
+<%-include("partials/footer")%>

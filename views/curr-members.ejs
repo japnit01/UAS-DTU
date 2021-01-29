@@ -1,0 +1,58 @@
+<%-include("partials/header")%>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    nav.transparent {
+        position: fixed !important;
+        top: 0;
+        background-color: #000000 !important;
+    }
+    .outer {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        margin: 50px 0;
+        background-color: #ffffff;
+        border-radius: 60px;
+        width: 37%;
+    }
+    .box img {
+        transform: scale(1.33);
+    }
+    .box div {
+        font-size: 24px;
+        padding: 10px 40px;
+    }
+</style>
+
+<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+    <div class="outer">
+        <% members.map(m => { %>
+        <div class="box">
+            <img src="/tarrot.png" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+            <div><%= m.name %><br><%= m.rank %></div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+<script>
+    let main = document.querySelector('.main');
+    let nav = document.querySelector('.transparent');
+
+    let shift = window.getComputedStyle(nav).getPropertyValue('height');
+    // console.log(shift);
+    main.style.marginTop = shift;
+</script>
+
+<%-include("partials/footer")%>

@@ -14,8 +14,8 @@ app.get("/",(req,res)=>{
     res.render("home",{signal:signal});
 });
 
-app.get("/members", (req, res) => {
-    res.render("members", {
+app.get("/past-members", (req, res) => {
+    res.render("past-members", {
         members: {
             "2k19": [
                 {
@@ -199,6 +199,55 @@ app.get("/members", (req, res) => {
     });
 });
 
+app.get("/mentors", (req, res) => {
+    res.render('mentors', {
+        mentors: [
+            {
+                name: ""
+            }
+        ]
+    });
+});
+
+app.get("/curr-members", (req, res) => {
+    res.render("curr-members", {
+        members: [
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            },
+            {
+                name: "Aman Virmani",
+                rank: "Team Captain"
+            }
+        ]
+    });
+});
+
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
@@ -233,8 +282,9 @@ app.get("/hangar",(req,res)=>{
                 side: "right"
             }
         ]
-    })
-})
+    });
+});
+
 app.listen(port,()=>{
     console.log("app is listening");
 });
