@@ -13,7 +13,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .box {
+    .box1 {
         width: 27%;
         min-width: 300px;
         flex-shrink: 1;
@@ -27,7 +27,7 @@
 <div class="main" style="background-color: #eeeeee; padding: 40px 0;">
     <div class="outer">
         <% members["2k18"].map(m => { %>
-        <div class="box">
+        <div class="box1">
             <div class="ctn" style="transform: translateY(-20%);">
                 <img src="/UAS-Past/<%= m.src %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                 <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>

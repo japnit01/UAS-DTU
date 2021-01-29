@@ -21,6 +21,7 @@
         margin: 40px 20px;
         box-sizing: border-box;
         background-color: #ffffff;
+        padding: 0 20px;
     }
 </style>
 
@@ -29,9 +30,10 @@
         <% mentors.map(m => { %>
         <div class="box">
             <div class="ctn" style="transform: translateY(-20%);">
-                <img src="/UAS-Past/<%= m.src %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                <img src="/av2.jpg" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                 <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>
                 <div><%= m.rank %></div>
+                <div><%= m.desc %></div>
             </div>
         </div>
         <% }) %>
