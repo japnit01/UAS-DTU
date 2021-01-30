@@ -32,19 +32,19 @@
         font-size: 24px;
         padding: 10px 40px;
     }
-    .box1, .box3 {
+    .box1, .box3, .box4 {
         text-align: center;
         box-sizing: border-box;
     }
     h3.center {
         text-align: center;
     }
-    .box1 {
+    .box1, .box4 {
         background-color: #ffffff;
         margin: 80px 20px 30px 20px;
     }
     .box3 {
-        margin: 50px 20px 0 20px;
+        margin: 50px 30px 0 30px;
     }
 </style>
 
@@ -65,7 +65,7 @@
 
     <div class="outer">
         <% members["3-yrs"].map(m => { %>
-        <div class="box2" style="width: 40%; min-width: 300px;">
+        <div class="box2" style="width: 40%; min-width: 400px;">
             <img src="https://lh3.googleusercontent.com/-nUS8aDqEoQc/YAFfGrWYegI/AAAAAAAAACw/xiMmxbHSBTgtdP7JIciRMWqTNqD9g94XACEwYBhgLKtMDAL1OcqzWXpWWZ3SnvB6R32uR3oGVNklX2Occ_sI4flSTSVK1r188okpdlePM-2Nt0EIJSI1k91a0Vagu91hh14U2EJBXZpLCpmUXuABTz0VJLM4LrerZoVCWboF8A77J8shQt81xhdTBQyEFAJv2Cgq6_b5f8G-2xv40PcMzjgKCHMpj1xv58-8oIO11hK3INZfR7Us2B3n8NjU8zSUQmCrTRSfze3BfcLMzB8fiyfHvN8JJMi1jEBIfoinn47aALGthNNDjCv81F9ZyEmWBylBeLmIKLX7vzs6TPGKbtPROj9JsJKXV_TTprIEj4Y6TNDdGi5C9d1qL3o2KB9oZ8oAhXYL_oHg23ezQ5EmtRm4G5t2yzJ4_ayT958v7rvdn3Mw7Cl9xcRHiqdELG4sNtivRyu-nW8ZbIAaHGF-K9Vxx94Hv18ow__KJTHXgeiDfO3iUiMaz5jCX6yo-b9HlV4dFZauPKNI6DDHO-wAv337vooTORfTFFCIn4rAkg1Ko17qLqZ0wHDL0GdTTXjGgmVjW36aDzp74O66NWRH0GzHGLmKh-RzQWyaJgl2h-4abKV-gT9KKcGU9CLI24Wh9afIKrHKRam2NpMlPyPGmEve03bMwvZvQgAY/w140-h140-p/DTU%2BID%2Bdp%2Bchange%2Bkrlo%2B20210115_145323.jpg" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
             <div><%= m.name %><br><%= m.rank %></div>
         </div>
@@ -76,9 +76,9 @@
 
     <div class="outer">
         <% members["2-yrs"].map(m => { %>
-        <div class="box1" style="width: 15%; min-width: 150px;">
+        <div class="box4" style="width: 20%; min-width: 150px;">
             <div class="ctn" style="transform: translateY(-20%);">
-                <img src="https://lh3.googleusercontent.com/-nUS8aDqEoQc/YAFfGrWYegI/AAAAAAAAACw/xiMmxbHSBTgtdP7JIciRMWqTNqD9g94XACEwYBhgLKtMDAL1OcqzWXpWWZ3SnvB6R32uR3oGVNklX2Occ_sI4flSTSVK1r188okpdlePM-2Nt0EIJSI1k91a0Vagu91hh14U2EJBXZpLCpmUXuABTz0VJLM4LrerZoVCWboF8A77J8shQt81xhdTBQyEFAJv2Cgq6_b5f8G-2xv40PcMzjgKCHMpj1xv58-8oIO11hK3INZfR7Us2B3n8NjU8zSUQmCrTRSfze3BfcLMzB8fiyfHvN8JJMi1jEBIfoinn47aALGthNNDjCv81F9ZyEmWBylBeLmIKLX7vzs6TPGKbtPROj9JsJKXV_TTprIEj4Y6TNDdGi5C9d1qL3o2KB9oZ8oAhXYL_oHg23ezQ5EmtRm4G5t2yzJ4_ayT958v7rvdn3Mw7Cl9xcRHiqdELG4sNtivRyu-nW8ZbIAaHGF-K9Vxx94Hv18ow__KJTHXgeiDfO3iUiMaz5jCX6yo-b9HlV4dFZauPKNI6DDHO-wAv337vooTORfTFFCIn4rAkg1Ko17qLqZ0wHDL0GdTTXjGgmVjW36aDzp74O66NWRH0GzHGLmKh-RzQWyaJgl2h-4abKV-gT9KKcGU9CLI24Wh9afIKrHKRam2NpMlPyPGmEve03bMwvZvQgAY/w140-h140-p/DTU%2BID%2Bdp%2Bchange%2Bkrlo%2B20210115_145323.jpg" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                <img src="https://lh3.googleusercontent.com/-nUS8aDqEoQc/YAFfGrWYegI/AAAAAAAAACw/xiMmxbHSBTgtdP7JIciRMWqTNqD9g94XACEwYBhgLKtMDAL1OcqzWXpWWZ3SnvB6R32uR3oGVNklX2Occ_sI4flSTSVK1r188okpdlePM-2Nt0EIJSI1k91a0Vagu91hh14U2EJBXZpLCpmUXuABTz0VJLM4LrerZoVCWboF8A77J8shQt81xhdTBQyEFAJv2Cgq6_b5f8G-2xv40PcMzjgKCHMpj1xv58-8oIO11hK3INZfR7Us2B3n8NjU8zSUQmCrTRSfze3BfcLMzB8fiyfHvN8JJMi1jEBIfoinn47aALGthNNDjCv81F9ZyEmWBylBeLmIKLX7vzs6TPGKbtPROj9JsJKXV_TTprIEj4Y6TNDdGi5C9d1qL3o2KB9oZ8oAhXYL_oHg23ezQ5EmtRm4G5t2yzJ4_ayT958v7rvdn3Mw7Cl9xcRHiqdELG4sNtivRyu-nW8ZbIAaHGF-K9Vxx94Hv18ow__KJTHXgeiDfO3iUiMaz5jCX6yo-b9HlV4dFZauPKNI6DDHO-wAv337vooTORfTFFCIn4rAkg1Ko17qLqZ0wHDL0GdTTXjGgmVjW36aDzp74O66NWRH0GzHGLmKh-RzQWyaJgl2h-4abKV-gT9KKcGU9CLI24Wh9afIKrHKRam2NpMlPyPGmEve03bMwvZvQgAY/w140-h140-p/DTU%2BID%2Bdp%2Bchange%2Bkrlo%2B20210115_145323.jpg" height="120" width="120" style="border: 5px solid #ffffff;">
                 <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>
                 <div><%= m.rank %></div>
             </div>
