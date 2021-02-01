@@ -6,7 +6,7 @@
             fullWidth: true,
             indicators: true
         }).css('height',$(window).height());
-
+      
         
     setInterval(function(){
         $('.carousel').carousel('next');
@@ -29,7 +29,7 @@
     <div class="carousel carousel-slider" data-indicators="true">
         <a class="carousel-item" href="/"><img src="aarush1_front.jpg" alt="AB"></a>
         <a class="carousel-item" href="/"><img src="aarush2_front2.png" alt="CD"></a>
-        <a class="carousel-item" href="/"><img src="arceus_front.png" alt="CD"></a>
+        <a class="carousel-item" href="/"><img src="System Images without Background - Copy\Gaia.png" style="background-color: thistle;"alt="CD"></a>
     </div>
 </div>
 
@@ -45,85 +45,22 @@ $(document).ready(function(){
 
 
 <style>
- .card{
-     height: 27rem;
-     font-family: font-sans-serif;
-     border-radius: 1rem 1rem 1rem 1rem;
-     color: black;
- }
- 
- .card-image{
-     height: 13rem;
- }
-
- .card-image img{
-   height: 13rem;   
-   border-radius: 1rem 1rem 0rem 0rem  !important; 
- }
-
- /* .col.s12.m6.l4{
-    padding:0 4.5rem 0 4.5rem
- } */
-
-  .card .card-title{
-     font-weight: 500;
-     padding-bottom:1rem ;
-     text-align: center;
-     text-size-adjust: auto;
- }
-
- .card-content{
-     font-weight: 400;
-     text-size-adjust: auto;
- }
-
  .Achievements{
-   position: relative;
+  height: 45rem;
+  background-color: #2d3436;
+  background-image: linear-gradient(to left,#2d3436 40%, #000000 50%);
+  display: flex
+   
  }
+
 </style>
 
 <div class="Achievements">
-<h4 style="text-align: center; padding-top: 4rem; padding-bottom: 2rem; margin-top: 0;">Achievements</h4>
-    <div class="row" style="margin:1rem 3rem 1rem 3rem">
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="aarush1_front.jpg">
-            </div>
-            <div class="card-content">
-              <div class="card-title">IAF Mehar Baba</div>
-              <p>The team qualified to Phase 3 of this competition after 
-                  clearing Phase 1 and 2 with a successful demonstration of swarm technology</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="aarush1_front.jpg">
-              </div>
-              <div class="card-content">
-                <div class="card-title">Lockheed Martin Nvidia Alpha Award</div>
-                <p>The team was awarded the Alpha Pilot Drone developmental kit by Lockheed 
-                    Martin</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="aarush1_front.jpg">
-              </div>
-              <div class="card-content">
-                <div class="card-title">Drone Olympics 2019</div>
-                <p>The team ranked 1st in the Formation Flying category 
-                    and was awarded a cash prize of Rs.5 Lakh</p>
-              </div>
-            </div>
-          </div>
-      </div>
+ <div>
+    <h4 style="text-align: left; padding: 13rem 0 2rem 8rem; margin: 0 0 0 0; font-weight: 600; font-size: 3.5rem; color: white;">Achievements</h4>
+    <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:2px solid white; background-color: black; font-weight: 600; color: white; margin: 0 0 0 8rem;">Button</a>
+  </div>
+  <img src="av5.png" alt="" style="text-align: right; margin-left:20%">
 </div>
 
 <style>
@@ -213,6 +150,10 @@ $(document).ready(function(){
   .upcoming_events{
     margin-left: 8rem;
     margin-top: 12rem;
+    background-image: url("uas comp.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
   }
 </style>
 
