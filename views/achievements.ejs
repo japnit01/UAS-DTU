@@ -1,0 +1,55 @@
+<%-include("partials/header")%>
+
+<style>
+    nav.transparent {
+        position: fixed !important;
+        top: 0;
+        background-color: #000000 !important;
+    }
+    .main {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+    }
+    .ctn {
+        padding: 0 3vw;
+        width: 40vw;
+    }
+    .ctn p {
+        border: 8px solid #ffffff;
+        border-width: 0 0 0 8px;
+        padding: 9px 16px;
+    }
+    .ctn h4 {
+        margin: 30px 0;
+    }
+    .collage {
+        background-attachment: fixed;
+        background-position: 39vw 10vh;
+        background-image: url("/sample-collage.jpg");
+        background-size: 60vw 90vh;
+        width: 60vw;
+    }
+</style>
+
+<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+    <div class="ctn">
+        <% achievs.map(a => { %>
+            <h4><%= a.name %></h4>
+            <p><%= a.desc %></p>
+        <% }) %>
+    </div>
+
+    <div class="collage"></div>
+</div>
+
+<script>
+    let main = document.querySelector('.main');
+    let nav = document.querySelector('.transparent');
+
+    let shift = window.getComputedStyle(nav).getPropertyValue('height');
+    // console.log(shift);
+    main.style.marginTop = shift;
+</script>
+
+<%-include("partials/footer")%>

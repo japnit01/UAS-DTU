@@ -483,6 +483,76 @@ app.get("/hangar",(req,res)=>{
     });
 });
 
+app.get('/achievements', (req, res) => {
+    res.render('achievements', {
+        achievs: [
+            {
+            name: "Drone Olympics 2019",
+            desc: "The team ranked 1st in the Formation Flying category and was awarded a cash prize of Rs.5 Lakh"
+            }, {
+            name: "AUVSI SUAS 2018",
+            desc: "The team ranked 2nd in the Design amongst a total of 63 teams worldwide with a cash barrel of $1600."
+            }, {
+            name: "SAE INDIA 2018",
+            desc: "The team secured 1st position overall in both Regular and Micro classes. The competition was held in the presence of officials from DRDO and ISRO. "
+            }, {
+            name: "SAE INDIA 2017",
+            desc: "In SAE INDIA Aero Design Challenge UAS DTU achieved 1st position in Regular Class. Also had best Technical Presenation "
+            }, {
+            name: "TATA UAV Launchpad",
+            desc: "UAS DTU achieved 2nd position."
+            }, {
+            name: "UAV Flytron",
+            desc: "Team UAS-DTU won the third prize in UAV Flytron organized by PEC, Chandigarh on 25-26 February 2017. The team was awarded a cash prize of Rs. 40000."
+            }
+        ]
+    })
+});
+
+app.get('/:id', (req, res) => {
+    let uavs = [
+        {
+            name: "Aarush X1",
+            video: "/1.mp4",
+            desc: "Fully Autonomous Navigation System.Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
+            specs: [
+                "Span: 12 ft. (3.6 m)",
+                "GTOW: 37 kg (75 lbs.) ",
+                "Payload: 5-10 kg (15 lbs) ",
+                "Endurance: 6 hrs ",
+                "Cruise speed: 70 kph (43 mph)",
+                "Propulsion: 50 cc, 5 HP 2-stroke gas engine with 500 watt on-board starter",
+                "Weight: 10kg(22 lbs)",
+                "Mechanical Range:  400 km (250 mi)",
+                "Communication Range: 1 km NLOS and 30 km LOS",
+                "Autopilot: Piccollo -II",
+                "Take-off distance: 80 m (260 ft.)",
+                "Landing distance: 70 m (230 ft.)",
+                "DashSpeed: 130 kph (80 mph)",
+                "Data Link: 2.4 Ghz C2  over COFDM based link"
+            ]
+        },
+        {
+            name: "Tarrot",
+            video: "/2.mp4",
+            desc: "Fully Autonomous Navigation System.High definition real-time video downlink with 20x Zoom Capability.Operational in temperatures till 50oC.Returns to home in case of link loss.Auto Land in case of low battery.",
+            specs: [
+                "Wheelbase : 650mm",
+                "GTOW: 2.5 kg ",
+                "Payload: 1.5 kg ",
+                "Endurance: 20 minutes ",
+                "Cruise speed: 3.8m/s",
+                "Communication range:10km",
+                "Take-Off: VTOL",
+                "Propulsion: 380KV 150W BLDC",
+                "Autopilot: Pixhawk"
+            ]
+        }
+    ];
+
+    res.render('uav', { info: uavs[+req.params.id] }); 
+});
+
 app.listen(port,()=>{
     console.log("app is listening");
 });
