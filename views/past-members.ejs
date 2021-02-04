@@ -1,31 +1,7 @@
 <%-include("partials/header")%>
 
 <style>
-    .sidebar a{
-        display: block;
-        color: white;
-        padding: 1rem 1rem;
-        font-family: "Rubik";
-        font-size: 1.3rem;
-    }
-
-    .sidebar{
-        position: fixed;
-        width:5rem;
-        top: 5rem;
-        left: 0;
-        bottom: 0;
-        background: black;
-    }
 </style>
-
-<div class="sidebar">
-    <a href="#">2020</a>
-    <a href="#">2019</a>
-    <a href="#">2018</a>
-    <a href="">2017</a>
-    <a href="">2016</a>
-</div>
 
 
 <style>
@@ -51,10 +27,34 @@
         background-color: #ffffff;
         border-radius: 0 0 10px 10px;
     }
+    .sidebar a{
+        display: block;
+        color: white;
+        padding: 1rem 1rem;
+        font-family: "Rubik";
+        font-size: 1.3rem;
+    }
+
+    .sidebar{
+        position: fixed;
+        width:5rem;
+        top: 5rem;
+        left: 0;
+        bottom: 0;
+        background: black;
+    }
 </style>
 
 <div class="main" style="background-color: #eeeeee; padding: 40px 0;">
     <div class="outer">
+        <div class="sidebar">
+            <a href="#">2020</a>
+            <a href="#">2019</a>
+            <a href="#">2018</a>
+            <a href="#">2017</a>
+            <a href="#">2016</a>
+        </div>
+
         <% members["2k18"].map(m => { %>
         <div class="box1">
             <div class="ctn" style="transform: translateY(-20%);">
