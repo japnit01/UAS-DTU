@@ -4,67 +4,29 @@
     nav.transparent {
         position: fixed !important;
         top: 0;
-    }
-    .bg-video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-    }
-    .empty {
-        width: 100%;
-        height: 100vh;
-    }
-    .empty h3 {
-        position: relative;
-        top: 70vh;
-        text-align: center;
-        color: #ffffff;
-        text-shadow: 0 0 10px #000000;
-    }
-    .ctn {
-        background-color: #dddddd;
-        padding: 20px 60px;
+        background-color: #000000 !important;
     }
     .specs {
-        width: 40vw;
-        padding-right: 20px;
-    }
-    .outer {
-        display: flex;
-        display: -moz-flex;
-        display: -webkit-flex;
+        width: 50%;
+        flex-shrink: 0;
+        color: #5b5b5b;
     }
 </style>
 
 <div class="main">
-    <video autoplay muted loop class="bg-video">
-        <source src="<%= info.video %>">
-    </video>
-    <div class="empty">
-        <h3 style="text-transform: uppercase; font-weight: 800; font-size: 5.3vw;"><%= info.name %></h3>
-    </div>
+    <img class="bg-img" src="<%= info.img %>" width="100%">
+    <h3 style="text-transform: uppercase; font-weight: 800; font-size: 5.3vw; text-align: center; color: #b29c71; padding: 60px 0;"><%= info.name %></h3>
 
     <div class="ctn">
-        <p style="font-size: 20px; background-color: #ffffff; padding: 20px;"><%= info.desc %></p>
-        <br><br>
+        <p style="font-size: 20px; color: #777777; padding: 20px; text-align: center; padding: 0 20% 50px 20%;"><%= info.desc %></p>
+        <img style="background-color: #222222;" src="<%= info.svg %>">
 
-        <div class="outer">
-            <div class="specs">
-                <h4>SPECIFICATIONS</h4>
-                <ul style="margin-top: 40px; font-size: 18px; line-height: 33px;">
-                    <% for(let i of info.specs) { %>
-                        <li><%= i %></li>
-                    <% } %>
-                </ul>
-            </div>
-
-            <div>
-                <img src="/sample-collage.jpg" width="100%">
-            </div>
-        </div>
+        <h4 style="text-align: center; font-weight: 700; font-size: 40px;"><%= info.name %> Specifications</h4>
+        <ul style="margin-top: 40px; font-size: 18px; line-height: 33px; display: flex; flex-wrap: wrap; width: 100%; padding: 0 20%;">
+            <% for(let i of info.specs) { %>
+                <li class="specs"><%= i %></li>
+            <% } %>
+        </ul>
     </div>
 </div>
 
