@@ -1,6 +1,6 @@
 <%-include("partials/header")%>
 
-<script>
+<!-- <script>
      $(document).ready(function(){
         $('.carousel.carousel-slider').carousel({
             fullWidth: true,
@@ -31,26 +31,91 @@
         <a class="carousel-item" href="/"><img src="aarush2_front2.png" alt="CD"></a>
         <a class="carousel-item" href="/"><img src="System Images without Background - Copy\Gaia.png" style="background-color: thistle;"alt="CD"></a>
     </div>
+</div> -->
+
+<style type="text/css">
+
+  #stage {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+
+  #stage a {
+    position: relative;
+  }
+
+  .slide-holder{
+    width: 100%;
+    height: 45rem;
+    position: static;
+    overflow: hidden;
+  }
+
+  #stage a img {
+     width: 100%;
+     height: 100%;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 10s;
+    animation-duration: 0.5s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    display: none;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+</style>
+
+<script type="text/javascript">
+
+  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+
+</script>
+<div class="slide-holder">
+  <div id="stage">
+    <a href="#"><img src="tarrot.png"></a>
+    <a href="#"><img src="aarush1_front.jpg"></a>
+    <a href="#"><img src="aarush2_front2.png"></a>
+  </div>
 </div>
 
 
-<script>
-$(document).ready(function(){
-        if($('#menu').hasClass("transparent"))
-        {
-          console.log("ppp")
-        }
-});
-</script>
+
 
 
 <style>
  .Achievements{
   height: 45rem;
-  background-color: #2d3436;
-  background-image: linear-gradient(to left,#2d3436 40%, #000000 50%);
-  display: flex
-   
+  /* background-color: #2d3436; */
+  /* background-image: linear-gradient(to left,#2d3436 40%, #000000 50%); */
+  background-image: url("Team_UAS_DTU_Drone_Olympics_Win.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
  }
 
 </style>
@@ -58,9 +123,9 @@ $(document).ready(function(){
 <div class="Achievements">
  <div>
     <h4 style="text-align: left; padding: 13rem 0 2rem 8rem; margin: 0 0 0 0; font-weight: 600; font-size: 3.5rem; color: white;">Achievements</h4>
-    <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:2px solid white; background-color: black; font-weight: 600; color: white; margin: 0 0 0 8rem;">Button</a>
-  </div>
-  <img src="av5.png" alt="" style="text-align: right; margin-left:20%">
+    <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:2px solid white; background-color: transparent; font-weight: 600; color: white; margin: 0 0 0 8rem;">Button</a>
+</div>
+  <!-- <img src="Team_UAS_DTU_Drone_Olympics_Win.png" alt="" style="margin-right:0; margin-left:15.56%;"> -->
 </div>
 
 <style>
@@ -74,7 +139,7 @@ $(document).ready(function(){
     }
 </style>
 <div id="parallax">
-  <h2 style="color: white; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%)">SYSTEMS</h2>
+  <h2 style="color: white; position: absolute; vertical-align: middle; top:40%; left: 50%; transform: translate(-50%, -50%)">SYSTEMS</h2>
 </div>
 
 <style>
@@ -115,7 +180,6 @@ $(document).ready(function(){
   #col1{
     background-image: url("aether.png");
   }
-  
   #col2{
     background-image: url("gaia.jpeg");
   }
@@ -147,23 +211,58 @@ $(document).ready(function(){
 </div>
 
 <style>
-  .upcoming_events{
+  .upcoming_events h2{
+    margin-top: 0;
     margin-left: 8rem;
-    margin-top: 12rem;
-    background-image: url("uas comp.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+  }
+
+  .upcoming_events a{
+    margin-left: 8rem;
+  }
+
+  .upcoming_events .inner_events{
+    display: flex;
+    position: relative;
+  }
+  .upcoming_events{
+    background-image: url("taylor-van-riper-yQorCngxzwI-unsplash.jpg");
+    background-position: 50% 55%;
   }
 </style>
 
-<div class="upcoming_events" style="height: 20rem; text-align: left;">
-  <h2 style="font-weight: 500;">Upcoming Events</h2>
-  <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; background-color: black; font-weight: 600;">Button</a>
+<div class="upcoming_events" style="height: 40rem; width:100%">
+  <div class="inner_events">
+    <div style="padding: 14rem 4rem 0rem 0;">
+      <h2 style="font-weight: 500; white-space: nowrap;">Upcoming Events</h2>
+      <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:3px solid white; background-color: transparent; font-weight: 600;">Button</a>
+    </div>
+    <div style="padding-right: 2rem; padding-top:8rem; margin:auto">
+      <img style="width:100%; height:50%;" src="website logo  final.png" alt="">
+    </div>
+  </div>
 </div>
 
-<div class="sponsors" style="text-align: center;">
-      <h3>Sponsors</h3>
+<style>
+.sponsors a{
+  padding-right: 3rem;
+  display: inline-block;
+  padding-bottom: 2rem;
+}
+.sponsors div{
+  padding-top: 5rem;
+  margin:auto;
+}
+</style>
+
+<div class="sponsors" style="text-align: center; padding-top: 2rem; padding-bottom: 5rem;">
+      <h3 style="font-weight: 500;">Sponsors</h3>
+      <div>
+        <a href=""><img src="dtu.jpg" alt=""></a>
+        <a href=""><img src="r_Reliance_Industries_Logo (2).png" alt=""></a>
+        <a href=""><img src="r_adani (1).png" alt=""></a>
+        <a href=""><img src="ongc.png" alt=""></a>
+        <a href=""><img src="lock1.png" alt=""></a>
+      </div>
 </div>
 
 <%-include("partials/footer")%>
