@@ -513,8 +513,8 @@ app.get('/:id', (req, res) => {
     let uavs = [
         {
             name: "Aarush X1",
-            video: "/1.mp4",
-            desc: "Fully Autonomous Navigation System.Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
+            img: "/gaia.jpeg",
+            desc: "Fully Autonomous Navigation System. Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
             specs: [
                 "Span: 12 ft. (3.6 m)",
                 "GTOW: 37 kg (75 lbs.) ",
@@ -523,7 +523,7 @@ app.get('/:id', (req, res) => {
                 "Cruise speed: 70 kph (43 mph)",
                 "Propulsion: 50 cc, 5 HP 2-stroke gas engine with 500 watt on-board starter",
                 "Weight: 10kg(22 lbs)",
-                "Mechanical Range:  400 km (250 mi)",
+                "Mechanical Range: 400 km (250 mi)",
                 "Communication Range: 1 km NLOS and 30 km LOS",
                 "Autopilot: Piccollo -II",
                 "Take-off distance: 80 m (260 ft.)",
@@ -534,15 +534,15 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Tarrot",
-            video: "/2.mp4",
-            desc: "Fully Autonomous Navigation System.High definition real-time video downlink with 20x Zoom Capability.Operational in temperatures till 50oC.Returns to home in case of link loss.Auto Land in case of low battery.",
+            img: "/tarrot.png",
+            desc: "Fully Autonomous Navigation System. High definition real-time video downlink with 20x Zoom Capability. Operational in temperatures till 50oC. Returns to home in case of link loss. Auto Land in case of low battery.",
             specs: [
-                "Wheelbase : 650mm",
+                "Wheelbase: 650mm",
                 "GTOW: 2.5 kg ",
                 "Payload: 1.5 kg ",
                 "Endurance: 20 minutes ",
                 "Cruise speed: 3.8m/s",
-                "Communication range:10km",
+                "Communication range: 10km",
                 "Take-Off: VTOL",
                 "Propulsion: 380KV 150W BLDC",
                 "Autopilot: Pixhawk"
