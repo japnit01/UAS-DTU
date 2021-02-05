@@ -466,7 +466,7 @@ app.get("/hangar",(req,res)=>{
             },
             {
                 name: "Garuda",
-                src: "/plain.jpg",
+                src: "/garuda.png",
                 desc: "GARUDA, a modified Sig Rascal 110 R/C aircraft along with its Ground Control System is capable of performing autonomous flight & navigation, simultaneously gathering actionable surveillance data using optical sensors. "
             },
             {
@@ -481,8 +481,9 @@ app.get("/hangar",(req,res)=>{
             },
             {
                 name: "Vihaan",
-                src: "/plain.jpg",
-                desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements.  "
+                src: "/v1.jpg",
+                desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements.  ",
+                side: "right"
             }            
         ]
     });
@@ -531,7 +532,7 @@ app.get('/:id', (req, res) => {
                 "Weight: 10kg(22 lbs)",
                 "Mechanical Range: 400 km (250 mi)",
                 "Communication Range: 1 km NLOS and 30 km LOS",
-                "Autopilot: Piccollo -II",
+                "Autopilot: Piccollo-II",
                 "Take-off distance: 80 m (260 ft.)",
                 "Landing distance: 70 m (230 ft.)",
                 "DashSpeed: 130 kph (80 mph)",
