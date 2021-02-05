@@ -24,20 +24,18 @@
         border-radius: 0 0 10px 10px;
     }
     .sidebar a{
-        display: block;
+        display:block;
+        padding: 0.85rem 2rem;
         color: white;
-        padding: 1rem 1rem;
-        font-family: "Rubik";
-        font-size: 1.3rem;
+        font-family: 'Crete Round', serif;
     }
 
     .sidebar{
-        position: fixed;
-        width:5rem;
-        top: 5rem;
-        left: 0;
-        bottom: 0;
-        background: #1a1a1a;
+        background-color: black;
+        position:absolute;
+        top:0rem;
+        left:0;
+        bottom:0;
     }
     #contact {
         z-index: 1;
@@ -47,11 +45,16 @@
 <div class="main" style="background-color: #eeeeee; padding: 40px 0;">
     <div class="outer">
         <div class="sidebar">
-            <a href="#">2020</a>
-            <a href="#">2019</a>
-            <a href="#">2018</a>
-            <a href="#">2017</a>
-            <a href="#">2016</a>
+            <a href="">2020</a>
+            <a href="">2019</a>
+            <a href="">2018</a>
+            <a href="">2017</a>
+            <a href="">2016</a>
+            <a href="">2015</a>
+            <a href="">2014</a>
+            <a href="">2013</a>
+            <a href="">2012</a>
+            <a href="">2011</a>
         </div>
 
         <% members["2k18"].map(m => { %>
