@@ -6,7 +6,7 @@
         top: 0;
         background-color: #000000 !important;
     }
-    .outer {
+    .inner {
         display: flex;
         display: -moz-flex;
         display: -webkit-flex;
@@ -19,7 +19,7 @@
         min-width: 300px;
         flex-shrink: 1;
         text-align: center;
-        margin: 40px 30px;
+        margin: 50px 30px;
         box-sizing: border-box;
         background-color: #ffffff;
         border-radius: 0 0 10px 10px;
@@ -29,8 +29,8 @@
         padding: 0.85rem 2rem;
         color: white;
         font-family: 'Crete Round', serif;
+        cursor: pointer;
     }
-
     .sidebar{
         background-color: #222;
         position:fixed;
@@ -46,24 +46,32 @@
 <div class="main" style="background-color: #eeeeee; padding: 40px 0;">
     <div class="outer">
         <div class="sidebar">
-            <a href="">2020</a>
-            <a href="">2019</a>
-            <a href="">2018</a>
-            <a href="">2017</a>
-            <a href="">2016</a>
-            <a href="">2015</a>
-            <a href="">2014</a>
-            <a href="">2013</a>
-            <a href="">2012</a>
-            <a href="">2011</a>
+            <a>2020</a>
+            <a>2019</a>
+            <a>2018</a>
+            <a>2017</a>
+            <a>2016</a>
+            <a>2015</a>
+            <a>2014</a>
+            <a>2013</a>
+            <a>2012</a>
+            <a>2011</a>
         </div>
 
-        <% members["2k18"].map(m => { %>
-        <div class="box1">
-            <div class="ctn" style="transform: translateY(-20%);">
-                <img src="/UAS-Past/<%= m.src %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
-                <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>
-                <div><%= m.rank %></div>
+        <% Object.keys(members).map(k => { %>
+        <div id="y<%= k %>" class="years">
+            <h3 style="text-align: center; font-weight: 700; color: #997755; padding: 0 0 50px 0;">Batch of <%= k.replace('k', 0) %></h3>
+
+            <div class="inner">
+                <% members[k].map(m => { %>
+                <div class="box1">
+                    <div class="ctn" style="transform: translateY(-20%);">
+                        <img src="/UAS-Past/<%= m.src || '../anon.jpg' %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                        <p style="font-size: 18px; font-weight: bold; text-transform: uppercase;"><%= m.name %></p>
+                        <div><%= m.rank %></div>
+                    </div>
+                </div>
+                <% }) %>
             </div>
         </div>
         <% }) %>
@@ -73,10 +81,21 @@
 <script>
     let main = document.querySelector('.main');
     let nav = document.querySelector('.transparent');
+    let links = [...document.querySelectorAll(".sidebar a")];
+    let years = [...document.querySelectorAll(".years")];
 
     let shift = window.getComputedStyle(nav).getPropertyValue('height');
-    // console.log(shift);
     main.style.marginTop = shift;
+
+    links.map(a => {
+        a.addEventListener("click", e => {
+            years.map(yr => yr.style.display = 'none');
+            document.querySelector('#y' + a.innerText.replace('0','k')).style.display = 'block';
+        });
+    });
+
+    years.map(yr => yr.style.display = "none");
+    document.querySelector("#y2k19").style.display = "block";
 </script>
 
 <%-include("partials/footer")%>
