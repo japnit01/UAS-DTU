@@ -450,35 +450,40 @@ app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
             {
-                src: "./tarrot.png",
                 name: "Aarush X1",
-                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
-                side: "left"
+                src: "/aarush1_front.jpg",
+                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use."
             },
             {
-                src: "./optimized-btni.png",
                 name: "Aarush X2",
-                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
-                side: "left"
+                src: "/aarush2_front2.png",
+                desc: "Aarush X2 is the optimized version of Aarush X1. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters."
             },
             {
-                src: "./tarrot.png",
+                name: "Avniel",
+                src: "/plain.jpg",
+                desc: " Avniel aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors. "
+            },
+            {
+                name: "Garuda",
+                src: "/plain.jpg",
+                desc: "GARUDA, a modified Sig Rascal 110 R/C aircraft along with its Ground Control System is capable of performing autonomous flight & navigation, simultaneously gathering actionable surveillance data using optical sensors. "
+            },
+            {
+                name: "Lazarus",
+                src: "/plain.jpg",
+                desc: "Lazarus, designed to meet the objectives of AUVSI student UAS competition. Lazarus is a modified Sig Rascal 110 R/C aircraft controlled by the ArduPilot Mega, an open-source autopilot. Capable of following dynamically changing waypoints, ANACONDA  provides real time reconnaissance to an Imagery terminal on ground using a gimbal stabilized point and shoot camera."
+            },
+            {
                 name: "Tarrot",
-                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
-                side: "right"
+                src: "/tarrot.png",
+                desc: "The project aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors. "
             },
             {
-                src: "./optimized-btni.png",
-                name: "Aarush X2",
-                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
-                side: "left"
-            },
-            {
-                src: "./tarrot.png",
-                name: "Tarrot",
-                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use.",
-                side: "right"
-            }
+                name: "Vihaan",
+                src: "/plain.jpg",
+                desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements.  "
+            }            
         ]
     });
 });
@@ -513,7 +518,8 @@ app.get('/:id', (req, res) => {
     let uavs = [
         {
             name: "Aarush X1",
-            img: "/gaia.jpeg",
+            img: "/gaia2.jpg",
+            svg: "/transparents/Gaia.svg",
             desc: "Fully Autonomous Navigation System. Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
             specs: [
                 "Span: 12 ft. (3.6 m)",
@@ -550,7 +556,7 @@ app.get('/:id', (req, res) => {
         }
     ];
 
-    res.render('uav', { info: uavs[+req.params.id] }); 
+    res.render('uav', { info: uavs[+req.params.id % 2] }); 
 });
 
 app.listen(port,()=>{
