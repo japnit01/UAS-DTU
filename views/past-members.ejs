@@ -1,32 +1,35 @@
 <%-include("partials/header")%>
 
 <style>
-    .sidebar a{
-        display: block;
-        color: white;
-        padding: 1rem 1rem;
-        font-family: "Rubik";
-        font-size: 1.3rem;
+    .sidebar{
+        background-color: black;
+        position:absolute;
+        top:0rem;
+        left:0;
+        bottom:0;
+
     }
 
-    .sidebar{
-        position: fixed;
-        width:5rem;
-        top: 5rem;
-        left: 0;
-        bottom: 0;
-        background: black;
+    .sidebar a{
+        display:block;
+        padding: 0.85rem 2rem;
+        color: white;
+        font-family: 'Crete Round', serif;
     }
 </style>
 
 <div class="sidebar">
-    <a href="#">2020</a>
-    <a href="#">2019</a>
-    <a href="#">2018</a>
+    <a href="">2020</a>
+    <a href="">2019</a>
+    <a href="">2018</a>
     <a href="">2017</a>
     <a href="">2016</a>
+    <a href="">2015</a>
+    <a href="">2014</a>
+    <a href="">2013</a>
+    <a href="">2012</a>
+    <a href="">2011</a>
 </div>
-
 
 <style>
     nav.transparent {
@@ -34,6 +37,7 @@
         top: 0;
         background-color: #000000 !important;
     }
+
     .outer {
         display: flex;
         display: -moz-flex;
@@ -41,7 +45,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .box1 {
+
+    .box1{
         width: 27%;
         min-width: 300px;
         flex-shrink: 1;
