@@ -14,6 +14,10 @@ app.get("/",(req,res)=>{
     res.render("home",{signal:signal});
 });
 
+app.get("/about-us",(req,res)=>{
+    res.render("about");
+});
+
 app.get("/past-members", (req, res) => {
     res.render("past-members", {
         members: {
@@ -519,7 +523,7 @@ app.get('/:id', (req, res) => {
     let uavs = [
         {
             name: "Aarush X1",
-            img: "/gaia2.jpg",
+            img: "gaia2.jpg",
             svg: "/transparents/Gaia.svg",
             desc: "Fully Autonomous Navigation System. Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
             specs: [
@@ -541,7 +545,7 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Tarrot",
-            img: "/tarrot.png",
+            img: "tarrot.png",
             desc: "Fully Autonomous Navigation System. High definition real-time video downlink with 20x Zoom Capability. Operational in temperatures till 50oC. Returns to home in case of link loss. Auto Land in case of low battery.",
             specs: [
                 "Wheelbase: 650mm",
