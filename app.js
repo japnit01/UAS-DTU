@@ -21,11 +21,17 @@ app.get("/about-us",(req,res)=>{
 app.get("/past-members", (req, res) => {
     res.render("past-members", {
         members: {
+            "2k20": [
+                {
+                    name: "Rohan Pratap Singh",
+                    rank: "Student Advisor",
+                    src: "Rohan Pratap Singh_2017.png"
+                }
+            ],
             "2k19": [
                 {
                     name: "Harsh Panwar",
-                    rank: "Project Manager",
-                    src: "Harsh Panwar_2019.png"
+                    rank: "Project Manager"
                 },
                 {
                     name: "Suvi Varshney",
@@ -63,8 +69,7 @@ app.get("/past-members", (req, res) => {
             "2k17": [
                 {
                     name: "Rohan Pratap Singh",
-                    rank: "Student Advisor",
-                    src: "Rohan Pratap Singh_2017.png"
+                    rank: "Student Advisor"
                 }
             ],
             "2k16": [
@@ -109,8 +114,7 @@ app.get("/past-members", (req, res) => {
                 },
                 {
                     name: "Harsh Aggarwal",
-                    rank: "Student Advisor",
-                    src: "Harsh Aggarwal_2014.png"
+                    rank: "Student Advisor"
                 },
                 {
                     name: "Lakshay Chauhan",
@@ -119,8 +123,7 @@ app.get("/past-members", (req, res) => {
                 },
                 {
                     name: "Shivang Baweja",
-                    rank: "Student Advisor",
-                    src: "Shivang Baweja_2014.png"
+                    rank: "Student Advisor"
                 }
             ],
             "2k13": [
@@ -131,8 +134,7 @@ app.get("/past-members", (req, res) => {
                 },
                 {
                     name: "KVSR Hareen",
-                    rank: "Student Advisor",
-                    src: "KVSR Hareen_2013.png"
+                    rank: "Student Advisor"
                 },
                 {
                     name: "Raghvendra Gautam",
@@ -195,8 +197,7 @@ app.get("/past-members", (req, res) => {
                 },
                 {
                     name: "Sahil Kapoor",
-                    rank: "Student Advisor",
-                    src: "Sahil Kapoor_2011.png"
+                    rank: "Student Advisor"
                 }               
             ]
         }
@@ -464,6 +465,11 @@ app.get("/hangar",(req,res)=>{
                 desc: "Aarush X2 is the optimized version of Aarush X1. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters."
             },
             {
+                name: "Aarush-M",
+                src: "/aarush2_front2.png",
+                desc: "Aarush-M is the younger sibling of Aarush. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters."
+            },
+            {
                 name: "Avniel",
                 src: "/plain.jpg",
                 desc: " Avniel aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors. "
@@ -525,7 +531,7 @@ app.get('/:id', (req, res) => {
             name: "Aarush X1",
             img: "gaia2.jpg",
             svg: "/transparents/Gaia.svg",
-            desc: "Fully Autonomous Navigation System. Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
+            desc: "Fully Autonomous Navigation System.Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
             specs: [
                 "Span: 12 ft. (3.6 m)",
                 "GTOW: 37 kg (75 lbs.) ",
@@ -544,24 +550,111 @@ app.get('/:id', (req, res) => {
             ]
         },
         {
+            name: "Aarush X2",
+            img: "/tarrot.png",
+            desc: "Aarush X2 is the optimized version of Aarush X1. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters.It features significant improvements over Aarush X1 in terms of structural design and the use of lightweight composite sandwitch structure for its construction. It also has a more efficent low-drag fuselage design over Aarush X1. Another feature of Aarush X2 is that it can deploy either an electric propulsion system or a gas engine for its propulsion depending on mission requirements, making Aarush X2 a versatile UAV.",
+            specs: [
+                "Setup time: 30 minutes",
+                "Endurance Gas Engine: 6-8 hours",
+                "Endurance Electric Motor: 40 min ",
+                "Wingspan: 122 inches ",
+                "Payload: 14 pounds ",
+                "Gross takeoff weight: 40 pounds"            
+            ]
+        },
+        {
+            name: "Aarush-M",
+            img: "/tarrot.png",
+            desc: "Aarush-M is the younger sibling of Aarush. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters.",
+            specs: [
+                "Wheelbase : 650mm",
+                "GTOW: 2.5 kg ",
+                "Payload: 1.5 kg ",
+                "Endurance: 20 minutes ",
+                "Cruise speed: 15 kmph"            
+            ]
+        },
+        {
+            name: "Avniel",
+            img: "/tarrot.png",
+            desc: "The project aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors.",
+            specs: [
+                "GTOW: 8kg",
+                "Payload: 3.5kg",
+                "Wingspan: 2m",
+                "Takeoff dist< 60ft",
+                "Cruise speed: 13m/s",
+                "Wood and aluminium framework"            
+            ]
+        },
+        {
+            name: "Garuda",
+            img: "/tarrot.png",
+            desc: "GARUDA, a modified Sig Rascal 110 R/C aircraft along with its Ground Control System is capable of performing autonomous flight & navigation, simultaneously gathering actionable surveillance data using optical sensors. The system includes commercially available autopilot system, Piccolo II for control & navigation with a customized imagery system capable of capturing & transmitting high definition images of the hostile territory simultaneously processing it to deliver actionable intelligence. The Ground Control Station (GCS) and the aircraft communicate in real time to provide situational awareness and safe and reliable flight. Modular in design the entire system can be brought to a flying state in less than 20 minutes.",
+            specs: [
+                "Wingspan: 110 Inches",
+                "Empty weight: 18.7 lbs",
+                "Launch Weight: 24.2 lbs",
+                "Propulsion: Hacker A60 20x10 prop",
+                "Power: 10s 5000mAh Thunder Power Li-Po",
+                "Endurance: 23 min",
+                "Cruise speed: 29 Knots",
+                "Range: 1.6 mile LOS",
+                "Wireless link: 2.4 Mhz (Data telemetry)",
+                "5 Mhz (Imagery)",
+                "Camera Canon G10, gimbal stabilized."            
+            ]
+        },
+        {
+            name: "Lazarus",
+            img: "/tarrot.png",
+            desc: "Lazarus,controlled by the ArduPilot Mega, an open-source autopilot is capable of following dynamically changing waypoints. Lazarus  provides real time reconnaissance to an Imagery terminal on ground using a gimbal stabilized point and shoot camera. The transmission of captured images takes place on a 2.4GHz secured wireless link. The received images are then processed for actionable intelligence. Modular in design,Lazarus can be brought to flying state in less than 40 minutes. Safety being of paramount importance in all aspects of UAS operations, anaconda   can be controlled by its Mission Control Centre over a 2.4 GHz secured wireless link as a Remotely Piloted Vehicle (RPV) and also by a 2.4 GHz Radio transmitter remote under full manual control.",
+            specs: [
+                "GTOW : 15.84 lbs",
+                "Wingspan: 2.5metres",
+                "Power: 10s Lipo 8000Mah",
+                "Cruise Velocity: 14m/s",
+                "Endurance: 35 minutes"
+            ]
+        },
+        {
             name: "Tarrot",
             img: "tarrot.png",
             desc: "Fully Autonomous Navigation System. High definition real-time video downlink with 20x Zoom Capability. Operational in temperatures till 50oC. Returns to home in case of link loss. Auto Land in case of low battery.",
             specs: [
-                "Wheelbase: 650mm",
+                "Wheelbase : 650mm",
                 "GTOW: 2.5 kg ",
                 "Payload: 1.5 kg ",
                 "Endurance: 20 minutes ",
                 "Cruise speed: 3.8m/s",
-                "Communication range: 10km",
+                "Communication range:10km",
                 "Take-Off: VTOL",
                 "Propulsion: 380KV 150W BLDC",
                 "Autopilot: Pixhawk"
             ]
+        },
+        {
+            name: "Vihaan",
+            img: "/tarrot.png",
+            desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements. It is used by the team for testing and evaluation of avionics and mechanical subsystems.",
+            specs: [
+                "Wingspan: 2.1 m",
+                "Setup time: 1 hour",
+                "Gross Takeoff Weight: 6 KGS",
+                "Take Off: Catapult launcher",
+                "Mechanical Range: 35 Km",
+                "Payload: 2.5 Kg",
+                "Endurance: 40 minutes",
+                "Communication Range: 10 Km",
+                "Landing: Belly landing",
+                "Cruise Speed: 15 m/s",
+                "Cieling: 2.5 Km",
+                "Propulsion: BLDC Electric"
+            ]
         }
     ];
 
-    res.render('uav', { info: uavs[+req.params.id % 2] }); 
+    res.render('uav', { info: uavs[+req.params.id] }); 
 });
 
 app.listen(port,()=>{
