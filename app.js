@@ -1,6 +1,6 @@
 let express = require("express"),
     bodyParser = require("body-parser"),
-    nodemon  = require("nodemon"),
+    nodemon = require("nodemon"),
     app = express();
 
 const port = 80;
@@ -208,15 +208,15 @@ app.get("/mentors", (req, res) => {
     res.render('mentors', {
         mentors: [
             {
+                name: `Dr. N.S. Raghava`,
+                rank: `Professor`,
+                desc: `Department of I.T.
+                Delhi Technological University
+                Faculty Advisor`
+            }, {
             name: `Dr. Vikas Rastogi`,
             rank: `Professor`,
             desc: `Department of Mechanical Engineering
-            Delhi Technological University
-            Faculty Advisor`
-            }, {
-            name: `Dr. N.S. Raghava`,
-            rank: `Professor`,
-            desc: `Department of I.T.
             Delhi Technological University
             Faculty Advisor`
             }, {
@@ -466,13 +466,33 @@ app.get("/hangar",(req,res)=>{
             },
             {
                 name: "Aarush-M",
-                src: "/aarush2_front2.png",
+                src: "/m2.jpg",
                 desc: "Aarush-M is the younger sibling of Aarush. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters."
+            },
+            {
+                name: "Aquila 160",
+                src: "/Aquila1.jpeg",
+                desc: "Aquila 160 is a robust model, the proof of which can be seen in it’s long flying range which extends up to more than 100 Kilometers accompanied by multiple Fail-safes and endurance of up to 3 hours which is a result of it’s Hybrid Power System."
             },
             {
                 name: "Avniel",
                 src: "/plain.jpg",
                 desc: " Avniel aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors. "
+            },
+            {
+                name: "Castor",
+                src: "/castor.jpg",
+                side: 'right',
+                desc: "Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.",
+                specs: [
+                    "Flight time: 40 min",
+                    "Power system: Hybrid",
+                    "Takeoff weight: 22 kgs",
+                    "Payload: 1 kg",
+                    "Delivery system: Autonomous",
+                    "Navigation: GPS denied, Encrypted Wireless GCS communication",
+                    "Endurance: 3 hrs"
+                ]
             },
             {
                 name: "Garuda",
@@ -494,7 +514,7 @@ app.get("/hangar",(req,res)=>{
                 src: "/v1.jpg",
                 desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements.  ",
                 side: "right"
-            }            
+            }
         ]
     });
 });
@@ -529,8 +549,8 @@ app.get('/:id', (req, res) => {
     let uavs = [
         {
             name: "Aarush X1",
-            img: "gaia2.jpg",
-            svg: "/transparents/Gaia.svg",
+            img: "/x1c.jpg",
+            svg: "/transparents/17.png",
             desc: "Fully Autonomous Navigation System.Robust NLOS C2  over L band and S Band COFDM based technology. High definition real-time surveillance with 40x zoom capability. Operational in cross-winds of 37 km/h and gusts of 46 km/h. Mid-air restart in case of engine failure.",
             specs: [
                 "Span: 12 ft. (3.6 m)",
@@ -551,7 +571,8 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Aarush X2",
-            img: "/tarrot.png",
+            img: "/x2a.jpg",
+            svg: "/transparents/18.png",
             desc: "Aarush X2 is the optimized version of Aarush X1. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters.It features significant improvements over Aarush X1 in terms of structural design and the use of lightweight composite sandwitch structure for its construction. It also has a more efficent low-drag fuselage design over Aarush X1. Another feature of Aarush X2 is that it can deploy either an electric propulsion system or a gas engine for its propulsion depending on mission requirements, making Aarush X2 a versatile UAV.",
             specs: [
                 "Setup time: 30 minutes",
@@ -564,7 +585,8 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Aarush-M",
-            img: "/tarrot.png",
+            img: "/m2.jpg",
+            svg: "/m2.jpg",
             desc: "Aarush-M is the younger sibling of Aarush. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters.",
             specs: [
                 "Wheelbase : 650mm",
@@ -575,8 +597,24 @@ app.get('/:id', (req, res) => {
             ]
         },
         {
+            name: "Aquila 160",
+            img: "/Aquila1.jpeg",
+            svg: "/transparents/6.png",
+            desc: "Aquila 160 is a robust model, the proof of which can be seen in it’s long flying range which extends up to more than 100 Kilometers accompanied by multiple Fail-safes and endurance of up to 3 hours which is a result of it’s Hybrid Power System. The aircraft has a maximum takeoff weight of 22 Kilograms and a payload weight of 1 kilogram with Safe Autonomous Payload Delivery System. It is also capable of Human Detection and Geotagging irrespective of the time. It maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS Denied Navigation. Moreover, it also has a wide range of Swarm Capabilities that can be controlled by more than one entity with a large scalability.",
+            specs: [
+                "Flying range > 100 kms",
+                "Power system: Hybrid",
+                "Takeoff weight: 22 kgs",
+                "Payload: 1 kg",
+                "Delivery system: Autonomous",
+                "Navigation: GPS denied",
+                "Endurance: 3 hrs"
+            ]
+        },
+        {
             name: "Avniel",
-            img: "/tarrot.png",
+            img: '',
+            svg: "/transparents/8.png",
             desc: "The project aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors.",
             specs: [
                 "GTOW: 8kg",
@@ -588,8 +626,24 @@ app.get('/:id', (req, res) => {
             ]
         },
         {
+            name: "Castor",
+            img: "/castor.jpg",
+            svg: "/transparents/13.png",
+            desc: "Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. It has a flight time of as much as 40 min, a coherent and compact design which makes it capable of high precision in locating and precise manoeuvring. The UAV includes localisation of a target and tracking it in 3D system, obstacle detection and avoidance which makes convenient to use. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.",
+            specs: [
+                "Flight time: 40 min",
+                "Power system: Hybrid",
+                "Takeoff weight: 22 kgs",
+                "Payload: 1 kg",
+                "Delivery system: Autonomous",
+                "Navigation: GPS denied, Encrypted Wireless GCS communication",
+                "Endurance: 3 hrs"
+            ]
+        },
+        {
             name: "Garuda",
-            img: "/tarrot.png",
+            img: "/garuda.png",
+            svg: "/transparents/7.png",
             desc: "GARUDA, a modified Sig Rascal 110 R/C aircraft along with its Ground Control System is capable of performing autonomous flight & navigation, simultaneously gathering actionable surveillance data using optical sensors. The system includes commercially available autopilot system, Piccolo II for control & navigation with a customized imagery system capable of capturing & transmitting high definition images of the hostile territory simultaneously processing it to deliver actionable intelligence. The Ground Control Station (GCS) and the aircraft communicate in real time to provide situational awareness and safe and reliable flight. Modular in design the entire system can be brought to a flying state in less than 20 minutes.",
             specs: [
                 "Wingspan: 110 Inches",
@@ -608,6 +662,7 @@ app.get('/:id', (req, res) => {
         {
             name: "Lazarus",
             img: "/tarrot.png",
+            svg: "/transparents/8.png",
             desc: "Lazarus,controlled by the ArduPilot Mega, an open-source autopilot is capable of following dynamically changing waypoints. Lazarus  provides real time reconnaissance to an Imagery terminal on ground using a gimbal stabilized point and shoot camera. The transmission of captured images takes place on a 2.4GHz secured wireless link. The received images are then processed for actionable intelligence. Modular in design,Lazarus can be brought to flying state in less than 40 minutes. Safety being of paramount importance in all aspects of UAS operations, anaconda   can be controlled by its Mission Control Centre over a 2.4 GHz secured wireless link as a Remotely Piloted Vehicle (RPV) and also by a 2.4 GHz Radio transmitter remote under full manual control.",
             specs: [
                 "GTOW : 15.84 lbs",
@@ -619,7 +674,8 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Tarrot",
-            img: "tarrot.png",
+            img: "tt3.jpg",
+            svg: "/transparents/15.png",
             desc: "Fully Autonomous Navigation System. High definition real-time video downlink with 20x Zoom Capability. Operational in temperatures till 50oC. Returns to home in case of link loss. Auto Land in case of low battery.",
             specs: [
                 "Wheelbase : 650mm",
@@ -635,7 +691,8 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Vihaan",
-            img: "/tarrot.png",
+            img: "/v1.jpg",
+            svg: "/transparents/16.png",
             desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements. It is used by the team for testing and evaluation of avionics and mechanical subsystems.",
             specs: [
                 "Wingspan: 2.1 m",
