@@ -1,46 +1,65 @@
 <%-include("partials/header")%>
 
 <style type="text/css">
+ #stage {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      
+    }
 
-  #stage {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-  }
+    #stage a {
+      position: relative;
+      display: inline-block;
+    }
 
-  #stage a {
-    position: relative;
-  }
+    .slide-holder{
+      width: 100%;
+      position: relative;
+    }
 
-  .slide-holder{
-    width: 100%;
-    height: 45rem;
-    position: static;
-    overflow: hidden;
-  }
+    #stage a:nth-of-type(1) {
+      animation-name: fader;
+      animation-delay: 10s;
+      animation-duration: 0.5s;
+      z-index: 20;
+    }
+    #stage a:nth-of-type(2) {
+      display: none;
+    }
+    #stage a:nth-of-type(n+3) {
+      display: none;
+    }
 
-  #stage a img {
-     width: 100%;
-     height: 100%;
-  }
+    @keyframes fader {
+      from { opacity: 1.0; }
+      to   { opacity: 0.0; }
+    }
+ @media only screen and (min-width: 600px){
+    #stage a>img{
+      width: 100%;
+      height: 39rem;
+    }
+    
+    #stage {
+      height: 39rem;
+      width: 100%;
+    }
+ }
 
-  #stage a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 10s;
-    animation-duration: 0.5s;
-    z-index: 20;
-  }
-  #stage a:nth-of-type(2) {
-    display: none;
-  }
-  #stage a:nth-of-type(n+3) {
-    display: none;
-  }
+  @media only screen and (max-width: 600px){
+    #stage a>img{
+      width: 100%;
+      height: 20rem;
+    }
 
-  @keyframes fader {
-    from { opacity: 1.0; }
-    to   { opacity: 0.0; }
+    #stage{
+      height: 20rem;
+      width: 100%;
+    }
   }
+    
+
 
 </style>
 
@@ -75,24 +94,51 @@
 
 <style>
  .Achievements{
-  height: 45rem;
-  /* background-color: #2d3436; */
-  /* background-image: linear-gradient(to left,#2d3436 40%, #000000 50%); */
+  position: relative;
   background-image: url("Team_UAS_DTU_Drone_Olympics_Win.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
  }
 
+ .Achievements h4{
+   color: white;
+ }
+ 
+ @media only screen and (max-width: 600px){
+   .Achievements{
+      text-align: left; 
+      padding: 6rem 0 0 5rem;
+      height: 20rem;
+   }
+
+   .Achievements h4{
+     font-size:2rem;
+     font-weight: 600;
+     
+   }
+ }
+
+ @media only screen and (min-width: 600px){
+   .Achievements{
+      height: 39rem;
+      text-align: left;
+      padding: 13rem 0 0 5rem;
+   }
+
+   .Achievements h4{
+     font-size:3rem;
+     font-weight: 600;
+     
+   }
+ }
 </style>
 
 <div class="Achievements">
  <div>
-    <h4 style="text-align: left; padding: 13rem 0 2rem 8rem; margin: 0 0 0 0; font-weight: 600; font-size: 3.5rem; color: white;">Achievements</h4>
-    <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:2px solid white; background-color: transparent; font-weight: 600; color: white; margin: 0 0 0 8rem;" href="/achievements">Button</a>
+    <h4>Achievements</h4>
+    <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:2px solid white; background-color: transparent; font-weight: 600; color: white;" href="/achievements">Button</a>
 </div>
-  <!-- <img src="Team_UAS_DTU_Drone_Olympics_Win.png" alt="" style="margin-right:0; margin-left:15.56%;"> -->
 </div>
 
 <style>
@@ -102,7 +148,19 @@
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
-      height: 40rem;
+      position: relative;
+    }
+
+    @media only screen and (max-width:600px){
+      #parallax{
+        height: 25rem !important;
+      }
+    }
+
+    @media only screen and (min-width:600px) {
+      #parallax{
+        height: 39rem !important;
+      }
     }
 </style>
 <div id="parallax">
@@ -156,10 +214,28 @@
   #col4{
     background-image: url("hero.jpg")
   }
+
+  @media only screen and (min-width:600px) {
+    #row1{
+      height: 22rem;
+    }
+    #row2{
+      height: 20rem;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+    #row1{
+      height: 15rem;
+    }
+    #row2{
+      height: 14rem;
+    }
+  }
 </style>
 
 <div id="system" style="margin:0 0 0 0;">
-  <div class="row" id="row1" style="height: 22rem;">
+  <div class="row" id="row1">
     <div class="col l8 m7 s7" id="col1">
       <h3 style="text-align: center; ">Aether</h3>
     </div>
@@ -167,7 +243,7 @@
       <h3>Gaia</h3>
     </div>
   </div>
-  <div class="row" id="row2" style="height: 20rem;">
+  <div class="row" id="row2">
     <div class="col l5 m5 s5" id="col3">
       <h3>Tarrot</h3>
     </div>
@@ -179,11 +255,38 @@
 
 <style>
   .upcoming_events h2{
-    margin-top: 0;
-    margin-left: 8rem;
+    -webkit-text-fill-color:transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
   }
 
-  .upcoming_events a{
+  .upcoming_events{
+    background-image: url("taylor-van-riper-yQorCngxzwI-unsplash.jpg");
+    background-position: 50% 55%;
+  }
+
+  @media only screen and (min-width:600px){
+    .upcoming_events{
+      height: 40rem; 
+      width:100%;
+     }
+
+    .upcoming_events h2{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-left: 8rem;
+    white-space: nowrap;
+    padding: 14rem 4rem 0rem 0;
+    }
+
+    #upcoming_events_img{
+      padding-right: 2rem; 
+      padding-top:9rem; 
+      margin:auto
+    }
+    
+    .upcoming_events a{
     margin-left: 8rem;
   }
 
@@ -191,19 +294,37 @@
     display: flex;
     position: relative;
   }
-  .upcoming_events{
-    background-image: url("taylor-van-riper-yQorCngxzwI-unsplash.jpg");
-    background-position: 50% 55%;
+  }
+
+  @media only screen and (max-width:600px){
+    .upcoming_events{
+      height: 25rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .upcoming_events h2{
+      padding-top: 8rem;  
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-top: 0;
+      margin-left: 3rem;
+      white-space: nowrap;
+    }
+
+    .upcoming_events a{
+    margin-left: 3rem;
+  }
   }
 </style>
 
-<div class="upcoming_events" style="height: 40rem; width:100%">
+<div class="upcoming_events">
   <div class="inner_events">
-    <div style="padding: 14rem 4rem 0rem 0;">
-      <h2 style="font-weight: 500; white-space: nowrap;">Upcoming Events</h2>
+    <div>
+      <h2>Upcoming Events</h2>
       <a class="waves-effect waves-light btn-large" style=" height:4rem; width: 10rem; border:3px solid white; background-color: transparent; font-weight: 600;">Button</a>
     </div>
-    <div style="padding-right: 2rem; padding-top:8rem; margin:auto">
+    <div class="hide-on-med-and-down" id="upcoming_events_img">
       <img style="width:100%; height:50%;" src="website logo  final.png" alt="">
     </div>
   </div>
