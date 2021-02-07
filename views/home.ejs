@@ -157,6 +157,12 @@
       }
     }
 
+    @media only screen and (max-width:400px){
+      #parallax{
+        height: 15rem !important;
+      }
+    }
+
     @media only screen and (min-width:600px) {
       #parallax{
         height: 39rem !important;
@@ -272,7 +278,7 @@
      }
 
     .upcoming_events h2{
-    font-size: 4.5rem;
+    font-size: 12vh;
     font-weight: 600;
     margin-top: 0;
     margin-left: 8rem;
@@ -331,16 +337,33 @@
 </div>
 
 <style>
-.sponsors a{
-  padding-right: 3rem;
+  @media only screen and (max-width:600px){
+    .sponsors .sponsor_logo{
+  padding-top: 3rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  }
+
+  .sponsor_logo a{
+  padding-right: 1rem;
+  padding-bottom: 3rem;
   display: inline-block;
+  }    
+  }
+
+  @media only screen and (min-width:600px){
+    .sponsors .sponsor_logo{
+    padding-top: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .sponsor_logo a{
+  padding-right: 3rem;
   padding-bottom: 2rem;
-}
-.sponsors .sponsor_logo{
-  padding-top: 5rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
+  display: inline-block;
+  }
+  }
 </style>
 
 <div class="sponsors" style="text-align: center; padding-top: 2rem; padding-bottom: 5rem;">

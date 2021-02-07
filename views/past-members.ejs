@@ -41,6 +41,11 @@
     #contact {
         z-index: 1;
     }
+
+    .selected_yr{
+        border-bottom: 3px solid white;
+        
+    }
 </style>
 
 <div class="main" style="background-color: #eeeeee; padding: 40px 0;">
@@ -96,6 +101,20 @@
 
     years.map(yr => yr.style.display = "none");
     document.querySelector("#y2k19").style.display = "block";
+
+
+    links.map(a =>{
+        a.addEventListener("click",e=>{
+            for(var i=0;i<links.length;i++)
+            {
+                if(links[i].classList.contains("selected_yr"))
+                {
+                    links[i].classList.toggle("selected_yr");
+                }
+            }
+            a.classList.toggle("selected_yr")
+        })
+    })
 </script>
 
 <%-include("partials/footer")%>

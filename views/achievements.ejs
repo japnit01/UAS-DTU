@@ -1,34 +1,34 @@
 <%-include("partials/header")%>
 
-<style>
+<style>   
     nav.transparent {
         position: fixed !important;
         top: 0;
-        background-color: #000000 !important;
+        background-color: rgba(216,216,216,0.5) !important;
     }
+
+    .ctn{
+        background-color: rgba(216,216,216,0.7);
+        margin: 2.3rem 50rem 0 0; 
+        padding:1rem 2rem 2rem 4rem;
+    }
+
+    .ctn h4{
+        font-size: 2.5rem;
+        font-weight: 500;
+        color:  #b29c71;
+        font-family: 'Crete Round', serif;
+    }
+
+    .ctn p{
+        font-weight: 500;
+        font-family: 'DM Sans', sans-serif;
+    }
+
     .main {
-        display: flex;
-        display: -moz-flex;
-        display: -webkit-flex;
-    }
-    .ctn {
-        padding: 0 3vw;
-        width: 40vw;
-    }
-    .ctn p {
-        border: 8px solid #ffffff;
-        border-width: 0 0 0 8px;
-        padding: 9px 16px;
-    }
-    .ctn h4 {
-        margin: 30px 0;
-    }
-    .collage {
-        background-attachment: fixed;
-        background-position: 39vw 10vh;
+        background-repeat: no-repeat;
         background-image: url("WhatsApp Image 2021-01-31 at 18.52.24 (2).jpeg");
-        background-size: 60vw 90vh;
-        width: 60vw;
+        background-size: cover;
     }
 </style>
 
@@ -39,17 +39,7 @@
             <p><%= a.desc %></p>
         <% }) %>
     </div>
-
-    <div class="collage"></div>
 </div>
 
-<script>
-    let main = document.querySelector('.main');
-    let nav = document.querySelector('.transparent');
-
-    let shift = window.getComputedStyle(nav).getPropertyValue('height');
-    // console.log(shift);
-    main.style.marginTop = shift;
-</script>
 
 <%-include("partials/footer")%>
