@@ -598,8 +598,8 @@ app.get('/:id', (req, res) => {
         },
         {
             name: "Aquila 160",
-            img: "/Aquila1.jpeg",
-            svg: "/transparents/6.png",
+            img: "/gaia2.jpg",
+            svg: "/transparents/19.png",
             desc: "Aquila 160 is a robust model, the proof of which can be seen in it’s long flying range which extends up to more than 100 Kilometers accompanied by multiple Fail-safes and endurance of up to 3 hours which is a result of it’s Hybrid Power System. The aircraft has a maximum takeoff weight of 22 Kilograms and a payload weight of 1 kilogram with Safe Autonomous Payload Delivery System. It is also capable of Human Detection and Geotagging irrespective of the time. It maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS Denied Navigation. Moreover, it also has a wide range of Swarm Capabilities that can be controlled by more than one entity with a large scalability.",
             specs: [
                 "Flying range > 100 kms",
