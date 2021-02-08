@@ -262,217 +262,268 @@ app.get("/curr-members", (req, res) => {
             "4-yrs": [
                 {
                     name: "Aniket Gupta",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Saurav Ahlawat",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Joyraj Bhowmick",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Parth Mahajan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Anurag Singh",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
             "3-yrs": [
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
             "software": [
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
             "avionics": [
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
             "airframe":[
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
             "corporate":[
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ]
         }
@@ -579,21 +630,6 @@ app.get('/upcoming_events',(req,res)=>{
 
 app.get('/:id', (req, res) => {
     let uavs = [
-        {
-            name: "Aquila 160",
-            img: "/Aquila1.jpeg",
-            svg: "/transparents/6.png",
-            desc: "Aquila 160 is a robust model, the proof of which can be seen in it’s long flying range which extends up to more than 100 Kilometers accompanied by multiple Fail-safes and endurance of up to 3 hours which is a result of it’s Hybrid Power System. The aircraft has a maximum takeoff weight of 22 Kilograms and a payload weight of 1 kilogram with Safe Autonomous Payload Delivery System. It is also capable of Human Detection and Geotagging irrespective of the time. It maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS Denied Navigation. Moreover, it also has a wide range of Swarm Capabilities that can be controlled by more than one entity with a large scalability.",
-            specs: [
-                "Flying range > 100 kms",
-                "Power system: Hybrid",
-                "Takeoff weight: 22 kgs",
-                "Payload: 1 kg",
-                "Delivery system: Autonomous",
-                "Navigation: GPS denied",
-                "Endurance: 3 hrs"
-            ]
-        },
         {   
             name: "Aarush X1",
             img: "/x1c.jpg",
@@ -641,6 +677,21 @@ app.get('/:id', (req, res) => {
                 "Payload: 1.5 kg ",
                 "Endurance: 20 minutes ",
                 "Cruise speed: 15 kmph"            
+            ]
+        },
+        {
+            name: "Aquila 160",
+            img: "/gaia2.jpg",
+            svg: "/transparents/19.png",
+            desc: "Aquila 160 is a robust model, the proof of which can be seen in it’s long flying range which extends up to more than 100 Kilometers accompanied by multiple Fail-safes and endurance of up to 3 hours which is a result of it’s Hybrid Power System. The aircraft has a maximum takeoff weight of 22 Kilograms and a payload weight of 1 kilogram with Safe Autonomous Payload Delivery System. It is also capable of Human Detection and Geotagging irrespective of the time. It maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS Denied Navigation. Moreover, it also has a wide range of Swarm Capabilities that can be controlled by more than one entity with a large scalability.",
+            specs: [
+                "Flying range > 100 kms",
+                "Power system: Hybrid",
+                "Takeoff weight: 22 kgs",
+                "Payload: 1 kg",
+                "Delivery system: Autonomous",
+                "Navigation: GPS denied",
+                "Endurance: 3 hrs"
             ]
         },
         {
