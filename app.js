@@ -261,190 +261,269 @@ app.get("/curr-members", (req, res) => {
         members: {
             "4-yrs": [
                 {
-                    name: "Saurav Ahlawat",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
                     name: "Aniket Gupta",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Saurav Ahlawat",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
-                    name: "Aniket Gupta",
-                    rank: "lorem ipsum dolor sit amet"
+                    name: "Joyraj Bhowmick",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Parth Mahajan",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Anurag Singh",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
             "3-yrs": [
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
-            "2-yrs": [
+            "software": [
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ],
-            "1-yrs": [
+            "avionics": [
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 },
                 {
                     name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet"
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Tushant Verma",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Nishkarsh Pandey",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                }
+            ],
+            "airframe":[
+                {
+                    name: "Nitin Chauhan",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Aman Virmani",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Tushant Verma",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Nishkarsh Pandey",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Nitin Chauhan",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                }
+            ],
+            "corporate":[
+                {
+                    name: "Nitin Chauhan",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Aman Virmani",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Tushant Verma",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Nishkarsh Pandey",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
+                },
+                {
+                    name: "Nitin Chauhan",
+                    rank: "lorem ipsum dolor sit amet",
+img: ""
                 }
             ]
         }
@@ -545,9 +624,13 @@ app.get('/achievements', (req, res) => {
     })
 });
 
+app.get('/upcoming_events',(req,res)=>{
+    res.render("upcomin_events");
+});
+
 app.get('/:id', (req, res) => {
     let uavs = [
-        {
+        {   
             name: "Aarush X1",
             img: "/x1c.jpg",
             svg: "/transparents/17.png",
