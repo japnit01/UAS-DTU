@@ -259,272 +259,368 @@ app.get("/mentors", (req, res) => {
 app.get("/curr-members", (req, res) => {
     res.render("curr-members", {
         members: {
-            "4-yrs": [
-                {
-                    name: "Aniket Gupta",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Saurav Ahlawat",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Joyraj Bhowmick",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Parth Mahajan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Anurag Singh",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                }
+            "4-yrs": [{
+                name: "Aniket Gupta",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Saurav Ahlawat",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Joyraj Bhowmick",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Parth Mahajan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Anurag Singh",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            }
             ],
-            "3-yrs": [
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                }
+            "3-yrs": [{
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            }
             ],
-            "software": [
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                }
+            "software": [{
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            }
             ],
-            "avionics": [
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                }
+            "avionics": [{
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            }
             ],
-            "airframe":[
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                }
+            "airframe": [{
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            }
             ],
-            "corporate":[
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Aman Virmani",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Tushant Verma",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nishkarsh Pandey",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                },
-                {
-                    name: "Nitin Chauhan",
-                    rank: "lorem ipsum dolor sit amet",
-img: ""
-                }
+            "corporate": [{
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Aman Virmani",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Tushant Verma",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nishkarsh Pandey",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            },
+            {
+                name: "Nitin Chauhan",
+                rank: "lorem ipsum dolor sit amet",
+                img: "",
+                lkdn: "",
+                mail: ""
+            }
             ]
         }
     });
