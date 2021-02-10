@@ -3,7 +3,7 @@ let express = require("express"),
     nodemon = require("nodemon"),
     app = express();
 
-const port = 80;
+const port = process.env.PORT || 80;
 
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
