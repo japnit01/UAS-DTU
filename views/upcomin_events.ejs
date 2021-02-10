@@ -8,79 +8,157 @@
     }
 
     .row{
-        margin: 9rem 4rem 3rem 4rem;
+        margin: 0 4rem 0rem 4rem;
+    }
+
+    #row1{
+        padding-top: 7rem;
     }
 
     .row .col{
         padding: 1rem 1rem 1rem 1rem;
     }
+
+    .card .card-image{
+        text-align: center;
+    }
+
+    .card .card-image img{
+        display: inline-block;
+        width:80%;
+        height: 80%;
+    }
+
+    .bg_row{
+        background-image: url("road-wallpapers-40500-5655548.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card{
+        background-color: transparent;
+    }
+
+    .row #col1{
+        padding-top: 12.8rem;
+    }
+
+    .row #col3{
+        padding-top: 12rem;
+    }
+    #row2{
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    #col4 .card{
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+
+    #col5 .card{
+        padding-right: 5rem;
+        padding-left: 4rem;
+    }
+
+    .card .card-title{
+        text-align: center;
+        font-weight: 500;
+        color: white;
+    }
+
+    .card .card-content{
+        text-align: justify;
+        font-family: 'Karma', serif;
+        font-weight: 700;
+    }
+
+    /* .card{
+        border: 1px solid white;
+    }
+
+    .card .card-image {
+        border: 1px solid white;
+    }
+    .col{
+        border: 1px solid white;
+    } */
 </style>
 
-<div class="row">
-    <div class="col l4 s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+<div class="bg_row">
+    <div class="row" id="row1">
+        <div class="col l4 s12 m7" id = "col1">
+            <div class="card">
+                <div class="card-image" style="background-color: white;">
+                <img src="mbzirc.png">
+                </div>
+                <div class="card-title">
+                    Mohamed Bin Zayed International Robotics Challenge 2023
+                </div>
+                <div class="card-content">
+                <p>Development of a system of Collaborative UAVs equipped with appropriate software (e.g. artificial intelligence, swarm intelligence etc.) and hardware (e.g. multiple sensors, high payload carrying capacity etc.) to create better HADR capabilities and help the IAF envisage a future of humanitarian response in a far more able manner.</p>
+                </div>
+            </div>
         </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+
+        <div class="col l4 s12 m7" id="col2">
+            <div class="card">
+            <div class="card-image">
+                <img src="iaf.png">
+            </div>
+            <div class="card-title">
+                Mehar Baba Prize Phase 3
+            </div>
+            <div class="card-content">
+            <p>Development of a system of Collaborative UAVs equipped with appropriate software (e.g. artificial intelligence, swarm intelligence etc.) and hardware (e.g. multiple sensors, high payload carrying capacity etc.) to create better HADR capabilities and help the IAF envisage a future of humanitarian response in a far more able manner.</p>
+            </div>
+            </div>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+
+        <div class="col l4 s12 m7" id="col3">
+            <div class="card">
+            <div class="card-image" style="background-color: white;">
+                <img src="outback.png">
+            </div>
+            <div class="card-title">
+                Medical Rescue Challenge 2021
+            </div>
+            <div class="card-content">
+                <p>The goal of this Competition is to demonstrate the utility of Unmanned Airborne Vehicles (UAVs) for civilian applications, particularly in those applications that will save the lives of people in the future. In this competition, competitors will be required to develop an autonomous flying system that could save lives by quickly and cost effectively providing a live video and audio stream from a remote accident site in the Australian Outback to a medical team travelling to provide medical assistance.
+                </p>
+            </div>
+            </div>
         </div>
-      </div>
+
     </div>
 
-    <div class="col l4 s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
+    <div class="row" id="row2">  
+            <div class="col l6 s12 m7" id="col4">
+            <div class="card">
+                <div class="card-image">
+                <img src="sae.png">
+                </div>
+                <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+                </div>
+            </div>
+            </div>
 
-      <div class="col l4 s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
+            <div class="col l6 s12 m7" id="col5">
+            <div class="card">
+                <div class="card-image">
+                <img src="suas.png">
+                </div>
+                <div class="card-title">
+                    AUVSI SUAS 2021
+                </div>
+                <div class="card-content">
+                <p>The team will participate in AUVSI SUAS 2020 Competition.This Competition has been held annually since 2002. The competition begins in the end of August with the Notification of Intent, and concludes in June with the 5-day culminating event at the Patuxent River Naval Air Station in Maryland.</p>
+                </div>
+            </div>
+            </div>
 
   </div>
-
+</div>
 <%-include("partials/footer")%>

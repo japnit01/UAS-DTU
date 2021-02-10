@@ -9,9 +9,9 @@ app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
+
 app.get("/",(req,res)=>{
-    const signal = 1;
-    res.render("home",{signal:signal});
+    res.render("home");
 });
 
 app.get("/about-us",(req,res)=>{
