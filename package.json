@@ -1,0 +1,19 @@
+{
+    "name": "UAS-DTU",
+    "version": "0.0.1",
+    "description": "A simple Node app with SQLite as a database management system, instantly up and running.",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "",
+      "nodemon": "",
+      "ejs": ""
+    },
+    "engines": {
+      "node": "12.x"
+    },
+    "license": "DTU"
+  }
+  
