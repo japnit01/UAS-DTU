@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="fullpage.css">
+    <script type="text/javascript" src="fullpage.js"></script>
+</head>
+<body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true
+    	    });
+
+            //methods
+            $.fn.fullpage.setAllowScrolling(false);
+        });
+    </script>
+
+    <div class="section">
+        <div class="slide" data-anchor="slide1" style="height:100vh">
+            <h1 style="font-size:50vh">T</h1>
+        </div>
+        <div class="slide" data-anchor="slide2" style="height:100vh">
+            <h1 style="font-size:50vh">R</h1>
+        </div>
+        <div class="slide" data-anchor="slide3" style="height:100vh">
+            <h1 style="font-size:50vh">S</h1>
+        </div>
+    </div>
+</body>
+</html>
