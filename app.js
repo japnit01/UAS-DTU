@@ -214,6 +214,12 @@ app.get("/mentors", (req, res) => {
                 Delhi Technological University
                 Faculty Advisor`
             }, {
+                name: `Madan`,
+                rank: `Professor`,
+                desc: `Department of Mechanical Engineering
+                Delhi Technological University
+                Faculty Advisor`
+                }, {
             name: `Dr. Vikas Rastogi`,
             rank: `Professor`,
             desc: `Department of Mechanical Engineering
