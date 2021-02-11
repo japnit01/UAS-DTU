@@ -14,6 +14,11 @@ app.get("/",(req,res)=>{
     res.render("home");
 });
 
+
+app.get("/check",(req,res)=>{
+    res.render("check");
+});
+
 app.get("/about-us",(req,res)=>{
     res.render("about");
 });
