@@ -731,6 +731,29 @@ app.get('/achievements', (req, res) => {
     })
 });
 
+app.get("/upcomin-projects", (req, res) => {
+    res.render("upcomin_projects", {
+        projs: [
+            {
+                name: "Mechanical Arm on UGV",
+                desc: "A 6DOF Robotic Arm and Unmanned Ground Vehicle (UGV) setup is being developed to revolutionize the field of soft-crop agriculture by automating crop harvesting and management interventions through implementation of visual-based crop detection deep learning models on the setup. The team is further looking forward to implement its existing swarming capabilities to create a swarm of crop harvesting UGV in the later stages of the project."
+            },
+            {
+                name: "Mechanical Arm on UAV",
+                desc: "The crew aims to develop an AI-based integrated system between the UAV and Robotic Arm, capable of object detection, tracking, and pick and drop capabilities (i.e collecting objects from water surfaces, twisting a doorknob, plucking fruit from trees, etc.)"
+            },
+            {
+                name: "Aggressive Control of UAVs: Passing through constrained spaces",
+                desc: "UAVs capable of aggressive maneuvres to conduct task-specific activities (i.e throwing a ball through a window) along with the ability to fly across heavily constrained and restricted areas (i.e In between circular loops, tree branches, and cable wires). These applications of minimum snap trajectory control will be highly beneficial in conducting multi-variant tasks and rapid collection of Intelligence, Surveillance, and Reconnaissance (ISR) information in the urban areas."
+            },
+            {
+                name: "Designing and Fabrication of fixed-wing UAV having Morphing Characteristics",
+                desc: "We are working towards equipping our UAVs with Morphing characteristic designs in the near future. The wings of these UAVs would be having the provision to change their shape seamlessly in order to provide optimal performance according to external conditions and also to adapt themselves for mission-specific tasks in order to achieve optimum endurance."
+            }
+        ]
+    })
+});
+
 app.get('/upcoming_events',(req,res)=>{
     res.render("upcomin_events");
 });
@@ -907,3 +930,4 @@ app.get('/:id', (req, res) => {
 app.listen(port,()=>{
     console.log("app is listening");
 });
+process.on("uncaughtException", () => console.log("error"));
