@@ -5,35 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="fullpage.css">
-    <script type="text/javascript" src="fullpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous">
+    <script src="vendors/easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
 </head>
 <body>
     
-    <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                //options here
-                autoScrolling:true,
-                scrollHorizontally: true
-    	    });
+    
 
-            //methods
-            $.fn.fullpage.setAllowScrolling(false);
-        });
-    </script>
-
-    <div class="section">
-        <div class="slide" data-anchor="slide1" style="height:100vh">
-            <h1 style="font-size:50vh">T</h1>
-        </div>
-        <div class="slide" data-anchor="slide2" style="height:100vh">
-            <h1 style="font-size:50vh">R</h1>
-        </div>
-        <div class="slide" data-anchor="slide3" style="height:100vh">
-            <h1 style="font-size:50vh">S</h1>
-        </div>
+    <div id="fullpage">
+        <div class="section active" style="height:100vh; background-color: cornflowerblue;"><h1 style="font-size:50vh; margin:0 0 0 0">T</h1></div>
+        <div class="section" style="height:100vh; background-color: firebrick;"><h1 style="font-size:50vh; margin:0 0 0 0">R</h1></div>
+        <div class="section" style="height:100vh; background-color: black;"><h1 style="font-size:50vh; color: white; margin:0 0 0 0">S</h1></div>
     </div>
+
+    
+    <script>
+    new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
+//methods
+fullpage_api.setAllowScrolling(false);
+    </script>
 </body>
 </html>
