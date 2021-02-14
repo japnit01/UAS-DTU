@@ -1,0 +1,54 @@
+<%-include("partials/header")%>
+<style>
+.nav{
+    top:0;
+    position: fixed !important;
+}
+
+.gaia{
+background-color:black;
+height: 100vh;
+position: relative;
+padding:16vh 2vh 0 2vh
+}
+
+.row .img_container>#img{
+background-color: white;
+margin-left: 4vh;
+height:45vh;
+width:65vh;
+text-align: center;
+}    
+
+.row .img_container{
+    padding-left: 15vh;
+}
+
+.row .img>img{
+    height:40vh;
+    width:80vh;
+}
+
+#img img{
+    height:45vh;
+    width:90vh;
+}
+</style>
+
+<div class="contaier">
+    <div class="gaia">
+        <div class="row">
+            <div class="col l6">
+                <h3>Castor</h3>
+                <p>Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.</p>
+            </div>
+            <div class="col l6 img_container">
+                <div id="img">
+                    <img src="System Images without Background - Copy\castor.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-include("partials/footer")%>

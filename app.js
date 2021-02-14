@@ -637,6 +637,10 @@ app.get("/curr-members", (req, res) => {
     });
 });
 
+app.get("/systems",(req,res)=>{
+    res.render("system");
+});
+
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
