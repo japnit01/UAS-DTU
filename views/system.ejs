@@ -1,48 +1,54 @@
 <%-include("partials/header")%>
 <style>
-.nav{
+
+nav.transparent{
     top:0;
     position: fixed !important;
+    color: black !important;
+
+}
+
+.row{
+    height: 100vh;
+}
+
+.row .content{
+    padding: 0 12vh 0 6vh;
+    text-align: justify;
+    color: black;
 }
 
 .gaia{
-background-color:black;
+background-color:white;
 height: 100vh;
 position: relative;
-padding:16vh 2vh 0 2vh
+padding:20vh 8vh 0 8vh
 }
 
-.row .img_container>#img{
-background-color: white;
-margin-left: 4vh;
-height:45vh;
-width:65vh;
+#img_container{
+    display: inline-block;
+    overflow-x: hidden;
+    padding-left: 20vh;
+    background-color:#f2f2f2;
+    height: 100vh;
+}
+
+#img_container #img{
+background-color:#f2f2f2;
 text-align: center;
-}    
-
-.row .img_container{
-    padding-left: 15vh;
-}
-
-.row .img>img{
-    height:40vh;
-    width:80vh;
-}
-
-#img img{
-    height:45vh;
-    width:90vh;
+display: inline-block;
+padding-top: 6vh;
 }
 </style>
 
-<div class="contaier">
+<div class="main">
     <div class="gaia">
         <div class="row">
-            <div class="col l6">
+            <div class="col l6 content">
                 <h3>Castor</h3>
                 <p>Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.</p>
             </div>
-            <div class="col l6 img_container">
+            <div class="col l6" id="img_container">
                 <div id="img">
                     <img src="System Images without Background - Copy\castor.png" alt="">
                 </div>
