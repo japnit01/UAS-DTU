@@ -1,6 +1,6 @@
 let express = require("express"),
     bodyParser = require("body-parser"),
-    nodemon = require("nodemon"),
+    // nodemon = require("nodemon"),
     app = express();
 
 const port = process.env.PORT || 80;
