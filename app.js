@@ -641,6 +641,10 @@ app.get("/systems",(req,res)=>{
     res.render("system");
 });
 
+app.get("/aquila",(req,res)=>{
+    res.render("aquila")
+})
+
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
