@@ -2,56 +2,94 @@
 <style>
 
 nav.transparent{
-    top:0;
-    position: fixed !important;
-    color: black !important;
-
+top:0;
+position: fixed !important;
+background-color: black !important;
 }
 
-.row{
+.main{
+    position: relative;
+    padding-top: 12vh;
+}
+
+.system_row{
+    margin-bottom: 0;
     height: 100vh;
 }
 
 .row .content{
-    padding: 0 12vh 0 6vh;
+    padding: 16vh 20vh 0 12vh;
     text-align: justify;
     color: black;
+    background-color: white;
+    font-weight: 400;
 }
 
-.gaia{
-background-color:white;
-height: 100vh;
-position: relative;
-padding:20vh 8vh 0 8vh
+.heading{
+ font-weight: 600;
 }
 
-#img_container{
-    display: inline-block;
-    overflow-x: hidden;
-    padding-left: 20vh;
-    background-color:#f2f2f2;
+.para{
+    padding:7vh 0 0 0 ;
+}
+.img
+{ 
+    padding: 19vh 0 0 0;
+    text-align: center;
+}
+
+.img_container{
+    background-color: #f2f2f2;
+    padding:0 0 0 0;
     height: 100vh;
 }
 
-#img_container #img{
-background-color:#f2f2f2;
-text-align: center;
-display: inline-block;
-padding-top: 6vh;
+.img1{
+    padding: 20vh 0 0 0;
+    text-align: center;
 }
+
+.img_container1
+{
+    background-color: #f2f2f2;
+    padding:0 0 0 0;
+    height: 100vh;
+}
+
+.row .content1{
+    padding: 16vh 12vh 0 20vh;
+    text-align: justify;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+}
+
 </style>
 
 <div class="main">
-    <div class="gaia">
-        <div class="row">
+    <div class="castor">
+        <div class="row system_row">
             <div class="col l6 content">
-                <h3>Castor</h3>
-                <p>Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.</p>
+                <h3 class="heading">Castor</h3>
+                <p class="para">Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.</p>
             </div>
-            <div class="col l6" id="img_container">
-                <div id="img">
+            <div class="col l6 img_container">
+                <div class = "img">
                     <img src="System Images without Background - Copy\castor.png" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="gaia">
+        <div class="row system_row">
+            <div class="col l6 img_container1">
+                <div class="img1">
+                    <img src="System Images without Background - Copy\aquila (1).png" alt="">
+                </div>
+            </div>
+            <div class="col l6 content1">
+                <h3 class="heading">Aquila</h3>
+                <p class="para">Aquila 160 is a robust model, the proof of which can be seen in it’s long flying range which extends up to more than 100 Kilometers accompanied by multiple Fail-safes and endurance of up to 3 hours which is a result of it’s Hybrid Power System.</p>
             </div>
         </div>
     </div>
