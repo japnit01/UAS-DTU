@@ -743,6 +743,22 @@ app.get("/upcoming-projects", (req, res) => {
     res.render("upcomin_projects", {
         projs: [
             {
+                name: "FPGA based UAV Controller",
+                desc: "A Field Programmable Gate Array (FPGA) is essentially a re-programmable integrated circuit in the form of a chip. In contrast to a traditional Central Processing Unit (CPU), an FPGA can carry out various basic operations at the same time without competing for resources. Due to its reliability and flexibility, the FPGA is particularly suited for use in critical and high risk applications."
+            },
+            {
+                name: "GPS Spoofing",
+                desc: "GPS spoofing is an attack in which a radio transmitter located near the target is used to interfere with a legitimate GPS signals. The attacker can transmit no data at all or could transmit inaccurate coordinates. Recently, GPS spoofing attack on UAV has attracted widespread research interests due to the vulnerability of civilian GPS signal. GPS spoofing ensures that the UAV remains undetected and this is useful for UAV used in defense."
+            },
+            {
+                name: "Morphed Wing UAVs",
+                desc: "Morphing wings are changeable wing applications developed as a result of the need for a different lift and drag forces in various phases of the flight of aircraft. It is an application that enables altering the wing aspect ratio, wing airfoil, wing airfoil camber ratio, wing reference area etc. UAVs with morphing wing technology; may increase its payload ratio, may achieve a shorter take-off distance, may land and stop in shorter distance, may take-off where runway clearance is limited, has more efficient altitude change at lower engine RPMs, can obtain higher cruise speeds, may decrease its stall speed, may lower its drag if necessary, thus; saving energy and time."
+            },
+            {
+                name: "Aggressive Control of UAVs",
+                desc: "Well-developed features of autonomous UAV control include Aggressive Control which ensures that the UAV is able to maneuver testing conditions like constrained spaces, between trees etc. with no or  minimum human intervention. This technology is especially important since it is projected that the no of drones is going to increase exponentially and drones should be able to control themselves automatically."
+            },
+            {
                 name: "Mechanical Arm on UGV",
                 desc: "A 6DOF Robotic Arm and Unmanned Ground Vehicle (UGV) setup is being developed to revolutionize the field of soft-crop agriculture by automating crop harvesting and management interventions through implementation of visual-based crop detection deep learning models on the setup. The team is further looking forward to implement its existing swarming capabilities to create a swarm of crop harvesting UGV in the later stages of the project."
             },
