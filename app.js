@@ -735,7 +735,7 @@ app.get('/achievements', (req, res) => {
     })
 });
 
-app.get("/upcomin-projects", (req, res) => {
+app.get("/upcoming-projects", (req, res) => {
     res.render("upcomin_projects", {
         projs: [
             {
