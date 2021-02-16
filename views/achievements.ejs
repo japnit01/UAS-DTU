@@ -4,39 +4,47 @@
     nav.transparent {
         position: fixed !important;
         top: 0;
-        background-color: rgba(216,216,216,0.9) !important;
+        background-color: #000 !important;
     }
 
     .ctn{
-        background-color: rgba(216,216,216,0.9);
-        margin: 2.3rem 50rem 0 0; 
-        padding:1rem 2rem 2rem 4rem;
+        background-color: #f7f7f7;
+        padding: 40px 15vw 10px 15vw;
+        margin-top: 60px;
+        margin-bottom: 0;
     }
-
-    .ctn h4{
-        font-size: 2.5rem;
-        font-weight: 500;
-        color:  #b29c71;
-        font-family: 'Crete Round', serif;
+    .col {
+        color: #000 !important;
     }
-
+    .row {
+        border-color: #000;
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        padding: 2vw 0;
+    }
     .ctn p{
         font-weight: 500;
         font-family: 'DM Sans', sans-serif;
     }
-
-    .main {
-        background-repeat: no-repeat;
-        background-image: url("WhatsApp Image 2021-01-31 at 18.52.24 (2).jpeg");
-        background-size: cover;
-    }
 </style>
 
-<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+<div class="main">
     <div class="ctn">
+        <h3 style="margin: 60px 0; font-family: 'Crete Round', sans-serif; text-align: center;">Achievements</h3>
         <% achievs.map(a => { %>
-            <h4><%= a.name %></h4>
-            <p><%= a.desc %></p>
+            <div class="row hide-on-med-only">
+                <p><img src="icon.png" class="col l4 s4" style="padding: 5px 7vw;"></p>
+                <p class="col l3 s8" style="font-size: 20px; color: #555 !important;"><b><%= a.name %></b></p>
+                <p class="col l5 s12" style="color: #777 !important;"><%= a.desc %></p>
+            </div>
+            <div class="row show-on-medium" style="display: none;">
+                <p><img src="icon.png" class="col l4 m4" style="padding: 10px 7vw;"></p>
+                <p class="col l8 m8">
+                    <b style="color: #555;"><%= a.name %></b><br><br>
+                    <span style="color: #777 !important;"><%= a.desc %>
+                    </span>
+                </p>
+            </div>
         <% }) %>
     </div>
 </div>
