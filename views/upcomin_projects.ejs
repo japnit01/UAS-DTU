@@ -25,22 +25,20 @@
     }
 </style>
 
-<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+<div class="main" style="background-image: url(texture.jpg); background-size: cover; background-attachment: fixed; padding: 40px 0;">
     <div class="ctn">
         <div class="row">
         <% projs.map(p => { %>
             <div class="col s12 m6 l4">
-                <div class="card" style="margin: 70px 40px;">
-                <div class="card-image">
-                    <img src="images/sample-1.jpg">
-                    <span class="card-title"><%= p.name %></span>
-                </div>
-                <div class="card-content">
-                    <p><%= p.desc %></p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
+                <div class="card" style="margin: 70px 25px;">
+                    <div class="card-image">
+                        <img src="/<%= p.img %>">
+                    </div>
+                    <div class="card-content">
+                        <p style="color: #000; font-size: 20px;"><%= p.name %></p>
+                        <br>
+                        <p style="color: #555;"><%= p.desc %></p>
+                    </div>
                 </div>
             </div>
         <% }) %>
@@ -48,5 +46,14 @@
     </div>
 </div>
 
+<script>
+    let imgs = [...document.querySelectorAll('.card-image img')];
+    let min = 5000;
+    imgs.map(i => {
+        let h = window.getComputedStyle(i, null).getPropertyValue('height');
+        if(h < min) min = h;
+    });
+    console.log(min);
+</script>
 
 <%-include("partials/footer")%>

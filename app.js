@@ -744,41 +744,64 @@ app.get("/upcoming-projects", (req, res) => {
         projs: [
             {
                 name: "FPGA based UAV Controller",
+                img: "fpga.jpeg",
                 desc: "A Field Programmable Gate Array (FPGA) is essentially a re-programmable integrated circuit in the form of a chip. In contrast to a traditional Central Processing Unit (CPU), an FPGA can carry out various basic operations at the same time without competing for resources. Due to its reliability and flexibility, the FPGA is particularly suited for use in critical and high risk applications."
             },
             {
+                name: "Aggressive Control of UAVs: Passing through constrained spaces",
+                img: "agg_control4.jpg",
+                desc: "UAVs capable of aggressive maneuvres to conduct task-specific activities (i.e throwing a ball through a window) along with the ability to fly across heavily constrained and restricted areas (i.e In between circular loops, tree branches, and cable wires). These applications of minimum snap trajectory control will be highly beneficial in conducting multi-variant tasks and rapid collection of Intelligence, Surveillance, and Reconnaissance (ISR) information in the urban areas."
+            },
+            {
                 name: "GPS Spoofing",
+                img: "gps-spoofing4.png",
                 desc: "GPS spoofing is an attack in which a radio transmitter located near the target is used to interfere with a legitimate GPS signals. The attacker can transmit no data at all or could transmit inaccurate coordinates. Recently, GPS spoofing attack on UAV has attracted widespread research interests due to the vulnerability of civilian GPS signal. GPS spoofing ensures that the UAV remains undetected and this is useful for UAV used in defense."
             },
             {
-                name: "Morphed Wing UAVs",
-                desc: "Morphing wings are changeable wing applications developed as a result of the need for a different lift and drag forces in various phases of the flight of aircraft. It is an application that enables altering the wing aspect ratio, wing airfoil, wing airfoil camber ratio, wing reference area etc. UAVs with morphing wing technology; may increase its payload ratio, may achieve a shorter take-off distance, may land and stop in shorter distance, may take-off where runway clearance is limited, has more efficient altitude change at lower engine RPMs, can obtain higher cruise speeds, may decrease its stall speed, may lower its drag if necessary, thus; saving energy and time."
-            },
-            {
                 name: "Aggressive Control of UAVs",
+                img: "agg_control3.jpg",
                 desc: "Well-developed features of autonomous UAV control include Aggressive Control which ensures that the UAV is able to maneuver testing conditions like constrained spaces, between trees etc. with no or  minimum human intervention. This technology is especially important since it is projected that the no of drones is going to increase exponentially and drones should be able to control themselves automatically."
             },
             {
                 name: "Mechanical Arm on UGV",
+                img: "arm-ugv2.jpg",
                 desc: "A 6DOF Robotic Arm and Unmanned Ground Vehicle (UGV) setup is being developed to revolutionize the field of soft-crop agriculture by automating crop harvesting and management interventions through implementation of visual-based crop detection deep learning models on the setup. The team is further looking forward to implement its existing swarming capabilities to create a swarm of crop harvesting UGV in the later stages of the project."
             },
             {
                 name: "Mechanical Arm on UAV",
+                img: "arm-uav.jpg",
                 desc: "The crew aims to develop an AI-based integrated system between the UAV and Robotic Arm, capable of object detection, tracking, and pick and drop capabilities (i.e collecting objects from water surfaces, twisting a doorknob, plucking fruit from trees, etc.)"
             },
             {
-                name: "Aggressive Control of UAVs: Passing through constrained spaces",
-                desc: "UAVs capable of aggressive maneuvres to conduct task-specific activities (i.e throwing a ball through a window) along with the ability to fly across heavily constrained and restricted areas (i.e In between circular loops, tree branches, and cable wires). These applications of minimum snap trajectory control will be highly beneficial in conducting multi-variant tasks and rapid collection of Intelligence, Surveillance, and Reconnaissance (ISR) information in the urban areas."
+                name: "Morphed Wing UAVs",
+                img: "morph-wing2.jpg",
+                desc: "Morphing wings are changeable wing applications developed as a result of the need for a different lift and drag forces in various phases of the flight of aircraft. It is an application that enables altering the wing aspect ratio, wing airfoil, wing airfoil camber ratio, wing reference area etc. UAVs with morphing wing technology; may increase its payload ratio, may achieve a shorter take-off distance, may land and stop in shorter distance, may take-off where runway clearance is limited, has more efficient altitude change at lower engine RPMs, can obtain higher cruise speeds, may decrease its stall speed, may lower its drag if necessary, thus; saving energy and time."
             },
             {
                 name: "Designing and Fabrication of fixed-wing UAV having Morphing Characteristics",
+                img: "design-fabric-morph2.jpeg",
                 desc: "We are working towards equipping our UAVs with Morphing characteristic designs in the near future. The wings of these UAVs would be having the provision to change their shape seamlessly in order to provide optimal performance according to external conditions and also to adapt themselves for mission-specific tasks in order to achieve optimum endurance."
+            },
+            {
+                name: "Monocular depth estimation",
+                img: "monocular.png",
+                desc: "A fundamental challenge in the field of computer vision, Monocular Depth Estimation has potential applications in the field of robotics, scene understanding, 3D reconstruction and medical imaging. Countering the high memory requirement and computational time of binocular view setup, the concept of Monocular Depth Estimation uses Deep learning to infer scene geometry from 2D images. The aim is to predict the depth value of each pixel, given only a single RGB image as input."
+            },
+            {
+                name: "Object Tracking",
+                img: "multitracker-opencv.jpg",
+                desc: "Object tracking is the task of taking an initial set of object detections, creating a unique ID for each of the initial detections, and then tracking each of the objects as they move around frames in a video, maintaining the ID assignment."
+            },
+            {
+                name: "Object Detection and Classification",
+                img: "object.jpeg",
+                desc: "Object Detection and classification are at the core of ample applications like scene understanding and analysis, video surveillance, robotics and self-driving systems. Deep Learning techniques based on convolutional neural network have been employed to perform visual recognitions tasks such as image classification, localization and detection."
             }
         ]
     })
 });
 
-app.get('/upcoming_events',(req,res)=>{
+app.get('/upcoming-events',(req,res)=>{
     res.render("upcomin_events");
 });
 
