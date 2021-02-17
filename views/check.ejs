@@ -260,6 +260,9 @@
    color: white;
  }
  
+ .Achievements a:hover{
+    background: transparent;
+  }
  @media only screen and (max-width: 600px){
    .Achievements{
       text-align: left; 
@@ -520,9 +523,11 @@
     new fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
-	scrollHorizontally: true
+	scrollHorizontally: true,
+  dragAndMove:true,
+  scrollBar:true
     });
 
 //methods
-fullpage_api.setAllowScrolling(false);
+fullpage_api.setAllowScrolling(true);
 </script>
