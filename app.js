@@ -651,17 +651,17 @@ app.get("/hangar",(req,res)=>{
             {
                 name: "Aarush X1",
                 src: "/aarush1_front.jpg",
-                desc: "Aarush is a prototype of the UAV developed with financial resources and engineering mentoring support from Lockheed Martin Corporation. Traffic Management, Geomatics, Mining Surveillance, Border patrol are just some of the areas in which this UAV can be put to effective, efficient use."
+                desc: "Alongside being equipped with a Fully Autonomous Navigation System, the aircraft is also capable of undertaking High-Definition Real-Time Surveillance with a 40x Zoom Capability. Besides these, the system can also cruise at remarkable speeds of upto 70 kmph and has a take-off and landing height of upto 260 ft. It was developed in association with Lockheed Martin."
             },
             {
                 name: "Aarush X2",
                 src: "/aarush2_front2.png",
-                desc: "Aarush X2 is the optimized version of Aarush X1. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters."
+                desc: "This is an optimized version of AARUSH X1. Similar to X1, it also consists a Fully Autonomous Navigation System and the capability to undertake High Definition Real-Time Surveillance alongside with a 40x Zoom Capability, accompanied by a comparatively short take-off and landing height of upto 150ft."
             },
             {
                 name: "Aarush-M",
                 src: "/m2.jpg",
-                desc: "Aarush-M is the younger sibling of Aarush. Drawing upon the same design philosophy to retain the precise and dependable flight experience, while featuring a smaller footprint and with reduced fuel consumption, this UAV is meant for missions where vehicle size matters."
+                desc: "Similar to both X1 and X2, the aircraft has the capability to undertake High Definition Real-Time Surveillance with a 40x Zoom Capability along with the Fully Autonomous Navigation with an addition of Mid Air Re-start in case of engine failure.  It posses the ability to take of from dirt but with a comparatively small take off range."
             },
             {
                 name: "Aquila 160",
@@ -671,13 +671,13 @@ app.get("/hangar",(req,res)=>{
             {
                 name: "Avniel",
                 src: "/plain.jpg",
-                desc: " Avniel aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors. "
+                desc: "Embodies a Fully Autonomous System and can undertake High Definition Real-Time Surveillance. The system is designed to carry High Payload with an additional feature of returning to the base itself in case of lost linkage."
             },
             {
                 name: "Castor",
                 src: "/castor.jpg",
                 side: 'right',
-                desc: "Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.",
+                desc: "The aircraft is suitable for indoor areas that are denied of GPS, as it possess the ability to Navigate it’s way even in GPS denied areas and is considered to be India’s first Indoor Navigation Setup. Moreover, the system masters in Localization of a target and further, keeping track of it in 3D system along with Obstacle Detection and Avoidance. It’s flight time is considered to be as long as 20 minutes.",
                 specs: [
                     "Flight time: 40 min",
                     "Power system: Hybrid",
@@ -691,22 +691,22 @@ app.get("/hangar",(req,res)=>{
             {
                 name: "Garuda",
                 src: "/garuda.png",
-                desc: "GARUDA, a modified Sig Rascal 110 R/C aircraft along with its Ground Control System is capable of performing autonomous flight & navigation, simultaneously gathering actionable surveillance data using optical sensors. "
+                desc: "This is a Modified Sig Rascal 110 R/C type aircraft accompanied by the presence of a Ground Control System. It is capable of performing autonomous flight and navigation with the presence of an option to Surveillance Data using optical sensors."
             },
             {
                 name: "Lazarus",
                 src: "/plain.jpg",
-                desc: "Lazarus, designed to meet the objectives of AUVSI student UAS competition. Lazarus is a modified Sig Rascal 110 R/C aircraft controlled by the ArduPilot Mega, an open-source autopilot. Capable of following dynamically changing waypoints, ANACONDA  provides real time reconnaissance to an Imagery terminal on ground using a gimbal stabilized point and shoot camera."
+                desc: "Lazarus is designed to meet the objectives of AUVSI student UAS competition. It is a modified Sig Rascal 110 R/C aircraft controlled by the ArduPilot Mega, an open-source autopilot. Capable of following dynamically changing waypoints, ANACONDA  provides real time reconnaissance to an Imagery terminal on ground using a gimbal stabilized point and shoot camera."
             },
             {
                 name: "Tarrot",
                 src: "/tarrot.png",
-                desc: "The project aims to explore the hyper spectral remote sensing applications in characterizing plant and soils for quantitative assessment. Plausible results have been obtained by flight testing of a fixed wing UAV and a multi-rotor boarded with infrared and visible wavelength ranged sensors. "
+                desc: "Equipped with Swarming Capabilities, the system can also undertake Real-Time High Definition Surveillance with a 20x Zoom. In addition to this, it is also incorporated by Aerial Surveillance and Mapping Capabilities."
             },
             {
                 name: "Vihaan",
                 src: "/v1.jpg",
-                desc: "Vihaan is a UAS which was developed for primary purpose for competing in SUAS competition in the year 2014. It incorporates a COTS airframe, Skywalker X-8 and uses a dedicated catapult launch system designed and developed in house for short take offs. The stock airframe was reinforced with carbon fibre for making the system more robust and sustain the elements.  ",
+                desc: "Vihaan is an aircraft designed with a Single Point Take-off using an indigenously developed Catapult Launcher by the team. The system is capable of Payload Dropping at the designated target in addition to it’s Fully Autonomous System. Furthermore, it can also return home by itself in case of lost linkage.",
                 side: "right"
             }
         ]
@@ -718,22 +718,28 @@ app.get('/achievements', (req, res) => {
         achievs: [
             {
             name: "Drone Olympics 2019",
-            desc: "The team ranked 1st in the Formation Flying category and was awarded a cash prize of Rs.5 Lakh"
+            desc: "The team ranked 1st in the Formation Flying category and was awarded a cash prize of Rs.5 Lakh",
+            img: "logo/AeroIndia (without background).png"
             }, {
             name: "AUVSI SUAS 2018",
-            desc: "The team ranked 2nd in the Design amongst a total of 63 teams worldwide with a cash barrel of $1600."
+            desc: "The team ranked 2nd in the Design amongst a total of 63 teams worldwide with a cash barrel of $1600.",
+            img: "suas-removebg2.png"
             }, {
             name: "SAE INDIA 2018",
-            desc: "The team secured 1st position overall in both Regular and Micro classes. The competition was held in the presence of officials from DRDO and ISRO. "
+            desc: "The team secured 1st position overall in both Regular and Micro classes. The competition was held in the presence of officials from DRDO and ISRO.",
+            img: "/transparents/sae-removebg.png"
             }, {
             name: "SAE INDIA 2017",
-            desc: "In SAE INDIA Aero Design Challenge UAS DTU achieved 1st position in Regular Class. Also had best Technical Presenation "
+            desc: "In SAE INDIA Aero Design Challenge UAS DTU achieved 1st position in Regular Class. Also had best Technical Presenation.",
+            img: "/transparents/sae-removebg.png"
             }, {
             name: "TATA UAV Launchpad",
-            desc: "UAS DTU achieved 2nd position."
+            desc: "UAS DTU achieved 2nd position.",
+            img: "logo/tata (without background).png"
             }, {
             name: "UAV Flytron",
-            desc: "Team UAS-DTU won the third prize in UAV Flytron organized by PEC, Chandigarh on 25-26 February 2017. The team was awarded a cash prize of Rs. 40000."
+            desc: "Team UAS-DTU won the third prize in UAV Flytron organized by PEC, Chandigarh on 25-26 February 2017. The team was awarded a cash prize of Rs. 40000.",
+            img: "logo/flytron.jpg"
             }
         ]
     })
