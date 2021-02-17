@@ -142,8 +142,24 @@
     </div>
 </div>
 
+<style>
+.swarm_video{
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    display: block;
+    }
 
-<div style="height: 100vh;">
+.swarm_video video{
+  object-fit: fill;  
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+</style>
+
+<div class="swarm_video" style="height: 60vh; width:100%">
     <video loop muted autoplay>
         <source src="swarm.mp4" type="video/mp4">
         Your browser does not support the video tag.
