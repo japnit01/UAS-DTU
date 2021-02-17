@@ -789,12 +789,12 @@ app.get("/upcoming-projects", (req, res) => {
             },
             {
                 name: "Object Tracking",
-                img: "multitracker-opencv.jpg",
+                img: "multitracker-opencv2.jpg",
                 desc: "Object tracking is the task of taking an initial set of object detections, creating a unique ID for each of the initial detections, and then tracking each of the objects as they move around frames in a video, maintaining the ID assignment."
             },
             {
                 name: "Object Detection and Classification",
-                img: "object.jpeg",
+                img: "object2.jpeg",
                 desc: "Object Detection and classification are at the core of ample applications like scene understanding and analysis, video surveillance, robotics and self-driving systems. Deep Learning techniques based on convolutional neural network have been employed to perform visual recognitions tasks such as image classification, localization and detection."
             }
         ]
