@@ -811,6 +811,10 @@ app.get('/upcoming-events',(req,res)=>{
     res.render("upcomin_events");
 });
 
+app.get('/aarushx1', (req, res) => {
+    res.render('aarushx1');
+})
+
 app.get('/:id', (req, res) => {
     let uavs = [
         {   

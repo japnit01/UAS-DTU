@@ -19,7 +19,7 @@
     display: block;
 }
 
-.videocontainer video{
+.videocontainer img{
   object-fit: fill;  
   width: 100vw;
   height: 100vh;
@@ -29,16 +29,12 @@
 </style>
 
 <div class="videocontainer">
-    <video loop muted autoplay controls>
-        <source src="AQUILA160.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>    
+    <img src="aarush1_front.jpg">
 </div>
 
 <style>
-
     .eachsysrow{
-        margin: 13vh 8vh 1vh 8vh
+        margin: 13vh 8vh;
     }
 </style>
 
@@ -51,7 +47,7 @@
     </div>    
 </div>
  
-<style>
+<!-- <style>
     .specs{
         background-image: url("gaia2.jpg");
         background-position: center;
@@ -193,7 +189,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <style>
     .aqspecs{
@@ -280,9 +276,4 @@
     </div>
 </div>
 
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 <%-include("partials/footer")%>
