@@ -47,13 +47,20 @@
 </div>
 
 <script>
-    let imgs = [...document.querySelectorAll('.card-image img')];
-    let min = 5000;
-    imgs.map(i => {
-        let h = window.getComputedStyle(i, null).getPropertyValue('height');
-        if(h < min) min = h;
+    window.addEventListener('DOMContentLoaded', () => {
+        let cards = [...document.querySelectorAll('.card')];
+        let max = 0;
+        cards.map(c => {
+            let h = window.getComputedStyle(c, null).getPropertyValue('height');
+            console.log(h);
+            if(parseInt(h) > max) max = parseInt(h);
+        });
+        console.log(max);
+
+        cards.map(c => {
+            c.style.height = max + 250 + 'px';
+        });
     });
-    console.log(min);
 </script>
 
 <%-include("partials/footer")%>
