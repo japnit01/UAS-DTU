@@ -221,13 +221,19 @@
   }
 
     #parallax{
-      background-image: url("WhatsApp Image 2021-01-28 at 14.02.36.jpeg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       position: relative;
     }
 
+    #parallax .systemcontent{
+      position: absolute;
+      padding:20vh 0 0 5vh;
+    }
+    #parallax video{
+      object-fit: fill;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
     @media only screen and (max-width:600px){
       #parallax{
         height: 50vh !important;
@@ -238,17 +244,6 @@
       #parallax{
         height: 100vh !important;
       }
-    }
-
-    #parallax h2{
-      color: white; 
-      position: absolute; 
-      vertical-align: middle; 
-      top:40%; 
-      left: 50%; 
-      transform: translate(-50%, -50%);
-      font-size: 10vh;
-      font-weight: 600;
     }
 
  .Achievements{
@@ -455,7 +450,14 @@
         </div>
         <div class="section fp-auto-height" style="height:100vh;">
             <div id="parallax">
+              <video loop data-autoplay muted>
+                <source src="swarm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="systemcontent">
               <h2 style="text-align: left;">Systems</h2>
+              <a class="waves-effect waves-light btn-large" href="/upcoming_events">FLY IN</a>
+              </div>
             </div>
         </div>
         <div class="section fp-auto-height" style="height:100vh;">
@@ -463,7 +465,7 @@
                 <div class="inner_events">
                   <div>
                     <h2>Upcoming Events</h2>
-                    <a class="waves-effect waves-light btn-large" href="/upcoming-events">FLY IN</a>
+                    <a class="waves-effect waves-light btn-large" href="/upcoming_events">FLY IN</a>
                   </div>
                   <div class="hide-on-med-and-down" id="upcoming_events_img">
                     <img style="width:100%; height:50%;" src="website logo  final.png" alt="">
@@ -519,15 +521,21 @@
         </div>
     </div>
 
+<style>
+  #fp-nav ul li a span{
+    background: white;
+  }
+</style>    
     
 <script>
     new fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
-	scrollHorizontally: true,
   dragAndMove:true,
-  scrollBar:true
-
+  slidesNavigation:true,
+  responsiveSlides:true,
+  responsiveWidth:600,
+  navigation:true,
     });
 
 //methods
