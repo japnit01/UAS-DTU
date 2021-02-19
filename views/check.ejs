@@ -178,16 +178,13 @@
     font-size: 3.6vh;
      width: 22vh;
      border:3px solid white; 
-     background: transparent; 
+     background-color: transparent; 
      font-weight: 600;
      height: auto !important;
   }
 
   .upcoming_events a:hover{
     background-color: transparent;
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: .5px #fff; */
   }
   .upcoming_events .inner_events{
     display: flex;
@@ -198,7 +195,7 @@
 
   @media only screen and (max-width:600px){
     .upcoming_events{
-      height: 25rem;
+      height: 50vh;
       width: 100%;
       text-align: center;
     }
@@ -214,6 +211,12 @@
 
     .upcoming_events a{
     margin-left: 3rem;
+    background-color: transparent;
+    border:3px solid white; 
+  }
+
+  .upcoming_events a:hover{
+    background-color: transparent;
   }
   }
 
@@ -227,7 +230,7 @@
 
     @media only screen and (max-width:600px){
       #parallax{
-        height: 40vh !important;
+        height: 50vh !important;
       }
     }
 
@@ -433,7 +436,7 @@
     </div>  
 
     <div id="fullpage">
-        <div class="section active" style="height:100vh;">
+        <div class="section active fp-auto-height" style="height:100vh;">
             <div class="slide-holder">
                 <div id="stage">
                   <a href="#"><img src="tarrot.png"></a>
@@ -442,7 +445,7 @@
                 </div>
               </div>
         </div>
-        <div class="section" style="height:100vh;">        
+        <div class="section fp-auto-height" style="height:100vh;">        
             <div class="Achievements">
                 <div>
                 <h4>Achievements</h4>
@@ -450,12 +453,12 @@
                 </div>
             </div>
         </div>
-        <div class="section" style="height:100vh;">
+        <div class="section fp-auto-height" style="height:100vh;">
             <div id="parallax">
               <h2 style="text-align: left;">Systems</h2>
             </div>
         </div>
-        <div class="section" style="height:100vh;">
+        <div class="section fp-auto-height" style="height:100vh;">
             <div class="upcoming_events">
                 <div class="inner_events">
                   <div>
@@ -468,7 +471,7 @@
                 </div>
               </div>
         </div>
-        <div class="section" style="height:100vh; background-image: url(light-texture.jpg); background-size: cover;">
+        <div class="section" style="background-image: url(light-texture.jpg); background-size: cover;">
           <div class="sponsors" style="text-align: center; padding-top: 2rem; padding-bottom: 5rem;">
             <h3 style="font-weight: 500; color:black;">Sponsors</h3>
             <div class="sponsor_logo">
@@ -480,7 +483,7 @@
             </div>
           </div>
         </div>
-        <div class="section fp-auto-height" style="height:100vh;">
+        <div class="section fp-auto-height">
             <div id="contact" style="padding: 0 4rem 0 4rem; background:black; position: relative;">
                 <div class="row">
                             <div class="col l2 m12 s12">
@@ -524,6 +527,7 @@
 	scrollHorizontally: true,
   dragAndMove:true,
   scrollBar:true
+
     });
 
 //methods
