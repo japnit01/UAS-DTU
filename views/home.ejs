@@ -21,12 +21,15 @@
 
     #stage a:nth-of-type(1) {
       animation-name: fader;
-      animation-delay: 10s;
+      animation-delay: 5s;
       animation-duration: 0.5s;
       z-index: 20;
     }
     #stage a:nth-of-type(2) {
       display: none;
+      animation-name: myfade;
+      animation-delay: 5s;
+      animation-duration: 0.5s;
     }
     #stage a:nth-of-type(n+3) {
       display: none;
@@ -36,6 +39,12 @@
       from { opacity: 1.0; }
       to   { opacity: 0.0; }
     }
+
+    @keyframes myfade{
+      from {opacity:0.0;}
+      to {opacity:1.0;}
+    }
+
  @media only screen and (min-width: 600px){
     #stage a>img{
       width: 100%;
@@ -81,13 +90,37 @@
   }, false);
 
 </script>
-<div class="slide-holder">
-  <div id="stage">
-    <a href="#"><img src="tarrot.png"></a>
-    <a href="#"><img src="aarush1_front.jpg"></a>
-    <a href="#"><img src="aarush2_front2.png"></a>
-  </div>
+
+<style>
+  .owl-carousel{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .owl-carousel img
+  {
+    height: 100vh;
+    width: 100vw;
+  }
+</style>
+<div class="owl-carousel owl-theme">
+  <div><img src="tarrot.png" alt=""></div>
+  <div><img src="swarm.jpeg" alt=""></div>
 </div>
+
+<script>
+  $(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:1,
+    margin:30,
+    stagePadding:30,
+    smartSpeed:450
+  });
+});
+
+</script>
 
 
 <style>
@@ -121,6 +154,7 @@
    .Achievements{
       height: 100vh;
       text-align: left;
+      ;
    }
 
    .Achievements h4{
@@ -400,7 +434,7 @@
  
 </style>
 
-
+<!-- 
 <div class="sponsors" style="text-align: center; padding-top: 2rem; padding-bottom: 5rem; background-color:white">
       <h3 style="font-weight: 500; color:white;">Sponsors</h3>
       <div class="sponsor_logo">
@@ -410,6 +444,7 @@
         <a href=""><img src="ongc2.png" alt=""></a>
         <a href=""><img src="lockheed-martin.png" alt=""></a>
       </div>
-</div>
+</div> -->
 
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <%-include("partials/footer")%>

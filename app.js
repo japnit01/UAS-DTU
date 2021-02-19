@@ -1,7 +1,7 @@
-let express = require("express"),
-    bodyParser = require("body-parser"),
+let express = require("express");
+let bodyParser = require("body-parser");
     // nodemon = require("nodemon"),
-    app = express();
+const app = express();
 
 const port = process.env.PORT || 80;
 
