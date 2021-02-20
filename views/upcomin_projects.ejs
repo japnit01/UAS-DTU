@@ -23,16 +23,23 @@
         font-weight: 500;
         font-family: 'DM Sans', sans-serif;
     }
+    /* div.card-container {
+        -moz-column-width: 20vw;
+        -webkit-column-width: 20vw;
+        -moz-column-gap: 1rem;
+        -webkit-column-gap: 1rem;
+    } */
+
 </style>
 
 <div class="main" style="background-image: url(texture.jpg); background-size: cover; background-attachment: fixed; padding: 40px 0;">
     <div class="ctn">
-        <div class="row">
+        <div class="row card-container">
         <% projs.map(p => { %>
             <div class="col s12 m6 l4">
                 <div class="card" style="margin: 70px 25px;">
                     <div class="card-image">
-                        <img src="/<%= p.img %>">
+                        <img src="/<%= p.img %>" width="100%">
                     </div>
                     <div class="card-content">
                         <p style="color: #000; font-size: 20px;"><%= p.name %></p>
@@ -46,7 +53,7 @@
     </div>
 </div>
 
-<script>
+<!-- <script>
     window.addEventListener('DOMContentLoaded', () => {
         let cards = [...document.querySelectorAll('.card')];
         let max = 0;
@@ -61,6 +68,6 @@
             c.style.height = max + 250 + 'px';
         });
     });
-</script>
+</script> -->
 
 <%-include("partials/footer")%>
