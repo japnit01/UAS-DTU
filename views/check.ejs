@@ -128,6 +128,9 @@
   padding-bottom: 3rem;
   display: inline-block;
   }    
+  .sponsor_logo img {
+    height: 10vh;
+  }
   }
 
   @media only screen and (min-width:600px){
@@ -141,6 +144,9 @@
   padding-right: 3rem;
   padding-bottom: 2rem;
   display: inline-block;
+  }
+  .sponsor_logo img {
+    height: 100px;
   }
   } 
 
@@ -157,13 +163,13 @@
     .upcoming_events{
       height: 100vh; 
       width:100%;
+    padding-left: 12vh;
      }
 
     .upcoming_events h2{
     font-size: 12vh;
     font-weight: 600;
     margin-top: 0;
-    margin-left: 12vh;
     white-space: nowrap;
     padding: 35vh 4vh 0 0;
     }
@@ -174,19 +180,19 @@
       margin:auto
     }
     
-    .upcoming_events a{
-    margin-left: 12vh;
-    font-size: 3.6vh;
-     width: 22vh;
-     border:3px solid white; 
-     background-color: transparent; 
-     font-weight: 600;
-     height: auto !important;
-  }
+.upcoming_events a{
+ height:9vh; 
+ width: 25vh; 
+ border:2px solid white; 
+ background-color: transparent; 
+ font-weight: 600; 
+ color: white;
+}
 
-  .upcoming_events a:hover{
-    background-color: transparent;
-  }
+  .upcoming_events a:hover {
+        color: #555;
+        background-color:#fff;
+      }
   .upcoming_events .inner_events{
     display: flex;
     position: relative;
@@ -196,29 +202,32 @@
 
   @media only screen and (max-width:600px){
     .upcoming_events{
-      height: 50vh;
+      height: 100vh;
       width: 100%;
-      text-align: center;
+      text-align: left; 
+      padding: 6rem 0 0 5rem;
     }
 
     .upcoming_events h2{
-      padding-top: 8rem;  
+      padding-top: 30%;  
       font-size: 2.5rem;
       font-weight: 600;
-      margin-top: 0;
-      margin-left: 3rem;
       white-space: nowrap;
     }
 
     .upcoming_events a{
-    margin-left: 3rem;
-    background-color: transparent;
-    border:3px solid white; 
+      height:9vh; 
+      width: 25vh; 
+      border:2px solid white; 
+      background-color: transparent; 
+      font-weight: 600; 
+      color: white; 
   }
 
-  .upcoming_events a:hover{
-    background-color: transparent;
-  }
+  .upcoming_events a:hover {
+        color: #555;
+        background-color:#fff;
+      }
   }
 
     #parallax{
@@ -227,7 +236,8 @@
 
     #parallax .systemcontent{
       position: absolute;
-      padding:20vh 0 0 5vh;
+      text-align: left; 
+      padding: 6rem 0 0 5rem;
     }
     #parallax video{
       object-fit: cover;
@@ -239,11 +249,43 @@
       #parallax{
         height: 100vh !important;
       }
+      #parallax h2 {
+        padding-top: 30%;
+        font-size: 2.5rem;
+      }
+      #parallax a {
+        height:9vh; 
+        width: 25vh; 
+        border:2px solid white; 
+        background-color: transparent; 
+        font-weight: 600; 
+        color: white;
+      }
+      #parallax a:hover {
+        color: #555;
+        background-color:#fff;
+      }
     }
 
     @media only screen and (min-width:600px) {
       #parallax{
         height: 100vh !important;
+      }
+#parallax a{
+ height:9vh; 
+ width: 25vh; 
+ border:2px solid white; 
+ background-color: transparent; 
+ font-weight: 600; 
+ color: white;
+}
+      #parallax a:hover {
+        color: #555;
+        background-color:#fff;
+      }
+      #parallax h2 {
+        font-size: 12vh;
+        padding-top: 36%;
       }
     }
 
@@ -259,45 +301,60 @@
    color: white;
  }
  
- .Achievements a:hover{
-    background: transparent;
-  }
+.Achievements a:hover {
+  color: #555;
+  background-color:#fff;
+}
  @media only screen and (max-width: 600px){
    .Achievements{
       text-align: left; 
-      padding: 6rem 0 0 5rem;
-      height: 40vh;
+      padding: 4.5rem 0 0 5rem;
+      height: 100vh;
    }
+
+.Achievements a{
+   height:9vh; 
+   width: 25vh; 
+   border:2px solid white; 
+   background-color: transparent; 
+   font-weight: 600; 
+   color: white;
+ }
 
    .Achievements h4{
      font-size:2rem;
      font-weight: 600;
-     
+     padding-top: 27%;
    }
+
+.Achievements a:hover {
+  color: #555;
+  background-color:#fff;
+}
  }
 
  @media only screen and (min-width: 600px){
    .Achievements{
       height: 100vh;
       text-align: left;
+      padding: 3rem 0 0 5rem;
    }
 
    .Achievements h4{
      font-size:12vh;
      font-weight: 600;
      margin-top: 0;
-     margin-left: 12vh;
-     padding: 35vh 4vh 0 0;
+     padding: 27vh 4vh 0 0;
    }
 
    .Achievements a{
-    height:9vh; 
-    width: 25vh; 
-    border:2px solid white; 
-    background-color: transparent; 
-    font-weight: 600; 
-    color: white;
-    margin-left: 12vh;
+      height:9vh; 
+      width: 25vh; 
+      border:2px solid white; 
+      background-color: transparent; 
+      font-weight: 600; 
+      color: white;
+    }
    }
  }
 
@@ -441,11 +498,11 @@
           <div class="sponsors" style="text-align: center; padding-top: 2rem; padding-bottom: 5rem;">
             <h3 style="font-weight: 500; color:black;">Sponsors</h3>
             <div class="sponsor_logo">
-              <a href=""><img src="DTU.png" alt="" height="100"></a>
-              <a href=""><img src="reliance-industries-logo.png" height="100" alt=""></a>
-              <a href=""><img src="adani2.png" height="100" alt=""></a>
-              <a href=""><img src="ongc2.png" height="100" alt=""></a>
-              <a href=""><img src="lockheed-martin.png" height="100" alt=""></a>
+              <a href=""><img src="DTU.png" alt=""></a>
+              <a href=""><img src="reliance-industries-logo.png" alt=""></a>
+              <a href=""><img src="adani2.png" alt=""></a>
+              <a href=""><img src="ongc2.png" alt=""></a>
+              <a href=""><img src="lockheed-martin.png" alt=""></a>
             </div>
           </div>
         </div>
