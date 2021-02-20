@@ -1,11 +1,21 @@
 <%-include("partials/header")%>
 
+<script>
+    $(document).on("mousemove", function(){
+        $(".menu-holder").css("display","block");
+        setTimeout(function(){
+            $(".menu-holder").stop().slideUp({duration:2000});
+        }, 6000);
+    });
+
+</script>
+
 <style>    
     nav.transparent {
     position: fixed !important;
     background-color: black !important;
     top: 0;
-    display: none;
+    display: block;
 }
 
 #footer{
