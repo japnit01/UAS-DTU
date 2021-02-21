@@ -34,7 +34,6 @@
             padding: 12vh 20vh 0 12vh;
             text-align: justify;
             color: black;
-            background-color: white;
             font-weight: 400;
             font-family: 'Titillium Web', sans-serif;
             order:2
@@ -66,6 +65,9 @@
             padding: 20vh 0 0 0;
             text-align: center;
         }
+        .img img, .img1 img {
+            width: 100%;
+        }
         
         .img_container1
         {
@@ -79,7 +81,7 @@
             padding: 12vh 12vh 0 20vh;
             text-align: justify;
             color: black;
-            background-color: white;
+            z-index: -1;
             font-weight: 400;
             order:2;
         }
@@ -276,5 +278,8 @@
 <script>
     AOS.init();
 </script>
+
+<%-include("partials/footer")%>
 </body>
 </html>
+
