@@ -271,368 +271,200 @@ app.get("/curr-members", (req, res) => {
     res.render("curr-members", {
         members: {
             "4-yrs": [{
-                name: "Aniket Gupta",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
+              name: "Aniket Gupta",
+              rank: "Project Manager",
+              img: "aniketgupta.png",
+              lkdn: "http://www.linkedin.com/in/aniket-gupta-1490bb165",
+              mail: "aniket.tcdav@gmail.com"
+            },{
                 name: "Saurav Ahlawat",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
+                rank: "Student Advisor",
+                img: "saurav sir.jpg",
+                lkdn: "https://www.linkedin.com/in/sauravahlawat",
+                mail: "sauravahlawat2000@gmail.com"
+            },{
                 name: "Joyraj Bhowmick",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Parth Mahajan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Anurag Singh",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            }
-            ],
+                rank: "Student Advisor",
+                img: "joyraj.jpg",
+                lkdn: "https://www.linkedin.com/in/joyraj-bhowmick-2703a8158",
+                mail: "joyrajbhowmick1998@gmail.com"
+            },{
+              name: "Anurag Singh",
+              rank: "Student Advisor",
+              img: "anurag singh sir.jpg",
+              lkdn: "https://www.linkedin.com/in/anurag-singh-81a56114b",
+              mail: "anuragsingh5298016@gmail.com"
+            }],
             "3-yrs": [{
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Aman Virmani",
+              rank: "Team Captain",
+              img: "aman sir.jpg",
+              lkdn: "",
+              mail: "virmaniaman712000712000@gmail.com"
             },
             {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Tushant Yadav",
+              rank: "Software Head",
+              img: "tushant sir.jpg",
+              lkdn: "https://www.linkedin.com/in/tushant-yadav/",
+              mail: "tushanty000@gmail.com"
             },
             {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Nitin Sharma",
+              rank: "Airframes Head",
+              img: "nitin.jpg",
+              lkdn: "LinkedIn.com/in/nitin-sharma81464817a/",
+              mail: "nitin571999@gmail.com"
             },
             {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            }
-            ],
+              name: "Nishkarsh Sharma",
+              rank: "Avionics Head",
+              img: "nishkarsh.jpg",
+              lkdn: "https://www.linkedin.com/in/nishkarsh-sharma-7b9b5616b",
+              mail: "nishkarshsharma16@gmail.com"
+            }],
             "software": [{
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Sandeep Swain",
+              img: "sandeep swain.jpg",
+              lkdn: "https://www.linkedin.com/in/sandeep-swain-a64a1a1b8",
+              mail: "sandeepswain001@gmail.com"
             },
             {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Ananya Komal Singh",
+              img: "ananya singh.jpg",
+              lkdn: "https://www.linkedin.com/in/ananya-singh-856109187",
+              mail: "ananyaksingh11@gmail.com"
             },
             {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Japnit Singh",
+              img: "japnit sir.jpeg",
+              lkdn: "https://www.linkedin.com/in/japnit-singh-1500561ab/",
+              mail: "japnit2012@gmail.com"
             },
             {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Pankaj",
+              img: "pankaj sir.jpeg",
+              lkdn: "https://www.linkedin.com/in/pankaj-rajput-6551b61a0/",
+              mail: "pankajrajput020010@gmail.com"
             },
             {
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Rahul Verma",
+              img: "rahul verma.jpg",
+              lkdn: "https://in.linkedin.com/in/vrintle",
+              mail: "rahulverma27112001@gmail.com"
             },
             {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Nilesh Aggarwal",
+              img: "nilesh.jpg",
+              lkdn: "https://www.linkedin.com/mwlite/in/nilesh-aggarwal-a96304180",
+              mail: "nilesh.ggoo@gmail.com"
             },
             {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Raghav Goel",
+              img: "raghav.png",
+              lkdn: "https://www.linkedin.com/in/raghav-goel-667646139",
+              mail: "goelraghav1901@gmail.com"
             },
             {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            }
-            ],
+              name: "Harshit Nahata",
+              img: "harshit nahat.jpg",
+              lkdn: "https://www.linkedin.com/in/sandeep-swain-a64a1a1b8",
+              mail: "harshitnahata48@gmail.com"
+            },
+            {
+              name: "Harshit Gupta",
+              img: "harshitsir.jpg",
+              lkdn: "www.linkedin.com/in/harshit-gupta-22a411198",
+              mail: "harshit.barya401@outlook.com"
+            }],
             "avionics": [{
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
+                name: "Rithwick Sethi",
+                img: "rithwick.jpg",
                 lkdn: "",
-                mail: ""
+                mail: "rithwick11111@gmail.com"
+              },{
+              name: "Saransh Agarwal",
+              img: "saransh.jpeg",
+              lkdn: "https://www.linkedin.com/in/saransh--agarwal/",
+              mail: "saranshcool.1206@gmail.com"
+            },{
+              name: "Kartikey Aggarwal",
+              img: "kartikey sir.jpg",
+              lkdn: "",
+              mail: "aggkartikey@gmail.com"
+            },{
+              name: "Abhishek Gupta",
+              img: "abhishek gupta.jpg",
+              lkdn: "https://www.linkedin.com/in/abhishek-gupta-099288175",
+              mail: "abhishekgupta23810306@gmail.com"
+            },{
+              name: "Atiraj Anand",
+              img: "atiraj.jpeg",
+              lkdn: "https://www.linkedin.com/in/atiraj-anand-2079711b7",
+              mail: "anandatiraj@gmail.com"
+            },{
+              name: "Vayam jain",
+              img: "vayu.jpg",
+              lkdn: "https://www.linkedin.com/in/vayam-jain-1aa35612b",
+              mail: "jainvayam@gmail.com"
+            },{
+              name: "Priyanshi Jain",
+              img: "priyanshi maam.jpg",
+              lkdn: "https://www.linkedin.com/in/priyanshi-jain-1505aa1a7",
+              mail: "priyanshijain1610@gmail.com"
+            },{
+              name: "Tushar Singh",
+              img: "tushar sor.jpeg",
+              lkdn: "https://www.linkedin.com/in/tushar-singh-5a2b08193",
+              mail: "tushar300101@gmail.com"
+            }],
+            "airframe": [
+            {
+                name: "Abhishek Prajapati",
+                img: "abhishek-prajapati.jpg",
+                lkdn: "https://www.linkedin.com/in/abhishek-prajapati-9a11581aa",
+                mail: "abhishekprajapati704@gmail.com"
+            },{
+                name: "Anand Mohan Singh",
+                img: "anand.jpg",
+                lkdn: "https://www.linkedin.com/in/anand-singh-719a421a6",
+                mail: "anandsingh16898@gmail.com"
+            },{
+              name: "Aryan Chaudhary",
+              img: "aryan chaudhary.jpg",
+              lkdn: "",
+              mail: "aryanchaudhary8608@gmail.com"
             },
             {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Astik Srivastava ",
+              img: "astik.jpg",
+              lkdn: "https://www.linkedin.com/in/astik-srivastava-80746a205",
+              mail: "41.astiksrivastava@gmail.com"
             },
             {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Shubhodeep Shiv Aditya",
+              img: "subho sir.jpg",
+              lkdn: "https://www.linkedin.com/in/shubhodeepaditya",
+              mail: "shubhoaditya2212@gmail.com"
             },
             {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            }
-            ],
-            "airframe": [{
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            }
-            ],
+              name: "Sarthak Sinha",
+              img: "sarthak.jpeg",
+              lkdn: "https://www.linkedin.com/in/sarthak-sinha-3458931b8",
+              mail: "sinha.sarthak9818@gmail.com"
+            }],
             "corporate": [{
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
+              name: "Avyay Gupta",
+              img: "avyay.jpg",
+              lkdn: "https://www.linkedin.com/in/avyay-gupta-a9a67a201",
+              mail: "avyay007@gmail.com"
             },
             {
-                name: "Aman Virmani",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Tushant Verma",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nishkarsh Pandey",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            },
-            {
-                name: "Nitin Chauhan",
-                rank: "lorem ipsum dolor sit amet",
-                img: "",
-                lkdn: "",
-                mail: ""
-            }
-            ]
+              name: "Aadhya Roy",
+              img: "aadhya roy.jpeg",
+              lkdn: "https://www.linkedin.com/in/aadhya-roy-442b04204",
+              mail: "aadhyaroy2002@gmail.com"
+            }]
         }
     });
 });
