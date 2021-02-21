@@ -26,7 +26,7 @@
         .main{
             position: relative;
         }
-
+        
         .system_row{
             margin-bottom: 0;
         }        
@@ -37,7 +37,7 @@
             background-color: white;
             font-weight: 400;
             font-family: 'Titillium Web', sans-serif;
-            height: 100vh;
+            order:2
         }
         
         .heading{
@@ -59,6 +59,7 @@
             background-color: #ebebeb;
             padding:0 0 0 0;
             height: 100vh;
+            order: 1;
         }
         
         .img1{
@@ -71,6 +72,7 @@
             background-color:#ebebeb;
             padding:0 0 0 0;
             height: 100vh;
+            order: 1;
         }
         
         .row .content1{
@@ -79,6 +81,7 @@
             color: black;
             background-color: white;
             font-weight: 400;
+            order:2;
         }
         .hexbtn {
             border-image: url(hexagon.png) 10 fill;
@@ -98,7 +101,26 @@
         <div class="main">
             <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 m6 s12 img_container">
+                    <div class="col l6 m12 s12 push-l6 img_container1">
+                        <div class = "img1">
+                            <img src="System Images without Background - Copy/aquila (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l6 m12 s12 pull-l6 content1"  data-aos="fade-up" data-aos-offset="200"
+                        data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+                        <h3 class="heading">Aquila</h3>
+                        <p class="para">
+                            It comprises of a long flying range accompanied by an endurance of up to 3 hours. The drone has a maximum takeoff weight of 22 kilograms and a payload weight of 1 kilogram. The UAV is also capable of Human Detection and Geotagging and maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS denied navigation.
+                        </p>
+                        <!-- <button class="hexbtn"><div>&gt;</div></button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="castor">
+                <div class="row system_row">
+                    <div class="col l6 m12 s12 img_container">
                         <div class = "img">
                             <img src="System Images without Background - Copy/castor.png" alt="">
                         </div>
@@ -114,37 +136,35 @@
                     </div>
                 </div>
             </div>
-            <div class="gaia">
+
+            <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 content1" data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center">
-                        <h3 class="heading">Aquila</h3>
+                    <div class="col l6 m12 s12 push-l6 img_container1">
+                        <div class = "img1">
+                            <img src="System Images without Background - Copy/tilt_tricopter.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l6 m12 s12 pull-l6 content1"  data-aos="fade-up" data-aos-offset="200"
+                        data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+                        <h3 class="heading">Tilt Tricopter</h3>
                         <p class="para">
-                            It comprises of a long flying range accompanied by an endurance of up to 3 hours. The drone has a maximum takeoff weight of 22 kilograms and a payload weight of 1 kilogram. The UAV is also capable of Human Detection and Geotagging and maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS denied navigation.
+                            Cruising at 90 km/h, the system has a considerably High Range complimented by a phenomenal endurance of up to 85 minutes. The design contains a Tilt-Rotor for increased efficiency and making the model lightweight. Another highlights of this system include it’s Swarming Capabilities.
                         </p>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
-                    <div class="col l6 img_container1">
-                        <div class="img1">
-                            <img src="System Images without Background - Copy/aquila (1).png" alt="">
-                        </div>
-                    </div>
                 </div>
             </div>
+
+
             <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 img_container">
+                    <div class="col l6 m12 s12 img_container">
                         <div class = "img">
                             <img src="System Images without Background - Copy/TARROT.png" alt="">
                         </div>
                     </div>
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
+                    <div class="col l6 m12 s12 content"  data-aos="fade-up" data-aos-offset="200"
                         data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <h3 class="heading">Tarrot</h3>
@@ -155,9 +175,15 @@
                     </div>
                 </div>
             </div>
-            <div class="gaia">
+
+            <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
+                    <div class="col l6 m12 s12 push-l6 img_container1">
+                        <div class = "img1">
+                            <img src="transparents/17-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l6 m12 s12 pull-l6 content1"  data-aos="fade-up" data-aos-offset="200"
                         data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <h3 class="heading">Aarush X1</h3>
@@ -166,21 +192,17 @@
                         </p>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
-                    <div class="col l6 img_container">
-                        <div class = "img">
-                            <img src="transparents/17-2.png" alt="">
-                        </div>
-                    </div>
                 </div>
             </div>
+            
             <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 img_container">
+                    <div class="col l6 m12 s12 img_container">
                         <div class = "img">
                             <img src="System Images without Background - Copy\aarush x2 front.png" alt="">
                         </div>
                     </div>
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
+                    <div class="col l6 m12 s12 content"  data-aos="fade-up" data-aos-offset="200"
                         data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <h3 class="heading">Aarush X2</h3>
@@ -191,9 +213,15 @@
                     </div>
                 </div>
             </div>
-            <div class="gaia">
+
+            <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
+                    <div class="col l6 m12 s12 push-l6 img_container1">
+                        <div class = "img1">
+                            <img src="System Images without Background - Copy\3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l6 m12 s12 pull-l6 content1"  data-aos="fade-up" data-aos-offset="200"
                         data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <h3 class="heading">Aarush M</h3>
@@ -202,34 +230,17 @@
                         </p>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
-                    <div class="col l6 img_container">
-                        <div class = "img">
-                            <img src="System Images without Background - Copy\castor.png" alt="">
-                        </div>
-                    </div>
                 </div>
             </div>
+            
             <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 img_container">
+                    <div class="col l6 m12 s12 img_container">
                         <div class = "img">
-                            <img src="System Images without Background - Copy/8.png" alt="">
+                            <img src="System Images without Background - Copy/vihaan.png" alt="">
                         </div>
                     </div>
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
-                        data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                        data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
-                        <h3 class="heading">Avniel</h3>
-                        <p class="para">
-                            Embodies a Fully Autonomous System and can undertake High Definition Real-Time Surveillance. The system is designed to carry High Payload with an additional feature of returning to the base itself in case of lost linkage.
-                        </p>
-                        <!-- <button class="hexbtn"><div>&gt;</div></button> -->
-                    </div>
-                </div>
-            </div>
-            <div class="gaia">
-                <div class="row system_row">
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
+                    <div class="col l6 m12 s12 content"  data-aos="fade-up" data-aos-offset="200"
                         data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <h3 class="heading">Vihaan</h3>
@@ -238,21 +249,17 @@
                         </p>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
-                    <div class="col l6 img_container">
-                        <div class = "img">
-                            <img src="System Images without Background - Copy/vihaan.png" alt="">
-                        </div>
-                    </div>
                 </div>
             </div>
+
             <div class="castor">
                 <div class="row system_row">
-                    <div class="col l6 img_container">
-                        <div class = "img">
-                            <img src="System Images without Background - Copy/7.png" alt="">
+                    <div class="col l6 m12 s12 push-l6 img_container1">
+                        <div class = "img1">
+                            <img src="System Images without Background - Copy\7.png" alt="">
                         </div>
                     </div>
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
+                    <div class="col l6 m12 s12 pull-l6 content1"  data-aos="fade-up" data-aos-offset="200"
                         data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <h3 class="heading">Garuda</h3>
@@ -263,31 +270,11 @@
                     </div>
                 </div>
             </div>
-            <div class="gaia">
-                <div class="row system_row">
-                    <div class="col l6 content"  data-aos="fade-up" data-aos-offset="200"
-                        data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                        data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
-                        <h3 class="heading">Lazarus</h3>
-                        <p class="para">
-                            Lazarus is designed to meet the objectives of AUVSI student UAS competition. It is a modified Sig Rascal 110 R/C aircraft controlled by the ArduPilot Mega, an open-source autopilot. Capable of following dynamically changing waypoints, ANACONDA  provides real time reconnaissance to an Imagery terminal on ground using a gimbal stabilized point and shoot camera.
-                        </p>
-                        <!-- <button class="hexbtn"><div>&gt;</div></button> -->
-                    </div>
-                    <div class="col l6 img_container">
-                        <div class = "img">
-                            <img src="System Images without Background - Copy/castor.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
 
-    
+        </div>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init();
+    AOS.init();
 </script>
 </body>
 </html>
