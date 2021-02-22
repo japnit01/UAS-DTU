@@ -34,7 +34,6 @@
             padding: 12vh 20vh 0 12vh;
             text-align: justify;
             color: black;
-            background-color: white;
             font-weight: 400;
             font-family: 'Titillium Web', sans-serif;
             order:2
@@ -66,6 +65,9 @@
             padding: 20vh 0 0 0;
             text-align: center;
         }
+        .img img, .img1 img {
+            width: 100%;
+        }
         
         .img_container1
         {
@@ -79,7 +81,6 @@
             padding: 12vh 12vh 0 20vh;
             text-align: justify;
             color: black;
-            background-color: white;
             font-weight: 400;
             order:2;
         }
@@ -94,6 +95,20 @@
         .hexbtn div {
             font-family: monospace;
             transform: scale(1, 1.2);
+        }
+        .tesla-btn {
+            border: none;
+            background-color: #111;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 12px;
+            padding: 10px 80px;
+            margin-top: 20px;
+            margin-bottom: 80px;
+            font-weight: 600;
+            display: inline-block;
+            cursor: pointer !important;
+            color: #eee;
         }
         
         </style>
@@ -113,6 +128,7 @@
                         <p class="para">
                             It comprises of a long flying range accompanied by an endurance of up to 3 hours. The drone has a maximum takeoff weight of 22 kilograms and a payload weight of 1 kilogram. The UAV is also capable of Human Detection and Geotagging and maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS denied navigation.
                         </p>
+                        <a class="tesla-btn" href="/aquila">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -132,6 +148,7 @@
                         <p class="para">
                             Castor is a very structured and systematic model which is used for navigation or way-finding in areas denied of GPS. It has an efficient ‘Encrypted Wireless GCS Communication’ system which helps in its smooth  working. SLAM has a robust system due to which it can endure weather adversity, with multiple failsafes which makes it really user friendly.
                         </p>
+                        <a class="tesla-btn" href="/castor">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -151,6 +168,7 @@
                         <p class="para">
                             Cruising at 90 km/h, the system has a considerably High Range complimented by a phenomenal endurance of up to 85 minutes. The design contains a Tilt-Rotor for increased efficiency and making the model lightweight. Another highlights of this system include it’s Swarming Capabilities.
                         </p>
+                        <a class="tesla-btn" href="/tilt-tricopter">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -171,6 +189,7 @@
                         <p class="para">
                             Equipped with Swarming Capabilities, the system can also undertake Real-Time High Definition Surveillance with a 20x Zoom. In addition to this, it is also incorporated by Aerial Surveillance and Mapping Capabilities.
                         </p>
+                        <a class="tesla-btn" href="/tarrot">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -190,6 +209,7 @@
                         <p class="para">
                             Alongside being equipped with a Fully Autonomous Navigation System, the aircraft is also capable of undertaking High-Definition Real-Time Surveillance with a 40x Zoom Capability. Besides these, the system can also cruise at remarkable speeds of upto 70 kmph and has a take-off and landing height of upto 260 ft. It was developed in association with Lockheed Martin.
                         </p>
+                        <a class="tesla-btn" href="/aarush-x1">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -209,6 +229,7 @@
                         <p class="para">
                             This is an optimized version of AARUSH X1. Similar to X1, it also consists a Fully Autonomous Navigation System and the capability to undertake High Definition Real-Time Surveillance alongside with a 40x Zoom Capability, accompanied by a comparatively short take-off and landing height of upto 150ft.
                         </p>
+                        <a class="tesla-btn" href="/aarush-x2">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -228,6 +249,7 @@
                         <p class="para">
                             Similar to both X1 and X2, the aircraft has the capability to undertake High Definition Real-Time Surveillance with a 40x Zoom Capability along with the Fully Autonomous Navigation with an addition of Mid Air Re-start in case of engine failure.  It posses the ability to take of from dirt but with a comparatively small take off range.
                         </p>
+                        <a class="tesla-btn" href="/aarush-m">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -247,6 +269,7 @@
                         <p class="para">
                             Vihaan is an aircraft designed with a Single Point Take-off using an indigenously developed Catapult Launcher by the team. The system is capable of Payload Dropping at the designated target in addition to it’s Fully Autonomous System. Furthermore, it can also return home by itself in case of lost linkage.
                         </p>
+                        <a class="tesla-btn" href="/vihaan">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -266,6 +289,7 @@
                         <p class="para">
                             This is a Modified Sig Rascal 110 R/C type aircraft accompanied by the presence of a Ground Control System. It is capable of performing autonomous flight and navigation with the presence of an option to Surveillance Data using optical sensors.
                         </p>
+                        <a class="tesla-btn" href="/garuda">LEARN MORE</a>
                         <!-- <button class="hexbtn"><div>&gt;</div></button> -->
                     </div>
                 </div>
@@ -276,5 +300,8 @@
 <script>
     AOS.init();
 </script>
+
+<%-include("partials/footer")%>
 </body>
 </html>
+

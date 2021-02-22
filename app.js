@@ -28,9 +28,24 @@ app.get("/past-members", (req, res) => {
         members: {
             "2k20": [
                 {
-                    name: "Rohan Pratap Singh",
+                    name: "Aniket Gupta",
+                    rank: "Project Manager",
+                    src: "aniketgupta.png"
+                },{
+                    name: "Saurav Ahlawat",
                     rank: "Student Advisor",
-                    src: "Rohan Pratap Singh_2017.png"
+                    src: "saurav sir.jpg"
+                },{
+                    name: "Joyraj Bhowmick",
+                    rank: "Student Advisor",
+                    src: "joyraj.jpg"
+                },{
+                    name: "Anurag Singh",
+                    rank: "Student Advisor",
+                    src: "anurag singh sir.jpg"
+                },{
+                    name: "Parth Mahajan",
+                    rank: "Student Advisor"
                 }
             ],
             "2k19": [
@@ -214,8 +229,8 @@ app.get("/mentors", (req, res) => {
         mentors: [
             {
                 name: `Dr. N.S. Raghava`,
-                rank: `Professor`,
-                desc: `Department of I.T.
+                rank: `Professor and HOD`,
+                desc: `Department of ECE,
                 Delhi Technological University
                 Faculty Advisor`
             }, {
@@ -294,6 +309,12 @@ app.get("/curr-members", (req, res) => {
               img: "anurag singh sir.jpg",
               lkdn: "https://www.linkedin.com/in/anurag-singh-81a56114b",
               mail: "anuragsingh5298016@gmail.com"
+            },{
+                name: "Parth Mahajan",
+                rank: "Student Advisor",
+                img: "default.jpg",
+                lkdn: "",
+                mail: ""
             }],
             "3-yrs": [{
               name: "Aman Virmani",
@@ -351,19 +372,13 @@ app.get("/curr-members", (req, res) => {
               name: "Rahul Verma",
               img: "rahul verma.jpg",
               lkdn: "https://in.linkedin.com/in/vrintle",
-              mail: "rahulverma27112001@gmail.com"
+              mail: "vrintle@gmail.com"
             },
             {
               name: "Nilesh Aggarwal",
               img: "nilesh.jpg",
               lkdn: "https://www.linkedin.com/mwlite/in/nilesh-aggarwal-a96304180",
               mail: "nilesh.ggoo@gmail.com"
-            },
-            {
-              name: "Raghav Goel",
-              img: "raghav.png",
-              lkdn: "https://www.linkedin.com/in/raghav-goel-667646139",
-              mail: "goelraghav1901@gmail.com"
             },
             {
               name: "Harshit Nahata",
