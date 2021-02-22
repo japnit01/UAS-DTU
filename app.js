@@ -481,6 +481,10 @@ app.get("/castor",(req,res)=>{
     res.render("castor")
 });
 
+app.get("/tilttricopter",(req,res)=>{
+    res.render("tilttricopter")
+});
+
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
