@@ -229,8 +229,8 @@ app.get("/mentors", (req, res) => {
         mentors: [
             {
                 name: `Dr. N.S. Raghava`,
-                rank: `Professor`,
-                desc: `Department of I.T.
+                rank: `Professor and HOD`,
+                desc: `Department of ECE,
                 Delhi Technological University
                 Faculty Advisor`
             }, {
