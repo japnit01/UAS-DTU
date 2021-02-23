@@ -233,23 +233,24 @@ app.get("/mentors", (req, res) => {
                 desc: `Department of ECE,
                 Delhi Technological University
                 Faculty Advisor`,
-                img: ""
+                img: "raghava sir.png"
             }, {
-                name: `Madan`,
-                rank: `Professor`,
-                desc: `Department of Mechanical Engineering
-                Delhi Technological University
-                Faculty Advisor`
+                name: `Sqn. Ldr. Madhan Kumar`,
+                rank: `Senior Manager`,
+                desc: `Adani Defense`,
+                img: "madan sir.jpeg"
                 }, {
             name: `Dr. Vikas Rastogi`,
             rank: `Professor`,
             desc: `Department of Mechanical Engineering
             Delhi Technological University
-            Faculty Advisor`
+            Faculty Advisor`,
+            img: "vikas rastogi.png"
             }, {
             name: `Prof. P.B. Sharma`,
             rank: `Former Vice Chancellor`,
-            desc: `Delhi Technological University`
+            desc: `Delhi Technological University`,
+            img: "pb sharma.png"
             }, {
             name: `Prakash M. Sesha`,
             rank: `Program Manager`,
@@ -259,7 +260,8 @@ app.get("/mentors", (req, res) => {
             name: `Dr. D.S. Nagesh`,
             rank: `Professor`,
             desc: `Department of Mechanical Engineering
-            Delhi Technological University`
+            Delhi Technological University`,
+            img: "ds nagesh.png"
             }, {
             name: `John Sheeshan`,
             rank: `Sr. Systems Engineer`,
@@ -326,7 +328,7 @@ app.get("/curr-members", (req, res) => {
             },
             {
               name: "Tushant Yadav",
-              rank: "Software Head",
+              rank: "Vice Captain",
               img: "tushant sir.jpg",
               lkdn: "https://www.linkedin.com/in/tushant-yadav/",
               mail: "tushanty000@gmail.com"
@@ -346,10 +348,16 @@ app.get("/curr-members", (req, res) => {
               mail: "nishkarshsharma16@gmail.com"
             }],
             "software": [{
-              name: "Sandeep Swain",
-              img: "sandeep swain.jpg",
-              lkdn: "https://www.linkedin.com/in/sandeep-swain-a64a1a1b8",
-              mail: "sandeepswain001@gmail.com"
+                name: "Japnit Singh",
+                img: "japnit sir.jpeg",
+                lkdn: "https://www.linkedin.com/in/japnit-singh-1500561ab/",
+                mail: "japnit2012@gmail.com"
+            },
+            {
+                name: "Harshit Gupta",
+                img: "harshitsir.jpg",
+                lkdn: "www.linkedin.com/in/harshit-gupta-22a411198",
+                mail: "harshit.barya401@outlook.com"
             },
             {
               name: "Ananya Komal Singh",
@@ -358,28 +366,22 @@ app.get("/curr-members", (req, res) => {
               mail: "ananyaksingh11@gmail.com"
             },
             {
-              name: "Japnit Singh",
-              img: "japnit sir.jpeg",
-              lkdn: "https://www.linkedin.com/in/japnit-singh-1500561ab/",
-              mail: "japnit2012@gmail.com"
-            },
-            {
               name: "Pankaj",
               img: "pankaj sir.jpeg",
               lkdn: "https://www.linkedin.com/in/pankaj-rajput-6551b61a0/",
               mail: "pankajrajput020010@gmail.com"
             },
             {
-              name: "Rahul Verma",
-              img: "rahul verma.jpg",
-              lkdn: "https://in.linkedin.com/in/vrintle",
-              mail: "vrintle@gmail.com"
+                name: "Anunay",
+                img: "anunay.jpg",
+                lkdn: "https://www.linkedin.com/in/anunay-varshney-1b3515193",
+                mail: "anunay2608@gmail.com"
             },
             {
-              name: "Nilesh Aggarwal",
-              img: "nilesh.jpg",
-              lkdn: "https://www.linkedin.com/mwlite/in/nilesh-aggarwal-a96304180",
-              mail: "nilesh.ggoo@gmail.com"
+              name: "Rahul Verma",
+              img: "rahul.jpg",
+              lkdn: "https://in.linkedin.com/in/vrintle",
+              mail: "vrintle@gmail.com"
             },
             {
               name: "Harshit Nahata",
@@ -388,32 +390,43 @@ app.get("/curr-members", (req, res) => {
               mail: "harshitnahata48@gmail.com"
             },
             {
-              name: "Harshit Gupta",
-              img: "harshitsir.jpg",
-              lkdn: "www.linkedin.com/in/harshit-gupta-22a411198",
-              mail: "harshit.barya401@outlook.com"
+              name: "Nilesh Aggarwal",
+              img: "nilesh.jpg",
+              lkdn: "https://www.linkedin.com/mwlite/in/nilesh-aggarwal-a96304180",
+              mail: "nilesh.ggoo@gmail.com"
+            },
+            {
+                name: "Sandeep Swain",
+                img: "sandeep swain.jpg",
+                lkdn: "https://www.linkedin.com/in/sandeep-swain-a64a1a1b8",
+                mail: "sandeepswain001@gmail.com"
+            },{
+                name: "Arpan Garg",
+                img: "cheems.jpg",
+                lkdn: "",
+                mail: ""
             }],
             "avionics": [{
-                name: "Rithwick Sethi",
-                img: "rithwick.jpg",
-                lkdn: "",
-                mail: "rithwick11111@gmail.com"
-              },{
               name: "Saransh Agarwal",
               img: "saransh.jpeg",
               lkdn: "https://www.linkedin.com/in/saransh--agarwal/",
               mail: "saranshcool.1206@gmail.com"
             },{
-              name: "Kartikey Aggarwal",
-              img: "kartikey sir.jpg",
-              lkdn: "",
-              mail: "aggkartikey@gmail.com"
-            },{
-              name: "Abhishek Gupta",
-              img: "abhishek gupta.jpg",
-              lkdn: "https://www.linkedin.com/in/abhishek-gupta-099288175",
-              mail: "abhishekgupta23810306@gmail.com"
-            },{
+                name: "Tushar Singh",
+                img: "tushar sor.jpeg",
+                lkdn: "https://www.linkedin.com/in/tushar-singh-5a2b08193",
+                mail: "tushar300101@gmail.com"
+              },{
+                name: "Priyanshi Jain",
+                img: "priyanshi maam.jpg",
+                lkdn: "https://www.linkedin.com/in/priyanshi-jain-1505aa1a7",
+                mail: "priyanshijain1610@gmail.com"
+              },{
+                name: "Kartikey Aggarwal",
+                img: "kartikey sir.jpg",
+                lkdn: "",
+                mail: "aggkartikey@gmail.com"
+              },{
               name: "Atiraj Anand",
               img: "atiraj.jpeg",
               lkdn: "https://www.linkedin.com/in/atiraj-anand-2079711b7",
@@ -424,56 +437,56 @@ app.get("/curr-members", (req, res) => {
               lkdn: "https://www.linkedin.com/in/vayam-jain-1aa35612b",
               mail: "jainvayam@gmail.com"
             },{
-              name: "Priyanshi Jain",
-              img: "priyanshi maam.jpg",
-              lkdn: "https://www.linkedin.com/in/priyanshi-jain-1505aa1a7",
-              mail: "priyanshijain1610@gmail.com"
-            },{
-              name: "Tushar Singh",
-              img: "tushar sor.jpeg",
-              lkdn: "https://www.linkedin.com/in/tushar-singh-5a2b08193",
-              mail: "tushar300101@gmail.com"
+                name: "Abhishek Gupta",
+                img: "abhishek gupta.jpg",
+                lkdn: "https://www.linkedin.com/in/abhishek-gupta-099288175",
+                mail: "abhishekgupta23810306@gmail.com"
+              },{
+                name: "Rithwick Sethi",
+                img: "rithwick.jpg",
+                lkdn: "",
+                mail: "rithwick11111@gmail.com"
             }],
             "airframe": [
+                {
+                  name: "Shubhodeep Shiv Aditya",
+                  img: "subho sir.jpg",
+                  lkdn: "https://www.linkedin.com/in/shubhodeepaditya",
+                  mail: "shubhoaditya2212@gmail.com"
+                },{
+                name: "Anand Mohan Singh",
+                img: "anand.jpg",
+                lkdn: "https://www.linkedin.com/in/anand-singh-719a421a6",
+                mail: "anandsingh16898@gmail.com"
+            },
             {
                 name: "Abhishek Prajapati",
                 img: "abhishek-prajapati.jpg",
                 lkdn: "https://www.linkedin.com/in/abhishek-prajapati-9a11581aa",
                 mail: "abhishekprajapati704@gmail.com"
             },{
-                name: "Anand Mohan Singh",
-                img: "anand.jpg",
-                lkdn: "https://www.linkedin.com/in/anand-singh-719a421a6",
-                mail: "anandsingh16898@gmail.com"
-            },{
                 name: "Sampreet Bharali",
                 img: "Sampreet Bharali.jpg",
                 lkdn: "https://www.linkedin.com/in/sampreet-bharali-5b71a81a0",
                 mail: "sampreetbharali@gmail.com"
-            },{
-              name: "Aryan Chaudhary",
-              img: "aryan chaudhary.jpg",
-              lkdn: "",
-              mail: "aryanchaudhary8608@gmail.com"
-            },
-            {
-              name: "Astik Srivastava ",
-              img: "astik.jpg",
-              lkdn: "https://www.linkedin.com/in/astik-srivastava-80746a205",
-              mail: "41.astiksrivastava@gmail.com"
-            },
-            {
-              name: "Shubhodeep Shiv Aditya",
-              img: "subho sir.jpg",
-              lkdn: "https://www.linkedin.com/in/shubhodeepaditya",
-              mail: "shubhoaditya2212@gmail.com"
             },
             {
               name: "Sarthak Sinha",
               img: "sarthak.jpeg",
               lkdn: "https://www.linkedin.com/in/sarthak-sinha-3458931b8",
               mail: "sinha.sarthak9818@gmail.com"
-            }],
+            },
+            {
+              name: "Astik Srivastava ",
+              img: "astik.jpg",
+              lkdn: "https://www.linkedin.com/in/astik-srivastava-80746a205",
+              mail: "41.astiksrivastava@gmail.com"
+            },{
+                name: "Aryan Chaudhary",
+                img: "aryan chaudhary.jpg",
+                lkdn: "",
+                mail: "aryanchaudhary8608@gmail.com"
+              }],
             "corporate": [{
               name: "Avyay Gupta",
               img: "avyay.jpg",
