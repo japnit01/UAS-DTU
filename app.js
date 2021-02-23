@@ -500,6 +500,30 @@ app.get("/tilttricopter",(req,res)=>{
     res.render("tilttricopter")
 });
 
+app.get("/tarrot",(req,res)=>{
+    res.render("tarrot")
+});
+
+app.get("/aarushx1",(req,res)=>{
+    res.render("tarrot")
+});
+
+app.get("/aarushx2",(req,res)=>{
+    res.render("tarrot")
+});
+
+app.get("/avniel",(req,res)=>{
+    res.render("tarrot")
+});
+
+app.get("/vihaan",(req,res)=>{
+    res.render("tarrot")
+});
+
+app.get("/garuda",(req,res)=>{
+    res.render("tarrot")
+});
+
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [

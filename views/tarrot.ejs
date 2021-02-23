@@ -12,7 +12,7 @@
 }
 
 .specs{
-    background-image: url("castor.jpg");
+    background-image: url("tarrot.jpeg");
     background-position: center;
     background-size: cover;
     width: 100%;  
@@ -39,17 +39,8 @@
 
 @media only screen and (max-width: 600px){
     .specs .row .col{
-        padding: 0 2vh 0 0vh;
+        padding: 0 2vh 0 2vh;
     }
-
-    .specs{
-    background-image: url("castor.jpg");
-    background-position:20% 0;
-    background-size: cover;
-    width: 100%;  
-    height:100vh;
-}
-    
 }
 
 </style>
@@ -94,10 +85,10 @@
 
 <div class="row eachsysrow">
     <div class="col l6" style="text-align: center;">
-        <h2 style="font-weight: 800; color: #b29c71; font-size: 12vh;">CASTOR</h2>
+        <h2 style="font-weight: 800; color: #b29c71; font-size: 12vh;">TILT TRICOPTER</h2>
     </div>
     <div class="col l6">    
-        <p style="font-weight: 500; padding:3vh 0 8vh 0; font-size: medium;">The system is suitable for indoor areas that are denied of GPS, as it possess the ability to Navigate it’s way even in GPS denied areas and is considered to be India’s first Indoor Navigation Setup. Moreover, the system masters in Localization of a target and further, keeping track of it in 3D system along with Obstacle Detection and Avoidance. It’s flight time is considered to be as long as 20 minutes.</p>
+        <p style="font-weight: 500; padding:3vh 0 8vh 8vh; font-size: medium;">Cruising at 90 km/h, the system has a considerably High Range complimented by a phenomenal endurance of up to 85 minutes. The design contains a Tilt-Rotor for increased efficiency and making the model lightweight. Another highlights of this system include it’s Swarming Capabilities.</p>
     </div>    
 </div>
 
@@ -113,13 +104,14 @@
 
     .div2col li span{
         display: block;
+        color: black;
     }
     .specsctn {
         color: #fff;
     }
 
     .div2col li:before{
-        background-color: hsla(0,0%,100%,.5);
+        background-color: rgba(46, 42, 42, 0.5);
         width: 4vh;
         display: block;
         content: "";
@@ -131,69 +123,79 @@
     .div2col li .itsspec{
         font-weight: 700;
         padding-bottom: 1vh;
+        color: black;
     }
     @media only screen and (max-width: 993px){
         .specsctn {
             padding-left: 7vw !important;
         }
+
+        .aqspecs img{
+            width: 100%;
+        }
     }
 </style>
 
 <div class="aqspecs">
-    <div class="row" style="background-color: black; margin-bottom: 0;">
-            <div class="col l6 m12 s12 aquila160img" style="text-align: center; padding-top: 30vh;">
-                <img src="System Images without Background - Copy\castor.png" alt="">
+    <div class="row" style="background-color: #ebebeb; margin-bottom: 0;">
+            <div class="col l6 m12 s12 aquila160img" style="text-align: center; background-color: #ebebeb; padding-top: 30vh;">
+                <img src="System Images without Background - Copy\TARROT.png" alt="">
             </div>
             <div class="col l6 m12 s12 specsctn" data-aos="fade-up" data-aos-offset="20" data-aos-easing="ease-in-out" data-aos-mirror="true"data-aos-once="false" data-aos-duration="1000" style="padding-top: 20vh;">
-                <div class="specsheading" style="font-size: 6vh; font-weight: 700; margin-bottom: 5vh;">
-                    Castor <span style="font-weight: 400;">Specs</span>
+                <div class="specsheading" style="font-size: 6vh; font-weight: 700; margin-bottom: 5vh; color: black;">
+                    Tilt Tricopter <span style="font-weight: 400;">Specs</span>
                 </div>
                 <div class="div2col" style="display: inline-flex;">
                     <div>
                         <ul>
                             <li>
-                                <span class="itsspec">Dimensions</span>
-                                <span>50x50x15</span>
+                                <span class="itsspec">Range</span>
+                                <span>10Km</span>
                             </li>
                             <li>
-                                <span class="itsspec">Detection Range</span>
-                                <span>6m</span>
+                                <span class="itsspec">Structure</span>
+                                <span>Light weight carbon fibre body</span>
                             </li>
                             <li>
-                                <span class="itsspec">Power System</span>
-                                <span>Hybrid</span>
+                                <span class="itsspec">Wheel Base</span>
+                                <span>650mm</span>
                             </li>
                             <li>
                                 <span class="itsspec">Application</span>
-                                <span>Navigation in GPS deined areas</span>
+                                <span>Realtime high definition surveillance with 20x zoom</span>
                             </li>
                         </ul>
                     </div>
                     <div style="margin-left:30vh;">
                         <ul>
                             <li>
-                                <span class="itsspec">Max Take Off Weight</span>
-                                <span>22Kg</span>
+                                <span class="itsspec">Gross Take Off Weight</span>
+                                <span>3.5Kg</span>
                             </li>
                             <li>
                                 <span class="itsspec">Payload Capacity</span>
-                                <span>1Kg</span>
+                                <span>0.5Kg</span>
                             </li>
                             <li>
                                 <span class="itsspec">Swarm</span>
-                                <span>Scalable upto 75 UAV's</span>
+                                <span>Scalable upto 50 UAV's</span>
                             </li>
                             <li>
                                 <span class="itsspec">Endurance</span>
-                                <span>20 min</span>
+                                <span>35 min</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
     </div>
-    <div style="height: 10vh; background-color: black;">
-
+    <div style="height: 10vh;">
+        <div class="row">
+            <div class="col l6 m12 s12" style="background-color:#ebebeb; height: 10vh;">
+            </div>
+            <div class="col l6 m12 s12" style="background-color: white; height: 10vh;">
+            </div>
+        </div>
     </div>
 </div>
 
