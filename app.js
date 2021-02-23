@@ -502,6 +502,37 @@ app.get("/castor",(req,res)=>{
     res.render("castor")
 });
 
+<<<<<<< HEAD
+=======
+app.get("/tilttricopter",(req,res)=>{
+    res.render("tilttricopter")
+});
+
+app.get("/tarrot",(req,res)=>{
+    res.render("tarrot")
+});
+
+app.get("/aarushx1",(req,res)=>{
+    res.render("aarushx1")
+});
+
+app.get("/aarushx2",(req,res)=>{
+    res.render("aarushx2")
+});
+
+app.get("/avniel",(req,res)=>{
+    res.render("avniel")
+});
+
+app.get("/vihaan",(req,res)=>{
+    res.render("vihaan")
+});
+
+app.get("/garuda",(req,res)=>{
+    res.render("garuda")
+});
+
+>>>>>>> db4f2c9e71c9df628be7a0b65b0163ae08f97196
 app.get("/hangar",(req,res)=>{
     res.render("hangar", {
         hangar: [
