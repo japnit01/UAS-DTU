@@ -15,13 +15,120 @@
 </head>
 
 <body>
-    
-    <style>
-        nav.transparent{
-        top:0;
-        position: fixed !important;
-        background-color: black !important;
+
+    <script>    
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems,{});
+          });
+        
+        $(document).ready(function(){
+          $('.collapsible').collapsible();
+        });
+      </script>
+      
+      <style>
+        .main-wrapper{
+          position: relative;
         }
+    
+        .menu-holder{
+          position: fixed;
+          z-index: 9999;
+        } 
+    
+        nav {
+          color: white;
+        }
+        @media only screen and (min-width: 993px){
+          nav a.sidenav-trigger {
+          display: block;
+          }
+        }
+        
+        .sidenav {
+          line-height: 1rem;
+        }
+    
+        .sidenav li>a{
+            color: white;
+        }
+    
+        .sidenav li>a>i.material-icons{
+          color: white;
+        }
+    
+          ::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: black;
+      }
+    
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+    
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    
+      
+      </style>
+      
+      <div class="main-wrapper">
+        <div class="menu-holder" style="width:100%" id="menu">
+          <nav  class="transparent"  style="height: 5rem; box-shadow: none;"> 
+              <!-- navbar content here  --> 
+              <div class="nav-wrapper">
+                  <ul class="left">
+                    <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0.5rem;"><i class="material-icons" style="font-size:2rem;  color: white;">menu</i></a></li>
+                  </ul>
+                  <ul>
+                    <li style="height: 5rem; width: 5rem;"><a href="/" style="height: 5rem; width: 7rem; transform: translate(-4rem,-5.2rem);"><img src="whitelogo.png" alt="" style="margin-left: 0; height: 12rem; width: 22rem;"></a></li>
+                  </ul>
+                  <ul class="hide-on-med-and-down right" style="padding-right: 12rem; margin-top: -0.3rem;">
+                    <li> <span style="font-size:2rem; font-weight: 600; font-family: 'Nunito Sans', sans-serif;">Unmanned Aerial Systems</span> <div style="margin-top:-2.8rem; padding-left:0.2rem; font-size: 1.2rem;">Delhi   Technological   University</div></li>
+                  </ul>
+              </div>
+          </nav>
+    
+          <ul class="sidenav #000000 black" style="color:#eeeeee;" id="slide_out">
+            <!-- <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li> -->
+            <li><a href="" style="width:100%; height: 100%;"><img src="whitelogo2.png" alt="" style="transform:scale(2); width:100%; height: 100%; margin-top: 36px;"></a></li>
+            <hr style="margin: 1rem 2.5rem 1rem 2rem;">
+            <li><a href="/" class="active"><i class="material-icons">home</i> Home</a></li>
+            <li><a href="/about-us"><i class="material-icons">info</i> About Us</a></li>
+            <li><a href="/systems"><i class="material-icons">airplanemode_active</i> Hangar</a></li>
+            <li>
+              <ul class="collapsible" style="padding-left: 1rem;">
+              <li>
+                <div class="collapsible-header"><i class="material-icons" style="margin-right: 1.8rem;">group</i> <b>Team</b></div>
+                <div class="collapsible-body"> 
+                  <ul  style="background: black; padding-left: 4rem;">
+                      <li><a href="/mentors">Mentors</a></li>
+                      <li><a href="/curr-members">Current Members</a></li>
+                      <li><a href="/past-members">Past Members</a></li>
+                  </ul>
+                </div>
+              </li>
+              </ul>
+            </li>
+            <li><a href="/achievements"><i class="material-icons">emoji_events</i> Achievements</a></li>
+            <li><a href="/upcoming_events" class="active"><i class="material-icons">home</i> Upcoming Events</a></li>
+            <li><a href="/upcoming-projects" class="active"><i class="material-icons">precision_manufacturing</i> Upcoming Projects</a></li>
+            <li><a href="#footer"><i class="material-icons">email</i> Contact Us</a></li>
+          </ul>
+        </div>  
+
+
+
+    <style>
+
         
         .main{
             position: relative;

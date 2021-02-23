@@ -39,7 +39,12 @@
 
 @media only screen and (max-width: 600px){
     .specs .row .col{
-        padding: 0 2vh 0 2vh;
+        padding: 0 2vw 0 2vw !important;
+    }
+
+    
+    .specs .row{
+        width:100vw
     }
 }
 
@@ -57,7 +62,7 @@
                     Range
                 </div>
             </div>
-            <div class="col l4 m4 s4" style="border-right: 2px white solid;">
+            <div class="col l4 m4 s3" style="border-right: 2px white solid;">
                 <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
                     14m/s
                 </div>
@@ -120,20 +125,33 @@
         margin-bottom: 1vh;
     }
 
+    .div3col{
+        margin-left: 15vw;
+    }
+
     .div2col li .itsspec{
         font-weight: 700;
         padding-bottom: 1vh;
         color: black;
     }
-    @media only screen and (max-width: 993px){
-        .specsctn {
-            padding-left: 7vw !important;
-        }
-
-        .aqspecs img{
-            width: 100%;
-        }
+    @media only screen and (min-width: 600px){
+    .specs .row .col{
+        padding: 0 10vh 0 10vh;
     }
+}
+
+@media only screen and (max-width: 600px){
+    .specs .row .col{
+        padding: 0 2vw 0 2vw !important;
+    }
+
+    .div3col{
+        margin-left: 15vh;
+    }
+    .specs .row{
+        width:100vw
+    }
+}
 </style>
 
 <div class="aqspecs">
@@ -143,7 +161,7 @@
             </div>
             <div class="col l6 m12 s12 specsctn" data-aos="fade-up" data-aos-offset="20" data-aos-easing="ease-in-out" data-aos-mirror="true"data-aos-once="false" data-aos-duration="1000" style="padding-top: 20vh;">
                 <div class="specsheading" style="font-size: 6vh; font-weight: 700; margin-bottom: 5vh; color: black;">
-                    Tilt Tricopter <span style="font-weight: 400;">Specs</span>
+                    Avniel <span style="font-weight: 400;">Specs</span>
                 </div>
                 <div class="div2col" style="display: inline-flex;">
                     <div>
@@ -166,7 +184,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div style="margin-left:30vh;">
+                    <div class="div3col">
                         <ul>
                             <li>
                                 <span class="itsspec">Gross Take Off Weight</span>
@@ -193,7 +211,7 @@
         <div class="row">
             <div class="col l6 m12 s12" style="background-color:#ebebeb; height: 10vh;">
             </div>
-            <div class="col l6 m12 s12" style="background-color: white; height: 10vh;">
+            <div class="col l6 m12 s12" style="background-color:#ebebeb; height: 10vh;">
             </div>
         </div>
     </div>
