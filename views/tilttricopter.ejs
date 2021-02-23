@@ -41,6 +41,10 @@
     .specs .row .col{
         padding: 0 2vh 0 2vh;
     }
+
+    .specs .row{
+        width:100vw
+    }
 }
 
 </style>
@@ -57,15 +61,15 @@
                     Range
                 </div>
             </div>
-            <div class="col l4 m4 s4" style="border-right: 2px white solid;">
+            <div class="col l4 m4 s3" style="border-right: 2px white solid;">
                 <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
                     90km/h
                 </div>
-               <div style="font-size: 3vh; font-weight: 500; color: white; text-align: center; ">
+               <div style="font-size: 3vh; font-weight: 500; color: white; white-space:nowrap;  text-align: center; ">
                    Cruise Speed
                </div>
            </div>
-           <div class="col l4 m4 s4">
+           <div class="col l4 m4 s5">
                 <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;">
                     <i class="fas fa-cloud-sun-rain"></i>
                 </div>
@@ -84,10 +88,10 @@
 </style>
 
 <div class="row eachsysrow">
-    <div class="col l6" style="text-align: center;">
-        <h2 style="font-weight: 800; color: #b29c71; font-size: 12vh;">TILT TRICOPTER</h2>
+    <div class="col l6 s12" style="text-align: center;">
+        <h2 style="font-weight: 800; color: #b29c71;  font-size: 8vw;">TILT TRICOPTER</h2>
     </div>
-    <div class="col l6">    
+    <div class="col l6 s12">    
         <p style="font-weight: 500; padding:3vh 0 8vh 8vh; font-size: medium;">Cruising at 90 km/h, the system has a considerably High Range complimented by a phenomenal endurance of up to 85 minutes. The design contains a Tilt-Rotor for increased efficiency and making the model lightweight. Another highlights of this system include it’s Swarming Capabilities.</p>
     </div>    
 </div>
@@ -123,6 +127,14 @@
         font-weight: 700;
         padding-bottom: 1vh;
     }
+
+    @media only screen and (min-width: 993px){
+        .div3col
+        {
+            margin-left: 15vw;
+        }
+    }
+
     @media only screen and (max-width: 993px){
         .specsctn {
             padding-left: 7vw !important;
@@ -130,6 +142,11 @@
 
         .aqspecs img{
             width: 100%;
+        }
+
+        .div3col
+        {
+            margin-left: 15vw;
         }
     }
 </style>
@@ -164,7 +181,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div style="margin-left:30vh;">
+                    <div class="div3col">
                         <ul>
                             <li>
                                 <span class="itsspec">Gross Take Off Weight</span>
