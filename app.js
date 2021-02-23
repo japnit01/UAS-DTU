@@ -505,23 +505,23 @@ app.get("/tarrot",(req,res)=>{
 });
 
 app.get("/aarushx1",(req,res)=>{
-    res.render("tarrot")
+    res.render("aarushx1")
 });
 
 app.get("/aarushx2",(req,res)=>{
-    res.render("tarrot")
+    res.render("aarushx2")
 });
 
 app.get("/avniel",(req,res)=>{
-    res.render("tarrot")
+    res.render("avniel")
 });
 
 app.get("/vihaan",(req,res)=>{
-    res.render("tarrot")
+    res.render("vihaan")
 });
 
 app.get("/garuda",(req,res)=>{
-    res.render("tarrot")
+    res.render("garuda")
 });
 
 app.get("/hangar",(req,res)=>{
