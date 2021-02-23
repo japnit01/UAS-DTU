@@ -46,10 +46,10 @@
 </style>
 
 <div class="row eachsysrow">
-    <div class="col l6" style="text-align: center;">
+    <div class="col l6 s12" style="text-align: center;">
         <h2 style="font-weight: 800; color: #b29c71; font-size: 12vh;">AQUILA 160</h2>
     </div>
-    <div class="col l6">    
+    <div class="col l6 s12">    
         <p style="font-weight: 500; padding-top: 3vh; font-size: medium;">Comprises of a long flying range which extends up to more than 100 kilometers accompanied by multiple fail-safes and endurance of up to 3 hours, which is a result of it’s hybrid power system. The aircraft has a maximum takeoff weight of 22 kilograms and a payload weight of 1 kilogram with safe autonomous payload delivery system. The UAV is also capable of Human Detection and Geotagging irrespective of the time. The UAV maintains complete autonomy in mission execution with the use of Artificial Intelligence complimented by GPS denied navigation. Moreover, it also has a wide range of swarm capabilities that can be controlled by more than one entity with large scalability.</p>
     </div>    
 </div>
@@ -83,7 +83,11 @@
 
 @media only screen and (max-width: 600px){
     .specs .row .col{
-        padding: 0 2vh 0 2vh;
+        padding: 0 2vw 0 2vw  !important;
+    }
+
+    .specs .row{
+        width:100vw
     }
 }
 
@@ -93,7 +97,7 @@
     <div class="specs" style="text-align: center; margin:10vh 0 0 0; overflow: hidden; vertical-align:bottom; position: relative; text-align: center; vertical-align: bottom;">
         <div class="row" data-aos="fade-up" data-aos-offset="20" data-aos-once="false" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true"> 
-            <div class="col l4 m4 s4" style="border-right: 2px white solid;">
+            <div class="col l4 m4 s4 col1" style="border-right: 2px white solid;">
                 <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
                     100Km+
                 </div>
@@ -101,7 +105,7 @@
                     Range
                 </div>
             </div>
-            <div class="col l4 m4 s4" style="border-right: 2px white solid;">
+            <div class="col l4 m4 s3 col2" style="border-right: 2px white solid;">
                 <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
                     14m/s
                 </div>
@@ -109,11 +113,11 @@
                    Cruise Speed
                </div>
            </div>
-           <div class="col l4 m4 s4">
+           <div class="col l4 m4 s5 col3" style="display: inline-block;">
                 <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;">
                     <i class="fas fa-cloud-sun-rain"></i>
                 </div>
-                <div style="font-size: 3vh; display:inline-block; white-space:  nowrap; font-weight: 500; color: white; text-align: center; ">
+                <div style="font-size: 3vh; width:auto; white-space:  nowrap; font-weight: 500; color: white; text-align: center; ">
                     All weather adaptable
                 </div>
             </div>
@@ -143,7 +147,7 @@
         }
 
         .payloadcontent .heading{
-            font-size: 3vw;
+            font-size: 2vw;
             color: #fff;
         }
 
@@ -178,6 +182,8 @@
             .payloadcontent .heading{
                 padding-bottom: 25vh;
             }
+
+
         }
 
         @media only screen and (max-width: 993px){
@@ -372,6 +378,10 @@
         margin-bottom: 1vh;
     }
 
+    .div3col{
+        margin-left:15vw;
+    }
+
     .div2col li .itsspec{
         font-weight: 700;
         padding-bottom: 1vh;
@@ -413,7 +423,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div style="margin-left:30vh;">
+                    <div class="div3col">
                         <ul>
                             <li>
                                 <span class="itsspec">Gross Take Off Weight</span>

@@ -118,6 +118,10 @@
         color: #fff;
     }
 
+    .div3col{
+        margin-left: 15vw;
+    }
+
     .div2col li:before{
         background-color: hsla(0,0%,100%,.5);
         width: 4vh;
@@ -132,11 +136,25 @@
         font-weight: 700;
         padding-bottom: 1vh;
     }
-    @media only screen and (max-width: 993px){
-        .specsctn {
-            padding-left: 7vw !important;
-        }
+
+    @media only screen and (min-width: 600px){
+    .specs .row .col{
+        padding: 0 10vh 0 10vh;
     }
+}
+
+@media only screen and (max-width: 600px){
+    .specs .row .col{
+        padding: 0 2vw 0 2vw !important;
+    }
+
+    .div3col{
+        margin-left: 15vh;
+    }
+    .specs .row{
+        width:100vw
+    }
+}
 </style>
 
 <div class="aqspecs">
@@ -169,7 +187,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div style="margin-left:30vh;">
+                    <div class="div3col">
                         <ul>
                             <li>
                                 <span class="itsspec">Max Take Off Weight</span>
