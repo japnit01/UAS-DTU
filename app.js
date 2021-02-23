@@ -226,48 +226,72 @@ app.get("/past-members", (req, res) => {
 
 app.get("/mentors", (req, res) => {
     res.render('mentors', {
-        mentors: [
+        mentors: {
+            "FacAdv": [
             {
                 name: `Dr. N.S. Raghava`,
-                rank: `Professor and HOD`,
-                desc: `Department of ECE,
-                Delhi Technological University
-                Faculty Advisor`,
+                rank: `Director`,
+                desc: `Professor and HOD,
+                Department of ECE,
+                Delhi Technological University`,
                 img: "raghava sir.png"
+            },{
+                name: "Dr. M Jayasimhadri",
+                rank: "Asst. Director",
+                desc: `Asst. Professor,
+                Department of Physics,
+                Delhi Technological University`,
+                img: "m jayasimhadri.png"
+            },{
+                name: "Dr. K. Srinivas",
+                rank: "Dy. Director",
+                desc: `Asst. Professor,
+                Mechanical Department,
+                Delhi Technological University`,
+                img: "k srinivas.png"
+            },{
+                name: "Dr. Rajesh Yadav",
+                rank: "Asst. Director",
+                desc: `Software`,
+                img: "rajesh yadav.png"
             }, {
+                name: `Dr. Vikas Gupta`,
+                rank: `Asst. Director`,
+                desc: `Asst. Professor,
+                USME,
+                Delhi Technological University`,
+                img: "vikas.png"
+                }
+            ],
+            "ProjAdv": [
+                {
                 name: `Sqn. Ldr. Madhan Kumar`,
                 rank: `Senior Manager`,
                 desc: `Adani Defense`,
                 img: "madan sir.jpeg"
-                }, {
-            name: `Dr. Vikas Rastogi`,
-            rank: `Professor`,
-            desc: `Department of Mechanical Engineering
-            Delhi Technological University
-            Faculty Advisor`,
-            img: "vikas rastogi.png"
-            }, {
+                },/* {
             name: `Prof. P.B. Sharma`,
             rank: `Former Vice Chancellor`,
             desc: `Delhi Technological University`,
             img: "pb sharma.png"
-            }, {
+            },*/ {
             name: `Prakash M. Sesha`,
             rank: `Program Manager`,
             desc: `Lockheed Martin Corporate
             Engineering & Technology, USA`
-            }, {
+            },/* {
             name: `Dr. D.S. Nagesh`,
             rank: `Professor`,
             desc: `Department of Mechanical Engineering
             Delhi Technological University`,
             img: "ds nagesh.png"
-            }, {
+            }, */{
             name: `John Sheeshan`,
             rank: `Sr. Systems Engineer`,
             desc: `Lockheed Martin Corporate
             Engineering & Technology
-            USA`
+            USA`,
+            img: "john sheeshan.png"
             }, {
             name: `Guy Bradley`,
             rank: `Manager`,
@@ -279,9 +303,11 @@ app.get("/mentors", (req, res) => {
             rank: `Senior Manager, Corporate`,
             desc: `Engineering & Technology
             Lockheed Martin Corporate
-            Engineering & Technology, USA`
+            Engineering & Technology, USA`,
+            img: "peter drewes.png"
             }
         ]
+        }
     });
 });
 
@@ -402,9 +428,9 @@ app.get("/curr-members", (req, res) => {
                 mail: "sandeepswain001@gmail.com"
             },{
                 name: "Arpan Garg",
-                img: "cheems.jpg",
-                lkdn: "",
-                mail: ""
+                img: "arpan-gark.jpg",
+                lkdn: "https://www.linkedin.com/in/arpan-garg-b885901b0",
+                mail: "arpangarg11111@gmail.com"
             }],
             "avionics": [{
               name: "Saransh Agarwal",
