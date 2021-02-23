@@ -232,7 +232,8 @@ app.get("/mentors", (req, res) => {
                 rank: `Professor and HOD`,
                 desc: `Department of ECE,
                 Delhi Technological University
-                Faculty Advisor`
+                Faculty Advisor`,
+                img: ""
             }, {
                 name: `Madan`,
                 rank: `Professor`,
@@ -445,6 +446,11 @@ app.get("/curr-members", (req, res) => {
                 lkdn: "https://www.linkedin.com/in/anand-singh-719a421a6",
                 mail: "anandsingh16898@gmail.com"
             },{
+                name: "Sampreet Bharali",
+                img: "Sampreet Bharali.jpg",
+                lkdn: "https://www.linkedin.com/in/sampreet-bharali-5b71a81a0",
+                mail: "sampreetbharali@gmail.com"
+            },{
               name: "Aryan Chaudhary",
               img: "aryan chaudhary.jpg",
               lkdn: "",
@@ -494,34 +500,6 @@ app.get("/aquila",(req,res)=>{
 
 app.get("/castor",(req,res)=>{
     res.render("castor")
-});
-
-app.get("/tilttricopter",(req,res)=>{
-    res.render("tilttricopter")
-});
-
-app.get("/tarrot",(req,res)=>{
-    res.render("tarrot")
-});
-
-app.get("/aarushx1",(req,res)=>{
-    res.render("tarrot")
-});
-
-app.get("/aarushx2",(req,res)=>{
-    res.render("tarrot")
-});
-
-app.get("/avniel",(req,res)=>{
-    res.render("tarrot")
-});
-
-app.get("/vihaan",(req,res)=>{
-    res.render("tarrot")
-});
-
-app.get("/garuda",(req,res)=>{
-    res.render("tarrot")
 });
 
 app.get("/hangar",(req,res)=>{
