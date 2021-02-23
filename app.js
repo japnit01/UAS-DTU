@@ -232,7 +232,8 @@ app.get("/mentors", (req, res) => {
                 rank: `Professor and HOD`,
                 desc: `Department of ECE,
                 Delhi Technological University
-                Faculty Advisor`
+                Faculty Advisor`,
+                img: ""
             }, {
                 name: `Madan`,
                 rank: `Professor`,
@@ -444,6 +445,11 @@ app.get("/curr-members", (req, res) => {
                 img: "anand.jpg",
                 lkdn: "https://www.linkedin.com/in/anand-singh-719a421a6",
                 mail: "anandsingh16898@gmail.com"
+            },{
+                name: "Sampreet Bharali",
+                img: "Sampreet Bharali.jpg",
+                lkdn: "https://www.linkedin.com/in/sampreet-bharali-5b71a81a0",
+                mail: "sampreetbharali@gmail.com"
             },{
               name: "Aryan Chaudhary",
               img: "aryan chaudhary.jpg",
