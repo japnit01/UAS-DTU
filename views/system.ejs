@@ -28,6 +28,9 @@
       </script>
       
       <style>
+        body {
+          font-family: 'Nunito Sans', sans-serif !important; /* common font */
+        }
         .main-wrapper{
           position: relative;
         }
@@ -58,25 +61,25 @@
           color: white;
         }
     
-          ::-webkit-scrollbar {
-        width: 10px;
+    
+        ::-webkit-scrollbar {
+        display: none;
       }
     
       /* Track */
       ::-webkit-scrollbar-track {
-        background: black;
+       display: none;
       }
     
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888;
+           display: none;
       }
     
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    
+        display: none;
+      }    
       
       </style>
       
@@ -93,7 +96,7 @@
     
           <ul class="sidenav #000000 black" style="color:#eeeeee;" id="slide_out">
             <!-- <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li> -->
-            <li><a href="" style="width:100%; height: 100%;"><img src="whitelogo2.png" alt="" style="transform:scale(2); width:100%; height: 100%; margin-top: 36px;"></a></li>
+            <li><a href="/" style="width:100%; height: 100%;"><img src="whitelogo2.png" alt="" style="transform:scale(2); width:100%; height: 100%; margin-top: 36px;"></a></li>
             <hr style="margin: 1rem 2.5rem 1rem 2rem;">
             <li><a href="/" class="active"><i class="material-icons">home</i> Home</a></li>
             <li><a href="/about-us"><i class="material-icons">info</i> About Us</a></li>
@@ -115,7 +118,7 @@
             <li><a href="/achievements"><i class="material-icons">emoji_events</i> Achievements</a></li>
             <li><a href="/upcoming_events" class="active"><i class="material-icons">home</i> Upcoming Events</a></li>
             <li><a href="/upcoming-projects" class="active"><i class="material-icons">precision_manufacturing</i> Upcoming Projects</a></li>
-            <li><a href="#footer"><i class="material-icons">email</i> Contact Us</a></li>
+            <!-- <li><a href="#section1"><i class="material-icons">email</i> Contact Us</a></li> -->
           </ul>
         </div>  
 
