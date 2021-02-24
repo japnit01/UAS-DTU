@@ -8,14 +8,18 @@
     }
 
     .about_inner{
-        margin-top:10rem;
-        margin-bottom:5rem;
+        margin-top:7vh;
+        margin-bottom:8vh;
     }
 
     .capabilities{
-        margin-left: 2rem;
+        margin-left: 1vw;
     }
 
+    .capabilities li{
+        list-style-type: circle !important;
+        padding-bottom: 1.5vh;
+    }
     .about div{
         font-weight: 700;
         font-size: 4vw;
@@ -23,23 +27,63 @@
 
     .para1{
         margin:0 9vw;
-        padding-top: 3vh;
-        font-size: 3vh;
+        padding-top: 1.5vw;
+        font-size: 1.5vw;
         text-align: center;
     }
 
-    .jumbotron{
+    .team_capabilities
+    {
+        margin:0 9vw;
+        padding-top: 15vh;
+    }
+
+    @media only screen and (min-width: 600px){
+        .jumbotron{
         background-image: url("Team_UAS_DTU_Drone_Olympics_Win.jpeg");
         height: 100vh;
         background-position: 0 -10%;
         background-size: cover;
+        }
+
+        .team_capabilities{
+            font-size: 1.5vw;
+        }
     }
 
-    .team_capabilities
+    @media only screen and (max-width: 600px){
+        .jumbotron{
+        background-image: url("Team_UAS_DTU_Drone_Olympics_Win.jpeg");
+        height: 50vh;
+        background-position: 0 -10%;
+        background-size: cover;
+        }
+
+        .para1{
+            font-size: 3vw;
+        }
+
+        .team_capabilities{
+            font-size: 3vw;
+        }
+
+        .teamheading{
+            font-size: 5vw; 
+            font-weight: 600;
+        }
+    }
+
 </style>
 
 <div class="jumbotron">
+    <div class="hide-on-med-and-down" style="font-size: 8vw;  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;  -webkit-text-fill-color:transparent; font-weight:600; padding-top: 20vh; text-align: center; letter-spacing: 3px;">
+        UAS DTU
+    </div>
+</div>
 
+<div class="heading hide-on-large-only" style="text-align: center; letter-spacing: 3px; padding-top: 10vh; font-size: 8vw; font-weight: 700;">
+    UAS DTU
 </div>
 
 <div class="container">
@@ -50,22 +94,22 @@
             </div>
         </div>
     <div class="team_capabilities">
-        <div>
+        <div class="teamheading" style="text-align: center; font-family: 'Quicksand', sans-serif;">
             Team Capabilities
         </div>
 
-        <div class="capabilities">
+        <div class="capabilities" style="padding-top: 3vh; font-family: 'Quicksand', sans-serif;">
             <ul>
-                <li>•	High performance customized UAS platform integration for mission specific requirements. </li>
-                <li>•	UAV swarm technology—the ability of drones to autonomously make decisions based on shared information.</li>
-                <li>•	ISTAR - Intelligence, Surveillance, Target Acquisition, and Reconnaissance for military and civilian application.</li>
-                <li>•	Humanitarian Assistance and Disaster Relief (HADR) using special drones. </li>
-                <li>•	Cost and time effective area search and infrastructure inspection operation by employing    swarm of UAVs.</li>
-                <li>•	Autonomous take-off, waypoint navigation and landing for both fixed-wings and multi-rotors, capable of out of sight navigation.</li>
-                <li>•	Simultaneous Localization and Mapping (SLAM) technology has been implemented on drones.</li>
-                <li>•	Made drones capable of human detection and geotagging.</li>
-                <li>•	Made drones which are used for navigation or way-finding in areas denied of GPS.</li>
-                <li>•	Manufactured UAVs which include localisation of a target and tracking it in 3D system, obstacle detection and avoidance</li>
+                <li>High performance customized UAS platform integration for mission specific requirements. </li>
+                <li>UAV swarm technology—the ability of drones to autonomously make decisions based on shared information.</li>
+                <li>ISTAR - Intelligence, Surveillance, Target Acquisition, and Reconnaissance for military and civilian application.</li>
+                <li>Humanitarian Assistance and Disaster Relief (HADR) using special drones. </li>
+                <li>Cost and time effective area search and infrastructure inspection operation by employing    swarm of UAVs.</li>
+                <li>Autonomous take-off, waypoint navigation and landing for both fixed-wings and multi-rotors, capable of out of sight navigation.</li>
+                <li>Simultaneous Localization and Mapping (SLAM) technology has been implemented on drones.</li>
+                <li>Made drones capable of human detection and geotagging.</li>
+                <li>Made drones which are used for navigation or way-finding in areas denied of GPS.</li>
+                <li>Manufactured UAVs which include localisation of a target and tracking it in 3D system, obstacle detection and avoidance</li>
             </ul>
         </div>
     </div>
