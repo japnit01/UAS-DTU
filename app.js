@@ -241,7 +241,7 @@ app.get("/mentors", (req, res) => {
                 desc: `Asst. Professor,
                 Department of Physics,
                 Delhi Technological University`,
-                img: "m jayasimhadri.png"
+                img: "m jayasimhadri.jpg"
             },{
                 name: "Dr. K. Srinivas",
                 rank: "Dy. Director",
@@ -253,14 +253,14 @@ app.get("/mentors", (req, res) => {
                 name: "Dr. Rajesh Yadav",
                 rank: "Asst. Director",
                 desc: `Software`,
-                img: "rajesh yadav.png"
+                img: "rajesh yadav.jpg"
             }, {
                 name: `Dr. Vikas Gupta`,
                 rank: `Asst. Director`,
                 desc: `Asst. Professor,
                 USME,
                 Delhi Technological University`,
-                img: "vikas.png"
+                img: "vikas.jpg"
                 }
             ],
             "ProjAdv": [
