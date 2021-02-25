@@ -23,6 +23,14 @@
         font-weight: 500;
         font-family: 'DM Sans', sans-serif;
     }
+
+    @media only screen and (max-width: 993px){
+        .img {
+            width: 100px !important;
+            padding: 10px !important;
+            margin-top: 10px;
+        }
+    }
 </style>
 
 <div class="main">
@@ -30,8 +38,8 @@
         <h3 style="margin: 60px 0; font-family: 'Crete Round', sans-serif; text-align: center;">Achievements</h3>
         <% achievs.map(a => { %>
             <div class="row hide-on-med-only">
-                <p><img src="<%= a.img %>" class="col l4 s4" style="padding: 5px 7vw; color: #000;"></p>
-                <p class="col l3 s8" style="font-size: 20px; color: #555 !important;"><b><%= a.name %></b></p>
+                <p><img src="<%= a.img %>" class="col l4 s6 img" style="padding: 5px 7vw; color: #000;"></p>
+                <p class="col l3 s6" style="font-size: 20px; color: #555 !important;"><b><%= a.name %></b></p>
                 <p class="col l5 s12" style="color: #777 !important;"><%= a.desc %></p>
             </div>
             <div class="row show-on-medium" style="display: none;">
