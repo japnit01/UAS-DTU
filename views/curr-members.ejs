@@ -53,7 +53,7 @@
     }
 </style>
 
-<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+<div class="main" style="background-color: #eeeeee; padding: 40px;">
     <div class="outer">
         <% members["4-yrs"].map(m => { %>
         <div class="box1" style="width: 23%; min-width: 200px; margin: 80px 30px 30px 30px;">
@@ -62,8 +62,12 @@
                 <div style="padding-top: 10px; color: #777;"><%= m.rank %></div>
                 <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin: 4px 0 17px 0;"><%= m.name %></p>
                 <div>
-                    <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                    
+                    <% if(m.lkdn) { %>
+                    <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                    <% } %>
+                    <% if(m.mail) { %>    
                     <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -74,13 +78,33 @@
 
     <div class="outer">
         <% members["3-yrs"].map(m => { %>
-        <div class="box2" style="width: 40%; min-width: 400px;">
+        <div class="box2 hide-on-small-only" style="width: 40%; min-width: 400px;">
             <img src="members/<%= m.img %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
             <div>
                 <span style="font-size: 17px; color: #777;"><%= m.rank %></span><br>
                 <span style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin: 4px 0 17px 0; display: inline-block;"><%= m.name %></span><br>
-                <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                    
+                <% if(m.lkdn) { %>
+                <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                <% } %>    
+                <% if(m.mail) { %>
                 <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                <% } %>
+            </div>
+        </div>
+        
+        <div class="box1 show-on-small" style="width: 23%; min-width: 200px; margin: 80px 30px 30px 30px;display: none;">
+            <div class="ctn" style="transform: translateY(-20%);">
+                <img src="members/<%= m.img %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                <div style="padding-top: 10px; color: #777;"><%= m.rank %></div>
+                <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin: 4px 0 17px 0;"><%= m.name %></p>
+                <div>
+                    <% if(m.lkdn) { %>
+                    <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                    <% } %>
+                    <% if(m.mail) { %>    
+                    <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                    <% } %>
+                </div>
             </div>
         </div>
         <% }) %>
@@ -90,13 +114,17 @@
 
     <div class="outer">
         <% members["software"].map(m => { %>
-        <div class="box1" style="width: 20%; min-width: 150px;">
+        <div class="box1" style="width: 20%; min-width: 180px; padding: 0 20px;">
             <div class="ctn" style="transform: translateY(-20%);">
                  <img src="members/<%= m.img %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                 <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;"><%= m.name %></p>
                 <div>
-                    <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                    
+                    <% if(m.lkdn) { %>
+                    <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                    <% } %>
+                    <% if(m.mail) { %>    
                     <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -107,13 +135,17 @@
 
     <div class="outer">
         <% members["avionics"].map(m => { %>
-            <div class="box1" style="width: 20%; min-width: 150px;">
+            <div class="box1" style="width: 20%; min-width: 180px; padding: 0 20px;">
                 <div class="ctn" style="transform: translateY(-20%);">
                     <img src="members/<%= m.img %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                     <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;"><%= m.name %></p>
                     <div>
-                        <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                    
+                        <% if(m.lkdn) { %>
+                        <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                        <% } %>
+                        <% if(m.mail) { %>    
                         <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                        <% } %>
                     </div>
                 </div>
             </div>
@@ -125,13 +157,17 @@
 
     <div class="outer">
         <% members["airframe"].map(m => { %>
-            <div class="box1" style="width: 20%; min-width: 150px;">
+            <div class="box1" style="width: 20%; min-width: 180px; padding: 0 20px;">
                 <div class="ctn" style="transform: translateY(-20%);">
                     <img src="members/<%= m.img %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                     <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;"><%= m.name %></p>
                     <div>
-                        <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                    
+                        <% if(m.lkdn) { %>
+                        <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                        <% } %>
+                        <% if(m.mail) { %>    
                         <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                        <% } %>
                     </div>
                 </div>
             </div>
@@ -143,13 +179,17 @@
 
     <div class="outer">
         <% members["corporate"].map(m => { %>
-            <div class="box1" style="width: 20%; min-width: 150px;">
+            <div class="box1" style="width: 20%; min-width: 180px; padding: 0 20px;">
                 <div class="ctn" style="transform: translateY(-20%);">
                     <img src="members/<%= m.img %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                     <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;"><%= m.name %></p>
                     <div>
-                        <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                    
+                        <% if(m.lkdn) { %>
+                        <a href="<%= m.lkdn %>" target="blank"><i class="fab fa-linkedin"></i></i></a>                
+                        <% } %>
+                        <% if(m.mail) { %>    
                         <a href="mailto:<%= m.mail %>" target="blank"><i class="fab fa-google"></i></i></a>
+                        <% } %>
                     </div>
                 </div>
             </div>

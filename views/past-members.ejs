@@ -16,7 +16,7 @@
     }
     .box1 {
         width: 25%;
-        min-width: 300px;
+        min-width: 200px;
         flex-shrink: 1;
         text-align: center;
         margin: 50px 30px;
@@ -41,14 +41,21 @@
     #contact {
         z-index: 1;
     }
-
     .selected_yr{
         border-bottom: 3px solid white;
-        
+    }
+    
+    @media only screen and (max-width: 993px){
+        .sidebar a {
+            padding: 0.85rem 20px !important;
+        }
+        .years h3 {
+            font-size: 30px;
+        }
     }
 </style>
 
-<div class="main" style="background-color: #eeeeee; padding: 40px 0;">
+<div class="main" style="background-color: #eeeeee; padding: 40px;">
     <div class="outer">
         <div class="sidebar">
             <a>2020</a>

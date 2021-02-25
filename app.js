@@ -363,7 +363,7 @@ app.get("/curr-members", (req, res) => {
               name: "Nitin Sharma",
               rank: "Airframes Head",
               img: "nitin.jpg",
-              lkdn: "LinkedIn.com/in/nitin-sharma81464817a/",
+              lkdn: "https://www.linkedin.com/in/nitin-sharma81464817a/",
               mail: "nitin571999@gmail.com"
             },
             {
@@ -702,14 +702,14 @@ app.get("/upcoming-projects", (req, res) => {
                 img: "arm-uav.jpg",
                 desc: "The crew aims to develop an AI-based integrated system between the UAV and Robotic Arm, capable of object detection, tracking, and pick and drop capabilities (i.e collecting objects from water surfaces, twisting a doorknob, plucking fruit from trees, etc.)"
             },
-            {
-                name: "Morphed Wing UAVs",
-                img: "morph-wing2.jpg",
-                desc: "Morphing wings are changeable wing applications developed as a result of the need for a different lift and drag forces in various phases of the flight of aircraft. It is an application that enables altering the wing aspect ratio, wing airfoil, wing airfoil camber ratio, wing reference area etc. UAVs with morphing wing technology; may increase its payload ratio, may achieve a shorter take-off distance, may land and stop in shorter distance, may take-off where runway clearance is limited, has more efficient altitude change at lower engine RPMs, can obtain higher cruise speeds, may decrease its stall speed, may lower its drag if necessary, thus; saving energy and time."
-            },
+            // {
+            //     name: "Morphed Wing UAVs",
+            //     img: "design-fabric-morph2.jpeg",
+            //     desc: "Morphing wings are changeable wing applications developed as a result of the need for a different lift and drag forces in various phases of the flight of aircraft. It is an application that enables altering the wing aspect ratio, wing airfoil, wing airfoil camber ratio, wing reference area etc. UAVs with morphing wing technology; may increase its payload ratio, may achieve a shorter take-off distance, may land and stop in shorter distance, may take-off where runway clearance is limited, has more efficient altitude change at lower engine RPMs, can obtain higher cruise speeds, may decrease its stall speed, may lower its drag if necessary, thus; saving energy and time."
+            // },
             {
                 name: "Designing and Fabrication of fixed-wing UAV having Morphing Characteristics",
-                img: "design-fabric-morph2.jpeg",
+                img: "morph-wing2.jpg",
                 desc: "We are working towards equipping our UAVs with Morphing characteristic designs in the near future. The wings of these UAVs would be having the provision to change their shape seamlessly in order to provide optimal performance according to external conditions and also to adapt themselves for mission-specific tasks in order to achieve optimum endurance."
             },
             {
