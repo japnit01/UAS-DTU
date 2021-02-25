@@ -160,7 +160,7 @@
   } 
 
   .upcoming_events h2{
-    color:white
+    color:white;
   }
 
   .upcoming_events{
@@ -190,8 +190,8 @@
     }
     
 .upcoming_events a{
- height:9vh; 
- width: 25vh; 
+ /* height:9vh; 
+ width: 25vh;  */
  border:2px solid white; 
  background-color: transparent; 
  font-weight: 600; 
@@ -297,8 +297,8 @@
     }
 
       #parallax a{
-      height:9vh; 
-      width: 25vh; 
+      /* height:9vh; 
+      width: 25vh;  */
       border:2px solid white; 
       background-color: transparent; 
       font-weight: 600; 
@@ -330,6 +330,7 @@
 .Achievements a:hover {
   color: #555;
   background-color:#fff;
+      text-shadow: none;
 }
  @media only screen and (max-width: 600px){
    .Achievements{
@@ -340,10 +341,14 @@
 
 .Achievements a{
    border:2px solid white; 
-   background-color: transparent; 
+   background-color: #0003; 
    font-weight: 600; 
    color: white;
    top: 67vh;
+      height: auto !important;
+      line-height: 100%;
+      padding: 15px 30px !important;
+      text-shadow: 0 0 4px #000;
  }
 
  .Achievements .achdiv{
@@ -364,6 +369,7 @@
 .Achievements a:hover {
   color: #555;
   background-color:#fff;
+      text-shadow: none;
 }
  }
 
@@ -382,12 +388,15 @@
    }
 
    .Achievements a{
-      height:9vh; 
-      width: 25vh; 
+      /* height:9vh; 
+      width: 25vh;  */
       border:2px solid white; 
-      background-color: transparent; 
+      background-color: #0003; 
       font-weight: 600; 
       color: white;
+      height: auto !important;
+      padding: 0 40px !important;
+      text-shadow: 0 0 4px #000;
     }
    }
 
@@ -505,7 +514,7 @@
         <div class="section fp-auto-height" style="height:100vh;">
             <div id="parallax">
               <video loop data-autoplay muted width="100%" height="100%">
-                <source src="swarm.mp4" type="video/mp4">
+                <source src="/swarm.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <div class="systemcontent">
