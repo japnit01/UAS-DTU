@@ -213,24 +213,27 @@
     .upcoming_events{
       height: 100vh;
       width: 100%;
-      text-align: left; 
-      padding: 6rem 0 0 5rem;
+      text-align: center;
     }
 
     .upcoming_events h2{
-      padding-top: 30%;  
+      width: 100%;
+      text-align: center;
       font-size: 2.5rem;
       font-weight: 600;
       white-space: nowrap;
+      position: absolute;
+      margin: 0;
+      top: 50vh;
     }
 
-    .upcoming_events a{
-      height:9vh; 
-      width: 25vh; 
+
+    .upcoming_events a{ 
       border:2px solid white; 
       background-color: transparent; 
       font-weight: 600; 
       color: white; 
+      margin-top: 67vh;
   }
 
   .upcoming_events a:hover {
@@ -241,12 +244,6 @@
 
     #parallax{
       position: relative;
-    }
-
-    #parallax .systemcontent{
-      position: absolute;
-      text-align: left; 
-      padding: 6rem 0 0 5rem;
     }
 
     #parallax video{
@@ -261,12 +258,21 @@
         height: 100vh !important;
       }
       #parallax h2 {
-        padding-top: 30%;
-        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+        font-size: 8vw;
+        position: absolute;
+        top: 45vh;
       }
+
+      #parallax .systembutton{
+        width: 100%;
+        text-align: center;
+
+      }
+
       #parallax a {
-        height:9vh; 
-        width: 25vh; 
+        margin-top: 67vh;
         border:2px solid white; 
         background-color: transparent; 
         font-weight: 600; 
@@ -282,14 +288,23 @@
       #parallax{
         height: 100vh !important;
       }
-#parallax a{
- height:9vh; 
- width: 25vh; 
- border:2px solid white; 
- background-color: transparent; 
- font-weight: 600; 
- color: white;
-}
+      
+      
+    #parallax .systemcontent{
+      position: absolute;
+      text-align: left; 
+      padding: 6rem 0 0 5rem;
+    }
+
+      #parallax a{
+      height:9vh; 
+      width: 25vh; 
+      border:2px solid white; 
+      background-color: transparent; 
+      font-weight: 600; 
+      color: white;
+      }
+      
       #parallax a:hover {
         color: #555;
         background-color:#fff;
@@ -318,24 +333,32 @@
 }
  @media only screen and (max-width: 600px){
    .Achievements{
-      text-align: left; 
-      padding: 4.5rem 0 0 5rem;
+      text-align: center; 
       height: 100vh;
    }
 
+
 .Achievements a{
-   height:9vh; 
-   width: 25vh; 
    border:2px solid white; 
    background-color: transparent; 
    font-weight: 600; 
    color: white;
+   top: 67vh;
+ }
+
+ .Achievements .achdiv{
+   width: 100%;
+   text-align: center;
+   display: inline-block;
  }
 
    .Achievements h4{
-     font-size:2rem;
+     position: absolute;
+     text-align: center;
+     width: 100%;
+     font-size:8vw;
      font-weight: 600;
-     padding-top: 27%;
+     top: 50vh;
    }
 
 .Achievements a:hover {
@@ -473,8 +496,8 @@
         </div>
         <div class="section fp-auto-height" style="height:100vh;">        
             <div class="Achievements">
-                <div>
                 <h4>Achievements</h4>
+                <div class="achdiv">
                 <a class="waves-effect waves-light btn-large" href="/achievements">LOOK IN</a>
                 </div>
             </div>
@@ -486,8 +509,10 @@
                 Your browser does not support the video tag.
               </video>
               <div class="systemcontent">
-              <h2 style="text-align: left;">Systems</h2>
+              <h2>Systems</h2>
+              <div class="systembutton">
               <a class="waves-effect waves-light btn-large" href="/systems">FLY IN</a>
+              </div>
               </div>
             </div>
         </div>
