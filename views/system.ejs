@@ -24,6 +24,77 @@
 </head>
 
 <body>
+    
+  <style>
+    .loader{
+      position:fixed;
+      top:0;
+      left:0;
+      z-index: 99;
+      width:100%;
+      height: 100%;
+      background-color: #ebebeb;
+      text-align: center;
+    }
+
+  #fp-nav{
+    z-index: 80 !important;
+  }
+
+@media only screen and (min-width: 600px){
+  .loader>img{
+      width: 30vw;
+      margin-top: 25vh;
+      margin-right: 7vw;
+    }
+}
+
+@media only screen and (max-width: 600px){
+  .loader>img{
+      width: 60vw;
+      margin-top: 25vh;
+      margin-right: 7vw;
+    }
+}
+
+.hidden{
+  animation:fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+  100%{
+    opacity:0;
+    visibility: hidden;
+  }
+}
+
+  </style>
+  <div class="loader">
+    <img src="l.png" alt="">
+    <div class="preloader-wrapper active" style="display: block; margin:2vh auto;">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load",function(){
+      const loader = document.querySelector(".loader");
+
+      loader.className += " hidden";
+    });
+  </script>
+
+
+
 
     <script>    
         document.addEventListener('DOMContentLoaded', function() {
@@ -46,7 +117,7 @@
     
         .menu-holder{
           position: fixed;
-          z-index: 9999;
+          z-index: 50;
         } 
     
         nav {
@@ -58,6 +129,10 @@
           }
         }
         
+        .sidenav-overlay{
+         z-index: 0;
+        }
+
         .sidenav {
           line-height: 1rem;
         }
@@ -133,99 +208,164 @@
 
 
 
-    <style>
+        <style>
 
         
-        .main{
-            position: relative;
+            .main{
+                position: relative;
+            }
+            
+            .system_row{
+                margin-bottom: 0;
+            }        
+            .row .content{
+                padding: 12vh 20vh 0 12vh;
+                color: black;
+                font-weight: 400;
+                font-family: 'Titillium Web', sans-serif;
+            }
+            
+            .heading{
+             font-weight: 600;
+             font-family: 'Lato', sans-serif;
+            }
+            
+            .para{
+                padding:4vh 0 0 0 ;
+                font-size: 18px;
+            }
+            
+            .img_container{
+                background-color: #ebebeb;
+            }
+            
+            .img1{
+                padding: 20vh 0 0 0;
+                text-align: center;
+            }
+            .img img, .img1 img {
+                width: 100%;
+            }
+            
+            .img_container1
+            {
+                background-color:#ebebeb;
+            }
+            
+            .row .content1{
+                color: black;
+                font-weight: 400;
+            }
+            .tesla-btn {
+                border: none;
+                background-color: #111;
+                height: 40px;
+                border-radius: 20px;
+                font-size: 12px;
+                padding: 10px 80px;
+                margin-top: 50px;
+                margin-bottom: 80px;
+                font-weight: 600;
+                display: inline-block;
+                cursor: pointer !important;
+                color: #eee;
+            }
+            
+        @media only screen and (min-width: 600px){
+            .img_container{
+                padding:0 0 0 0;
+                height: 100vh;
+            }
+
+            .para{
+                padding:4vh 0 0 0 ;
+                font-size: 18px;
+            }
+
+            .img_container1
+            {
+                background-color:#ebebeb;
+                padding:0 0 0 0;
+                height: 100vh;
+            }
+
+            .img1{
+                padding: 20vh 0 0 0;
+                text-align: center;
+            }
+
+            .img
+            { 
+                padding: 20vh 0 0 0;
+                text-align: center;
+            } 
+
+            .row .content{
+                padding: 12vh 20vh 0 12vh;
+                color: black;
+                font-weight: 400;
+                font-family: 'Titillium Web', sans-serif;
+            }
+
+            .row .content1{
+                padding: 12vh 6vw 0 10vw;
+                font-family: 'Titillium Web', sans-serif
+            }    
+
+            .row .content1{
+                padding: 12vh 6vw 0 10vw;
+            }       
         }
-        
-        .system_row{
-            margin-bottom: 0;
-        }        
-        .row .content{
-            padding: 12vh 20vh 0 12vh;
-            text-align: justify;
-            color: black;
-            font-weight: 400;
-            font-family: 'Titillium Web', sans-serif;
-            order:2
+
+        @media only screen and (max-width: 600px){
+            .img_container{
+                background-color: #ebebeb;
+                height: auto;
+            }
+
+            .para{
+                padding:0vh 0 0 0 ;
+                font-size: 18px;
+            }
+
+            .row .content{
+                margin-top: 2vh;
+                padding: 0vh 8vw 0 8vw;
+                font-family: 'Titillium Web', sans-serif;
+                text-align: center;
+            }
+
+            .row .content1{
+                margin-top: 2vh;
+                padding: 0vh 8vw 0 8vw;
+                font-family: 'Titillium Web', sans-serif;
+                text-align: center;
+            }
+
+            .img_container1
+            {
+                background-color:#ebebeb;
+                height: auto;
+            }
+
+            .img1{
+                padding:8vh 0 8vh 0;
+                text-align: center;
+            }
+
+            .heading{
+                text-align: center;
+            }
+
+            .img
+            { 
+                padding:8vh 0 8vh 0;
+                text-align: center;
+            }
         }
-        
-        .heading{
-         font-weight: 600;
-         font-family: 'Lato', sans-serif;
-        }
-        
-        .para{
-            padding:4vh 0 0 0 ;
-            font-size: 18px;
-        }
-        .img
-        { 
-            padding: 19vh 0 0 0;
-            text-align: center;
-        }
-        
-        .img_container{
-            background-color: #ebebeb;
-            padding:0 0 0 0;
-            height: 100vh;
-            order: 1;
-        }
-        
-        .img1{
-            padding: 20vh 0 0 0;
-            text-align: center;
-        }
-        .img img, .img1 img {
-            width: 100%;
-        }
-        
-        .img_container1
-        {
-            background-color:#ebebeb;
-            padding:0 0 0 0;
-            height: 100vh;
-            order: 1;
-        }
-        
-        .row .content1{
-            padding: 12vh 12vh 0 20vh;
-            text-align: justify;
-            color: black;
-            font-weight: 400;
-            order:2;
-        }
-        .hexbtn {
-            border-image: url(hexagon.png) 10 fill;
-            background: none;
-            font-size: 52px;
-            padding: 10px 24px 15px 24px;
-            font-weight: thin;
-            cursor: pointer;
-        }
-        .hexbtn div {
-            font-family: monospace;
-            transform: scale(1, 1.2);
-        }
-        .tesla-btn {
-            border: none;
-            background-color: #111;
-            height: 40px;
-            border-radius: 20px;
-            font-size: 12px;
-            padding: 10px 80px;
-            margin-top: 50px;
-            margin-bottom: 80px;
-            font-weight: 600;
-            display: inline-block;
-            cursor: pointer !important;
-            color: #eee;
-        }
-        
-        </style>
-        
+
+            </style>
+            
         <div class="main">
             <div class="castor">
                 <div class="row system_row">
