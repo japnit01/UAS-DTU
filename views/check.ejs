@@ -234,7 +234,7 @@
   } 
 
   .upcoming_events h2{
-    color:white;
+    color:#fff;
   }
 
   .upcoming_events{
@@ -245,7 +245,7 @@
   @media only screen and (min-width:600px){
     .upcoming_events{
       height: 100vh; 
-      width:100%;
+      width:100%;    
     padding-left: 12vh;
      }
 
@@ -266,14 +266,17 @@
 .upcoming_events a{
  /* height:9vh; 
  width: 25vh;  */
- border:2px solid white; 
- background-color: transparent; 
+ border:2px solid #fff; 
+ background-color: #0003; 
  font-weight: 600; 
- color: white;
+ color: #fff;
+      height: auto !important;
+      line-height: 100%;
+      padding: 15px 40px !important;
 }
 
   .upcoming_events a:hover {
-        color: #555;
+        color: #000;
         background-color:#fff;
       }
   .upcoming_events .inner_events{
@@ -303,15 +306,19 @@
 
 
     .upcoming_events a{ 
-      border:2px solid white; 
-      background-color: transparent; 
+      border:2px solid #fff; 
+      background-color: #0003; 
       font-weight: 600; 
-      color: white; 
-      margin-top: 67vh;
+      color: #fff; 
+      margin-top: 64vh;
+      height: auto !important;
+      line-height: 100%;
+      padding: 10px 30px !important;
+      font-size: 12px;
   }
 
   .upcoming_events a:hover {
-        color: #555;
+        color: #000;
         background-color:#fff;
       }
   }
@@ -346,11 +353,15 @@
       }
 
       #parallax a {
-        margin-top: 67vh;
+        margin-top: 64vh;
         border:2px solid white; 
-        background-color: transparent; 
+        background-color: #0008; 
         font-weight: 600; 
         color: white;
+      height: auto !important;
+      line-height: 100%;
+      padding: 10px 30px !important;
+      font-size: 12px;
       }
       #parallax a:hover {
         color: #555;
@@ -374,9 +385,12 @@
       /* height:9vh; 
       width: 25vh;  */
       border:2px solid white; 
-      background-color: transparent; 
+      background-color: #0008; 
       font-weight: 600; 
       color: white;
+      height: auto !important;
+      line-height: 100%;
+      padding: 15px 40px !important;
       }
       
       #parallax a:hover {
@@ -404,7 +418,6 @@
 .Achievements a:hover {
   color: #555;
   background-color:#fff;
-      text-shadow: none;
 }
  @media only screen and (max-width: 600px){
    .Achievements{
@@ -415,14 +428,14 @@
 
 .Achievements a{
    border:2px solid white; 
-   background-color: #0003; 
+   background-color: #0008; 
    font-weight: 600; 
    color: white;
-   top: 67vh;
+   top: 66vh;
       height: auto !important;
       line-height: 100%;
-      padding: 15px 30px !important;
-      text-shadow: 0 0 4px #000;
+      padding: 10px 30px !important;
+      font-size: 12px;
  }
 
  .Achievements .achdiv{
@@ -438,12 +451,12 @@
      font-size:8vw;
      font-weight: 600;
      top: 50vh;
+     text-shadow: 0 0 7px #0008;
    }
 
 .Achievements a:hover {
   color: #555;
   background-color:#fff;
-      text-shadow: none;
 }
  }
 
@@ -459,18 +472,19 @@
      font-weight: 600;
      margin-top: 0;
      padding: 27vh 4vh 0 0;
+     text-shadow: 0 0 7px #0008;
    }
 
    .Achievements a{
       /* height:9vh; 
       width: 25vh;  */
       border:2px solid white; 
-      background-color: #0003; 
+      background-color: #0008; 
       font-weight: 600; 
       color: white;
       height: auto !important;
-      padding: 0 40px !important;
-      text-shadow: 0 0 4px #000;
+      line-height: 100%;
+      padding: 15px 40px !important;
     }
    }
 
@@ -503,6 +517,32 @@
       width: 100%;
     }
   }
+
+  .nav-links a {
+    font-family: 'Nunito Sans', sans-serif !important;
+    /* text-shadow: 0 0 10px #000b; */
+    font-size: 18px !important;
+    padding: 25px 0 10px 0 !important;
+    margin: 0 15px !important;
+    line-height: 100%;
+  }
+  .nav-links a:hover {
+    background-color: transparent !important;
+  }
+
+.un::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  margin-top: 8px;
+  transition: 300ms;
+}
+
+.un:hover::after {
+  width: 100%;
+}
     
 </style>
 
@@ -526,17 +566,20 @@
   
   <div class="main-wrapper">
     <div class="menu-holder" style="width:100%" id="menu">
-      <nav  class="transparent"  style="height: 5rem; box-shadow: none;"> 
+      <nav  class="transparent"  style="height: 5rem; box-shadow: none; background-color: #0004 !important;"> 
           <!-- navbar content here  --> 
           <div class="nav-wrapper">
               <ul class="left">
                 <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0.5rem;"><i class="material-icons" style="font-size:2rem;  color: white;">menu</i></a></li>
               </ul>
               <ul>
-                <li style="height: 5rem; width: 5rem;"><a href="/" style="height: 5rem; width: 7rem; transform: translate(-4rem,-5.2rem);"><img src="/whitelogo.png" alt="" style="margin-left: 0; height: 12rem; width: 22rem;"></a></li>
+                <li style="height: 5rem; width: 5rem;"><a href="/" style="height: 5rem; width: 7rem; transform: translate(0,-0.5rem);"><img src="/whitelogo3.png" alt="" style="margin-left: 0; height: 6rem;"></a></li>
               </ul>
-              <ul class="hide-on-med-and-down right" style="padding-right: 12rem; margin-top: -0.3rem;">
-                <li> <span style="font-size:2rem; font-weight: 600; font-family: 'Nunito Sans', sans-serif;">Unmanned Aerial System </span> <div style="margin-top:-2.8rem; padding-left:0.2rem; font-size: 1.2rem;">Delhi   Technological   University</div></li>
+              <ul class="hide-on-med-and-down right nav-links" style="padding-right: 12rem;">
+                <li><a href="/solutions" class="un">Solutions</a></li>
+                <li><a href="/systems" class="un">Hangar</a></li>
+                <li><a href="/upcoming-projects" class="un">Upcoming Projects</a></li>
+                <li><a href="#contact" class="un">Contact Us</a></li>
               </ul>
           </div>
       </nav>
@@ -545,7 +588,7 @@
         <!-- <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li> -->
         <li><a href="/" style="width:100%; height: 100%;"><img src="whitelogo2.png" alt="" style="transform:scale(2); width:100%; height: 100%; margin-top: 36px;"></a></li>
         <hr style="margin: 1rem 2.5rem 1rem 2rem;">
-        <li><a href="/" class="active"><i class="material-icons">home</i> Home</a></li>
+        <!-- <li><a href="/" class="active"><i class="material-icons">home</i> Home</a></li> -->
         <li><a href="/about-us"><i class="material-icons">info</i> About Us</a></li>
         <li><a href="/systems"><i class="material-icons">airplanemode_active</i> Hangar</a></li>
         <li>
@@ -565,7 +608,8 @@
         <li><a href="/achievements"><i class="material-icons">emoji_events</i> Achievements</a></li>
         <li><a href="/upcoming_events" class="active"><i class="material-icons">home</i> Upcoming Events</a></li>
         <li><a href="/upcoming-projects" class="active"><i class="material-icons">precision_manufacturing</i> Upcoming Projects</a></li>
-        <!-- <li><a href="#section1"><i class="material-icons">email</i> Contact Us</a></li> -->
+        <li><a href="/solutions" class="active"><i class="material-icons">settings</i> Solutions</a></li>
+        <li><a href="#section1"><i class="material-icons">email</i> Contact Us</a></li>
       </ul>
     </div>  
 
@@ -581,7 +625,7 @@
             <div class="Achievements">
                 <h4>Achievements</h4>
                 <div class="achdiv">
-                <a class="waves-effect waves-light btn-large" href="/achievements">LOOK IN</a>
+                <a class="waves-effect waves-light btn-large" href="/achievements">LEARN MORE</a>
                 </div>
             </div>
         </div>
@@ -639,8 +683,8 @@
                             </div>
                            
                             <div class="col l7 m12 s12" id="g_map">
-                                <h4 class="map">Map help:</h4>
-                                <div style="overflow: hidden;">
+                                <h4 class="map hide-on-small-only">Map help:</h4>
+                                <div style="overflow: hidden; margin-top: 5px;">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.027403024808!2d77.11499645105123!3d28.748598782285452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01270184b37d%3A0x31d84edc5468f356!2sUAS+DTU!5e0!3m2!1sen!2sin!4v1516991611933" frameborder="0" style="border:0; width:35rem;height:10.5rem;" ></iframe>
                                 </div>
                                     
