@@ -14,6 +14,9 @@ app.get("/",(req,res)=>{
     res.render("check");
 });
 
+// app.get("/favicon.ico", (req, res) => {
+//     res.sendFile(__dirname + "/icon.png");
+// });
 
 app.get("/home",(req,res)=>{
     res.render("home");
