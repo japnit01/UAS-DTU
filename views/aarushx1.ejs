@@ -19,62 +19,82 @@
     height:100vh;
 }
  
- .specs .row{
+.specs .row{
     color:white; 
     position: relative; 
-    top:85%;
     text-align: center;
-    display: inline-block;
-}
-
-.specs .row .col{
-    display: inline-block;
 }
 
 @media only screen and (min-width: 600px){
     .specs .row .col{
         padding: 0 10vh 0 10vh;
     }
+
+    .specs .row{
+        width: 70%;
+        top:80%;
+    }
+
+    .num{
+        font-size: 2.5vw;
+    }
+
+    .col3 .head{
+        white-space: nowrap;
+    }
+
+    .head{
+        font-size: 1.5vw;
+    }
 }
 
 @media only screen and (max-width: 600px){
     .specs .row .col{
-        padding: 0 2vw 0 2vw !important;
+        padding: 0 1vw 0 1vw  !important;
+        height: 100%;
     }
 
-    
     .specs .row{
-        width:100vw
+        width:100vw;
+        top: 86%;
+    }
+
+    .num{
+        font-size: 5vw;
+    }
+
+    .head{
+        font-size: 3vw;
     }
 }
 
 </style>
  
 
-    <div class="specs" style="text-align: center; margin:0; overflow: hidden; vertical-align:bottom; position: relative; text-align: center; vertical-align: bottom;">
+    <div class="specs" style="text-align: center; margin:0vh 0 0 0; overflow: hidden; vertical-align:bottom; position: relative; text-align: center; vertical-align: bottom;">
         <div class="row" data-aos="fade-up" data-aos-offset="20" data-aos-once="false" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true"> 
-            <div class="col l4 m4 s4" style="border-right: 2px white solid;">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
+            <div class="col l4 m4 s4 col1" style="border-right: 2px white solid;">
+                <div class="num" style="font-weight: 500; color: white; text-align: center;"> 
                     10Km
                 </div>
-                <div style="font-size: 3vh; font-weight: 500; color: white; text-align: center; ">
+                <div class="head" style="font-weight: 500; color: white; text-align: center; ">
                     Range
                 </div>
             </div>
-            <div class="col l4 m4 s3" style="border-right: 2px white solid;">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
+            <div class="col l4 m4 s4 col2" style="border-right: 2px white solid;">
+                <div class="num" style="font-weight: 500; white-space: nowrap; color: white; text-align: center;"> 
                     70km/h
                 </div>
-               <div style="font-size: 3vh; font-weight: 500; white-space: nowrap; color: white; text-align: center; ">
+               <div class="head" style="font-weight: 500; white-space: nowrap; color: white; text-align: center; ">
                    Cruise Speed
                </div>
            </div>
-           <div class="col l4 m4 s5">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;">
+           <div class="col l4 m4 s4 col3" >
+                <div class="num" style="font-weight: 500; color: white; text-align: center;">
                     <i class="fas fa-cloud-sun-rain"></i>
                 </div>
-                <div style="font-size: 3vh; display:inline-block; white-space:  nowrap; font-weight: 500; color: white; text-align: center; ">
+                <div class="head" style="width:auto; font-weight: 500; color: white; text-align: center; ">
                     All weather adaptable
                 </div>
             </div>
@@ -90,7 +110,7 @@
 
 <div class="row eachsysrow">
     <div class="col l6 s12" style="text-align: center;">
-        <h2 style="font-weight: 800; color: #b29c71; font-size: 8vw;">AARUSH X1</h2>
+        <h2 style="font-weight: 800; white-space: nowrap; color: #b29c71; font-size: 8vw;">AARUSH X1</h2>
     </div>
     <div class="col l6 s12">    
         <p style="font-weight: 500; padding:3vh 0 8vh 8vh; font-size: medium;">Alongside being equipped with a Fully Autonomous Navigation System, the aircraft is also capable of undertaking High-Definition Real-Time Surveillance with a 40x Zoom Capability. Besides these, the system can also cruise at remarkable speeds of upto 70 kmph and has a take-off and landing height of upto 260 ft. It was developed in association with Lockheed Martin.</p>
@@ -134,6 +154,17 @@
         padding-bottom: 1vh;
         color: black;
     }
+
+    @media only screen and (min-width: 993px){
+        .div3col{
+        margin-left: 15vw;
+     }
+
+     .div3col1{
+        width: 20vw;
+     }
+    }
+
     @media only screen and (max-width: 993px){
         .specsctn {
             padding-left: 7vw !important;
@@ -141,6 +172,15 @@
 
         .aqspecs img{
             width: 100%;
+        }
+
+        .div3col
+        {
+            margin-left: 13vw;
+        }
+
+        .div3col1{
+        width: 35vw;
         }
     }
 </style>
@@ -156,7 +196,7 @@
                     AarushX1 <span style="font-weight: 400;">Specs</span>
                 </div>
                 <div class="div2col" style="display: inline-flex;">
-                    <div style="width: 35vh;">
+                    <div class="div3col1">
                         <ul>
                             <li>
                                 <span class="itsspec">Range</span>

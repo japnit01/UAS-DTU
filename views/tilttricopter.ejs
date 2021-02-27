@@ -19,66 +19,105 @@
     height:100vh;
 }
  
- .specs .row{
+.specs .row{
     color:white; 
     position: relative; 
-    top:85%;
     text-align: center;
-    display: inline-block;
-}
-
-.specs .row .col{
-    display: inline-block;
 }
 
 @media only screen and (min-width: 600px){
     .specs .row .col{
         padding: 0 10vh 0 10vh;
     }
+
+    .specs .row{
+        width: 70%;
+        top:80%;
+    }
+
+    .num{
+        font-size: 2.5vw;
+    }
+
+    .col3 .head{
+        white-space: nowrap;
+    }
+
+    .head{
+        font-size: 1.5vw;
+    }
+
+    .specs{
+    background-image: url("tilt tricopter.PNG");
+    background-position: center;
+    background-size: cover;
+    width: 100%;  
+    height:100vh;
+}
 }
 
 @media only screen and (max-width: 600px){
     .specs .row .col{
-        padding: 0 2vh 0 2vh;
+        padding: 0 1vw 0 1vw  !important;
+        height: 100%;
     }
 
     .specs .row{
-        width:100vw
+        width:100vw;
+        top: 86%;
     }
+
+    .num{
+        font-size: 5vw;
+    }
+
+    .head{
+        font-size: 3vw;
+    }
+
+    .specs{
+    background-image: url("tilt tricopter.PNG");
+    background-position:65% 0%;
+    background-size: cover;
+    width: 100%;  
+    height:100vh;
+}
 }
 
 </style>
  
 
-    <div class="specs" style="text-align: center; margin:0; overflow: hidden; vertical-align:bottom; position: relative; text-align: center; vertical-align: bottom;">
+    <div class="specs" style="text-align: center; margin:0vh 0 0 0; overflow: hidden; vertical-align:bottom; position: relative; text-align: center; vertical-align: bottom;">
         <div class="row" data-aos="fade-up" data-aos-offset="20" data-aos-once="false" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true"> 
-            <div class="col l4 m4 s4" style="border-right: 2px white solid;">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
+            <div class="col l4 m4 s4 col1" style="border-right: 2px white solid;">
+                <div class="num" style="font-weight: 500; color: white; text-align: center;"> 
                     100Km+
                 </div>
-                <div style="font-size: 3vh; font-weight: 500; color: white; text-align: center; ">
+                <div class="head" style="font-weight: 500; color: white; text-align: center; ">
                     Range
                 </div>
             </div>
-            <div class="col l4 m4 s3" style="border-right: 2px white solid;">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
+            <div class="col l4 m4 s4 col2" style="border-right: 2px white solid;">
+                <div class="num" style="font-weight: 500; white-space: nowrap; color: white; text-align: center;"> 
                     90km/h
                 </div>
-               <div style="font-size: 3vh; font-weight: 500; color: white; white-space:nowrap;  text-align: center; ">
+               <div class="head" style="font-weight: 500; white-space: nowrap; color: white; text-align: center; ">
                    Cruise Speed
                </div>
            </div>
-           <div class="col l4 m4 s5">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;">
+           <div class="col l4 m4 s4 col3" >
+                <div class="num" style="font-weight: 500; color: white; text-align: center;">
                     <i class="fas fa-cloud-sun-rain"></i>
                 </div>
-                <div style="font-size: 3vh; display:inline-block; white-space:  nowrap; font-weight: 500; color: white; text-align: center; ">
+                <div class="head" style="width:auto; font-weight: 500; color: white; text-align: center; ">
                     All weather adaptable
                 </div>
             </div>
         </div>  
     </div>
+
+</style>
 
 <style>
 
@@ -89,7 +128,7 @@
 
 <div class="row eachsysrow">
     <div class="col l6 s12" style="text-align: center;">
-        <h2 style="font-weight: 800; color: #b29c71;  font-size: 8vw;">TILT TRICOPTER</h2>
+        <h2 style="font-weight: 800; color: #b29c71;  white-space:nowrap; font-size: 6vw;">TILT TRICOPTER</h2>
     </div>
     <div class="col l6 s12">    
         <p style="font-weight: 500; padding:3vh 0 8vh 8vh; font-size: medium;">Cruising at 90 km/h, the system has a considerably High Range complimented by a phenomenal endurance of up to 85 minutes. The design contains a Tilt-Rotor for increased efficiency and making the model lightweight. Another highlights of this system include it’s Swarming Capabilities.</p>
@@ -133,6 +172,14 @@
         {
             margin-left: 15vw;
         }
+
+        .div3col1{
+            width: 20vw;
+        }
+
+        .specsheading{
+            font-size: 4vw;
+        }
     }
 
     @media only screen and (max-width: 993px){
@@ -146,7 +193,15 @@
 
         .div3col
         {
-            margin-left: 15vw;
+            margin-left: 13vw;
+        }
+
+        .div3col1{
+        width: 35vw;
+        }
+
+        .specsheading{
+            font-size: 8vw;
         }
     }
 </style>
@@ -157,11 +212,11 @@
                 <img src="System Images without Background - Copy\tilt_tricopter.png" alt="">
             </div>
             <div class="col l6 m12 s12 specsctn" data-aos="fade-up" data-aos-offset="20" data-aos-easing="ease-in-out" data-aos-mirror="true"data-aos-once="false" data-aos-duration="1000" style="padding-top: 20vh;">
-                <div class="specsheading" style="font-size: 6vh; font-weight: 700; margin-bottom: 5vh;">
+                <div class="specsheading" style="font-weight: 700; margin-bottom: 5vh;">
                     Tilt Tricopter <span style="font-weight: 400;">Specs</span>
                 </div>
                 <div class="div2col" style="display: inline-flex;">
-                    <div>
+                    <div class="div3col1">
                         <ul>
                             <li>
                                 <span class="itsspec">Range</span>
