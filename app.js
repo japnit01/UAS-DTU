@@ -22,6 +22,10 @@ app.get("/home",(req,res)=>{
     res.render("home");
 });
 
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
 app.get("/about-us",(req,res)=>{
     res.render("about");
 });
@@ -643,6 +647,16 @@ app.get("/hangar",(req,res)=>{
 app.get('/achievements', (req, res) => {
     res.render('achievements', {
         achievs: [
+            {
+                name: "UAV Design Challenge PEC 2020",
+                desc: "Our team was successfully able to design and fabricate a Unconventional UAV which was able to meet the required criterion. Our team secured 1st position.",
+                img: "uav-design.jpeg"
+            },
+            {
+                name: "IAF Mehar Baba Prize 2019",
+                desc: "The team has qualified for Phase 3, securing a position amongst the Top 5 and Development Budget of INR 2.5 crores after beating giant UAV startups and companies.",
+                img: "iaf.png"  
+            },
             {
             name: "Drone Olympics 2019",
             desc: "The team ranked 1st in the Formation Flying category and was awarded a cash prize of Rs.5 Lakh",
