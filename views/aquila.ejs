@@ -1,5 +1,77 @@
 <%-include("partials/header")%>
 
+
+<style>
+    .loader{
+      position:fixed;
+      top:0;
+      left:0;
+      z-index: 99;
+      width:100%;
+      height: 100%;
+      background-color: #ebebeb;
+      text-align: center;
+    }
+
+  #fp-nav{
+    z-index: 80 !important;
+  }
+
+
+@media only screen and (min-width: 600px){
+  .loader>img{
+      width: 30vw;
+      margin-top: 25vh;
+      margin-right: 7vw;
+    }
+}
+
+@media only screen and (max-width: 600px){
+  .loader>img{
+      width: 60vw;
+      margin-top: 25vh;
+      margin-right: 7vw;
+    }
+}
+
+.hidden{
+  animation:fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+  100%{
+    opacity:0;
+    visibility: hidden;
+  }
+}
+
+  </style>
+  <div class="loader">
+    <img src="l.png" alt="">
+    <div class="preloader-wrapper active" style="display: block; margin:2vh auto;">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load",function(){
+      const loader = document.querySelector(".loader");
+
+      loader.className += " hidden";
+    });
+  </script>
+
+
+
 <style>    
     nav.transparent {
     position: fixed !important;
@@ -18,16 +90,24 @@
     display: block;
 }
 
-.videocontainer video{
-  object-fit: cover;  
-  width: 100%;
-  height: 100vh;
-  object-position:bottom ;
+@media only screen and (min-width: 600px){
+    .videocontainer video{
+        object-fit: cover;  
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .videocontainer video{
+        object-fit: cover;  
+        width: 100%;
+    }
 }
 </style>
 
 <div class="videocontainer">
-    <video loop muted autoplay controls width="100%" height="100%">
+    <video loop muted autoplay controls>
         <source src="AQUILA160.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>    
@@ -66,28 +146,49 @@
  .specs .row{
     color:white; 
     position: relative; 
-    top:85%;
     text-align: center;
-    display: inline-block;
-}
-
-.specs .row .col{
-    display: inline-block;
 }
 
 @media only screen and (min-width: 600px){
     .specs .row .col{
         padding: 0 10vh 0 10vh;
     }
+
+    .specs .row{
+        width: 70%;
+        top:80%;
+    }
+
+    .num{
+        font-size: 2.5vw;
+    }
+
+    .col3 .head{
+        white-space: nowrap;
+    }
+
+    .head{
+        font-size: 1.5vw;
+    }
 }
 
 @media only screen and (max-width: 600px){
     .specs .row .col{
-        padding: 0 2vw 0 2vw  !important;
+        padding: 0 1vw 0 1vw  !important;
+        height: 100%;
     }
 
     .specs .row{
-        width:100vw
+        width:100vw;
+        top: 86%;
+    }
+
+    .num{
+        font-size: 5vw;
+    }
+
+    .head{
+        font-size: 3vw;
     }
 }
 
@@ -98,26 +199,26 @@
         <div class="row" data-aos="fade-up" data-aos-offset="20" data-aos-once="false" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true"> 
             <div class="col l4 m4 s4 col1" style="border-right: 2px white solid;">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;"> 
+                <div class="num" style="font-weight: 500; color: white; text-align: center;"> 
                     100Km+
                 </div>
-                <div style="font-size: 3vh; font-weight: 500; color: white; text-align: center; ">
+                <div class="head" style="font-weight: 500; color: white; text-align: center; ">
                     Range
                 </div>
             </div>
-            <div class="col l4 m4 s3 col2" style="border-right: 2px white solid;">
-                <div style="font-size: 5vh; font-weight: 500; white-space: nowrap; color: white; text-align: center;"> 
+            <div class="col l4 m4 s4 col2" style="border-right: 2px white solid;">
+                <div class="num" style="font-weight: 500; white-space: nowrap; color: white; text-align: center;"> 
                     14m/s
                 </div>
-               <div style="font-size: 3vh; font-weight: 500; color: white; text-align: center; ">
+               <div class="head" style="font-weight: 500; white-space: nowrap; color: white; text-align: center; ">
                    Cruise Speed
                </div>
            </div>
-           <div class="col l4 m4 s5 col3" style="display: inline-block;">
-                <div style="font-size: 5vh; font-weight: 500; color: white; text-align: center;">
+           <div class="col l4 m4 s4 col3" >
+                <div class="num" style="font-weight: 500; color: white; text-align: center;">
                     <i class="fas fa-cloud-sun-rain"></i>
                 </div>
-                <div style="font-size: 3vh; width:auto; white-space:  nowrap; font-weight: 500; color: white; text-align: center; ">
+                <div class="head" style="width:auto; font-weight: 500; color: white; text-align: center; ">
                     All weather adaptable
                 </div>
             </div>
@@ -195,7 +296,7 @@
         @media only screen and (max-width: 600px){
             .row .payloadcontent{
                 position: absolute;
-                top: 58%;
+                top: 55%;
             }
 
             .payloadcontent .content{
@@ -360,6 +461,10 @@
         background-color: black;
     }
 
+    .aquila160img>img{
+        width:100%
+    }
+
     .div2col li span{
         display: block;
     }
@@ -388,6 +493,12 @@
     @media only screen and (max-width: 993px){
         .specsctn {
             padding-left: 7vw !important;
+        }
+    }
+
+    @media only screen and (max-width: 993px){
+        .specsctn {
+            padding-left: 5vw !important;
         }
     }
 </style>
@@ -425,7 +536,7 @@
                     <div class="div3col">
                         <ul>
                             <li>
-                                <span class="itsspec">Gross Take Off Weight</span>
+                                <span class="itsspec" style="white-space: nowrap;">Gross Take Off Weight</span>
                                 <span>22Kg</span>
                             </li>
                             <li>
