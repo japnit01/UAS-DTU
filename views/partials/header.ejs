@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
@@ -97,31 +98,61 @@
   ::-webkit-scrollbar-thumb:hover {
     display: none;
   }
+
+.nav-links a {
+  font-family: 'Nunito Sans', sans-serif !important;
+  /* text-shadow: 0 0 10px #000b; */
+  font-size: 15px !important;
+  padding: 20px 0 10px 0 !important;
+  margin: 0 15px !important;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.nav-wrapper a:hover {
+  background-color: transparent !important;
+}
+
+.un::after {
+content: '';
+width: 0px;
+height: 1.5px;
+display: block;
+background: #fff;
+margin-top: 4px;
+transition: 300ms;
+}
+
+.un:hover::after {
+width: 100%;
+}
   
   </style>
   
   <div class="main-wrapper">
     <div class="menu-holder" style="width:100%" id="menu">
-      <nav  class="transparent"  style="height: 5rem; box-shadow: none;"> 
+      <nav  class="transparent"  style="height: 4rem; box-shadow: none; background-color: #0004;"> 
           <!-- navbar content here  --> 
           <div class="nav-wrapper">
               <ul class="left">
-                <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0.5rem;"><i class="material-icons" style="font-size:2rem;  color: white;">menu</i></a></li>
+                <li><a href="#" class=" sidenav-trigger" data-target="slide_out" style="padding-top: 0rem;"><i class="material-icons" style="font-size:1.5rem;  color: white;">menu</i></a></li>
               </ul>
               <ul>
-                <li style="height: 5rem; width: 5rem;"><a href="/" style="height: 5rem; width: 7rem; transform: translate(-4rem,-5.2rem);"><img src="/whitelogo.png" alt="" style="margin-left: 0; height: 12rem; width: 22rem;"></a></li>
+                <li style="height: 5rem; width: 5rem;"><a href="/" style="height: 5rem; width: 7rem; transform: translate(0, 0.5rem);"><img src="/whitelogo3.png" alt="" style="margin-left: 0; height: 3rem;"></a></li>
               </ul>
-              <ul class="hide-on-med-and-down right" style="padding-right: 12rem; margin-top: -0.3rem;">
-                <li> <span style="font-size:2rem; font-weight: 600; font-family: 'Nunito Sans', sans-serif;">Unmanned Aerial System </span> <div style="margin-top:-2.8rem; padding-left:0.2rem; font-size: 1.2rem;">Delhi   Technological   University</div></li>
+              <ul class="hide-on-med-and-down right nav-links" style="padding-right: 12rem;">
+                <li><a href="/solutions" class="un">Solutions</a></li>
+                <li><a href="/systems" class="un">Hangar</a></li>
+                <li><a href="/upcoming-projects" class="un">Upcoming Projects</a></li>
+                <li><a href="/contact" class="un">Contact Us</a></li>
               </ul>
           </div>
       </nav>
 
       <ul class="sidenav #000000 black" style="color:#eeeeee;" id="slide_out">
         <!-- <li><a class="sidenav-close" href="#!"><i class="material-icons" style="font-size:2rem;">menu</i></a></li> -->
-        <li><a href="/" style="width:100%; height: 100%;"><img src="/whitelogo2.png" alt="" style="transform:scale(2); width:100%; height: 100%; margin-top: 36px;"></a></li>
+        <li><a href="/" style="width:100%; height: 100%;"><img src="whitelogo2.png" alt="" style="transform:scale(2); width:100%; height: 100%; margin-top: 36px;"></a></li>
         <hr style="margin: 1rem 2.5rem 1rem 2rem;">
-        <li><a href="/" class="active"><i class="material-icons">home</i> Home</a></li>
+        <!-- <li><a href="/" class="active"><i class="material-icons">home</i> Home</a></li> -->
         <li><a href="/about-us"><i class="material-icons">info</i> About Us</a></li>
         <li><a href="/systems"><i class="material-icons">airplanemode_active</i> Hangar</a></li>
         <li>
@@ -141,6 +172,7 @@
         <li><a href="/achievements"><i class="material-icons">emoji_events</i> Achievements</a></li>
         <li><a href="/upcoming_events" class="active"><i class="material-icons">home</i> Upcoming Events</a></li>
         <li><a href="/upcoming-projects" class="active"><i class="material-icons">precision_manufacturing</i> Upcoming Projects</a></li>
-        <!-- <li><a href="#section1"><i class="material-icons">email</i> Contact Us</a></li> -->
+        <li><a href="/solutions" class="active"><i class="material-icons">settings</i> Solutions</a></li>
+        <li><a href="#section1"><i class="material-icons">email</i> Contact Us</a></li>
       </ul>
     </div>  
