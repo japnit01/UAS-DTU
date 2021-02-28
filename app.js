@@ -703,7 +703,7 @@ app.get("/upcoming-projects", (req, res) => {
             },
             {
                 name: "GPS Spoofing",
-                img: "gps-spoofing4.png",
+                img: "gps-spoofing4.jpg",
                 desc: "GPS spoofing is an attack in which a radio transmitter located near the target is used to interfere with a legitimate GPS signals. The attacker can transmit no data at all or could transmit inaccurate coordinates. Recently, GPS spoofing attack on UAV has attracted widespread research interests due to the vulnerability of civilian GPS signal. GPS spoofing ensures that the UAV remains undetected and this is useful for UAV used in defense."
             },
             {
@@ -733,7 +733,7 @@ app.get("/upcoming-projects", (req, res) => {
             },
             {
                 name: "Monocular depth estimation",
-                img: "monocular.png",
+                img: "monocular.jpg",
                 desc: "A fundamental challenge in the field of computer vision, Monocular Depth Estimation has potential applications in the field of robotics, scene understanding, 3D reconstruction and medical imaging. Countering the high memory requirement and computational time of binocular view setup, the concept of Monocular Depth Estimation uses Deep learning to infer scene geometry from 2D images. The aim is to predict the depth value of each pixel, given only a single RGB image as input."
             },
             {
