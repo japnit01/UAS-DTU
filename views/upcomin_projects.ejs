@@ -267,6 +267,10 @@ width: 100%;
         flex-direction: row;
     }
 
+    .upcoming_events .col{
+        padding:0 4vw;
+    }
+
     .card-panel h5{
         font-size: 20px;
         color:  #000;
@@ -278,9 +282,6 @@ width: 100%;
         color: #555;
         font-family: 'DM Sans', sans-serif;
         padding: 0 20px;
-    }
-    .card-out {
-        padding: 20px 40px !important;
     }
 
     .card-panel {
@@ -295,99 +296,30 @@ width: 100%;
     }
 
 </style>
+<%var count=0%>
 
 <div class="main">
   <!-- Card Container -->
-  <div class="row card-container">
-    <div class="card-out col l4 s12 m4">
-    <div class="card-panel">
-      <img src="/fpga.jpeg" width="100%">
-      <h5 id="title">FPGA based UAV Controller</h5>
-      <p id="description">A Field Programmable Gate Array (FPGA) is essentially a re-programmable integrated circuit in the form of a chip. In contrast to a traditional Central Processing Unit (CPU), an FPGA can carry out various basic operations at the same time without competing for resources. Due to its reliability and flexibility, the FPGA is particularly suited for use in critical and high risk applications.</p>
+  <% projs.map(p => { %>
+  <%if(count%3==0){%>  
+  <div class="row card-container upcoming_events">
+  <%}%>
+  <div class="col l4 m4 s12">     
+    <div class="card">
+        <div class="card-image">
+          <img src="/<%= p.img %>">
+        </div>
+        <div class="card-content">
+            <div class="card-title"><%= p.name %></div>  
+          <p><%= p.desc %></p>
+        </div>
+      </div>
     </div>
-    </div>
-    
-    <div class="card-out col l4 s12 m4">
-    <div class="card-panel">
-      <img src="/agg_control4.jpg" width="100%">
-      <h5 id="title">Aggressive Control of UAVs: Passing through constrained spaces</h5>
-      <p id="description">UAVs capable of aggressive maneuvres to conduct task-specific activities (i.e throwing a ball through a window) along with the ability to fly across heavily constrained and restricted areas (i.e In between circular loops, tree branches, and cable wires). These applications of minimum snap trajectory control will be highly beneficial in conducting multi-variant tasks and rapid collection of Intelligence, Surveillance, and Reconnaissance (ISR) information in the urban areas.</p>
-    </div>
-    </div>
-    
-    <div class="card-out col l4 s12 m4">
-    <div class="card-panel">
-      <img src="/gps-spoofing4.jpg" width="100%">
-      <h5 id="title">GPS Spoofing</h5>
-      <p id="description">GPS spoofing is an attack in which a radio transmitter located near the target is used to interfere with a legitimate GPS signals. The attacker can transmit no data at all or could transmit inaccurate coordinates. Recently, GPS spoofing attack on UAV has attracted widespread research interests due to the vulnerability of civilian GPS signal. GPS spoofing ensures that the UAV remains undetected and this is useful for UAV used in defense.</p>
-    </div>
-    </div>
+    <%if((count+1)%3==0){%>   
   </div>
-    
-  <div class="row card-container">
-    <div class="card-out col l4 s12 m4">
-    <div class="card-panel">
-      <img src="/agg_control3.jpg" width="100%">
-      <h5 id="title">Aggressive Control of UAVs</h5>
-      <p id="description">Well-developed features of autonomous UAV control include Aggressive Control which ensures that the UAV is able to maneuver testing conditions like constrained spaces, between trees etc. with no or  minimum human intervention. This technology is especially important since it is projected that the no of drones is going to increase exponentially and drones should be able to control themselves automatically.</p>
-    </div>
-    </div>
-    
-    <div class="card-out col l4 s12 m4">
-        <div class="card-panel">
-      <img src="/arm-ugv2.jpg" width="100%">
-      <h5 id="title">Mechanical Arm on UGV</h5>
-      <p id="description">A 6DOF Robotic Arm and Unmanned Ground Vehicle (UGV) setup is being developed to revolutionize the field of soft-crop agriculture by automating crop harvesting and management interventions through implementation of visual-based crop detection deep learning models on the setup. The team is further looking forward to implement its existing swarming capabilities to create a swarm of crop harvesting UGV in the later stages of the project.</p>
-    </div>
-    </div>
-    
-    <div class="card-out col l4 s12 m4">
-        <div class="card-panel">
-      <img src="/arm-uav.jpg" width="100%">
-      <h5 id="title">Mechanical Arm on UAV</h5>
-      <p id="description">The crew aims to develop an AI-based integrated system between the UAV and Robotic Arm, capable of object detection, tracking, and pick and drop capabilities (i.e collecting objects from water surfaces, twisting a doorknob, plucking fruit from trees, etc.)</p>
-    </div>
-    </div>
-
-  </div>
-    
-  <div class="row card-container">
-    <div class="card-out col l4 s12 m4">
-    <div class="card-panel">
-      <img src="/morph-wing2.jpg" width="100%">
-      <h5 id="title">Designing and Fabrication of fixed-wing UAV having Morphing Characteristics</h5>
-      <p id="description">We are working towards equipping our UAVs with Morphing characteristic designs in the near future. The wings of these UAVs would be having the provision to change their shape seamlessly in order to provide optimal performance according to external conditions and also to adapt themselves for mission-specific tasks in order to achieve optimum endurance.</p>
-    </div>
-    </div>
-    
-    <div class="card-out col l4 s12 m4">
-        <div class="card-panel">
-      <img src="/monocular.jpg" width="100%">
-      <h5 id="title">Monocular depth estimation</h5>
-      <p id="description">A fundamental challenge in the field of computer vision, Monocular Depth Estimation has potential applications in the field of robotics, scene understanding, 3D reconstruction and medical imaging. Countering the high memory requirement and computational time of binocular view setup, the concept of Monocular Depth Estimation uses Deep learning to infer scene geometry from 2D images. The aim is to predict the depth value of each pixel, given only a single RGB image as input.</p>
-    </div>
-    </div>
-    
-    <div class="card-out col l4 s12 m4">
-        <div class="card-panel">
-      <img src="/multitracker-opencv2.jpg" width="100%">
-      <h5 id="title">Object Tracking</h5>
-      <p id="description">Object tracking is the task of taking an initial set of object detections, creating a unique ID for each of the initial detections, and then tracking each of the objects as they move around frames in a video, maintaining the ID assignment.</p>
-    </div>
-    </div>
-
-  </div>
-    
-  <div class="row card-container">
-    <div class="card-out col l4 s12 m4">
-    <div class="card-panel">
-      <img src="/object2.jpeg" width="100%">
-      <h5 id="title">Object Detection and Classification</h5>
-      <p id="description">Object Detection and classification are at the core of ample applications like scene understanding and analysis, video surveillance, robotics and self-driving systems. Deep Learning techniques based on convolutional neural network have been employed to perform visual recognitions tasks such as image classification, localization and detection.</p>
-    </div>
-</div>
-    
-  </div>
+  <%}%>
+  <%count = count+1;%>
+  <%})%>
 </div>
 
 <script>
