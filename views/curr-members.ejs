@@ -10,6 +10,10 @@
         top: 0;
         background-color: #000000 !important;
     }
+    .main {
+        background-color: #eeeeee;
+        padding: 40px;
+    }
     .outer {
         display: flex;
         display: -moz-flex;
@@ -51,9 +55,17 @@
     .fa-linkedin {
         color: #08f;
     }
+    @media only screen and (max-width: 600px) {
+        .main {
+            padding: 30px;
+        }
+        .box1 {
+            width: 100% !important;
+        }
+    }
 </style>
 
-<div class="main" style="background-color: #eeeeee; padding: 40px;">
+<div class="main">
     <div class="outer">
         <% members["4-yrs"].map(m => { %>
         <div class="box1" style="width: 23%; min-width: 200px; margin: 80px 30px 30px 30px;">

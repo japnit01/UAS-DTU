@@ -35,23 +35,16 @@ app.get("/past-members", (req, res) => {
         members: {
             "2k20": [
                 {
-                    name: "Aniket Gupta",
-                    rank: "Project Manager",
-                    src: "aniketgupta.png"
+                    name: "Pranjal Shiva",
+                    rank: "Project Manager"
                 },{
-                    name: "Saurav Ahlawat",
-                    rank: "Student Advisor",
-                    src: "saurav sir.jpg"
+                    name: "Rupanjali Kukal",
+                    rank: "Student Advisor"
                 },{
-                    name: "Joyraj Bhowmick",
-                    rank: "Student Advisor",
-                    src: "joyraj.jpg"
+                    name: "Nikhil Sethi",
+                    rank: "Student Advisor"
                 },{
-                    name: "Anurag Singh",
-                    rank: "Student Advisor",
-                    src: "anurag singh sir.jpg"
-                },{
-                    name: "Parth Mahajan",
+                    name: "Anuj Agrawal",
                     rank: "Student Advisor"
                 }
             ],
@@ -348,9 +341,9 @@ app.get("/curr-members", (req, res) => {
             },{
                 name: "Parth Mahajan",
                 rank: "Student Advisor",
-                img: "default.jpg",
-                lkdn: "",
-                mail: ""
+                img: "parth.jpg",
+                lkdn: "https://www.linkedin.com/in/parth-mahajan-6118705b",
+                mail: "mahajanparth0@gmail.com"
             }],
             "3-yrs": [{
               name: "Aman Virmani",
@@ -519,6 +512,11 @@ app.get("/curr-members", (req, res) => {
                 img: "aryan chaudhary.jpg",
                 lkdn: "",
                 mail: "aryanchaudhary8608@gmail.com"
+              },{
+                  name: "Armaan",
+                  img: "armaan.jpg",
+                  lkdn: "https://www.linkedin.com/in/armaan-armaan-6ab951205",
+                  mail: "armaan.naman@gmail.com"
               }],
             "corporate": [{
               name: "Avyay Gupta",

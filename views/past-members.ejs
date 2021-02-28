@@ -26,31 +26,38 @@
     }
     .sidebar a{
         display:block;
-        padding: 0.85rem 2rem;
         color: white;
         font-family: 'Crete Round', serif;
         cursor: pointer;
+        padding: 13px 0;
+        box-sizing: border-box;
     }
-    .sidebar{
+    .sidebar {
         background-color: #444;
         position:fixed;
         top:4rem;
         left:0;
         bottom:0;
+        text-align: center;
+        width: 7vw;
     }
     #contact {
         z-index: 1;
     }
-    .selected_yr{
+    .selected_yr {
         border-bottom: 3px solid white;
     }
     
-    @media only screen and (max-width: 993px){
-        .sidebar a {
-            padding: 0.85rem 20px !important;
-        }
+    @media only screen and (max-width: 993px) {
         .years h3 {
             font-size: 30px;
+            margin-left: 10vw;
+        }
+        .years {
+            margin-left: 10vw;
+        }
+        .sidebar {
+            width: 20vw;
         }
     }
 </style>
