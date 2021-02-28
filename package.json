@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "ejs": "",
-    "express": "",
-    "owl.carousel": "^2.3.4"
+    "express": ""
   },
   "engines": {
     "node": "12.x"
