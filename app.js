@@ -236,19 +236,19 @@ app.get("/mentors", (req, res) => {
                 Delhi Technological University`,
                 img: "raghava sir.png"
             },{
-                name: "Dr. M Jayasimhadri",
-                rank: "Asst. Director",
-                desc: `Asst. Professor,
-                Department of Physics,
-                Delhi Technological University`,
-                img: "m jayasimhadri.jpg"
-            },{
                 name: "Dr. K. Srinivas",
                 rank: "Dy. Director",
                 desc: `Asst. Professor,
                 Mechanical Department,
                 Delhi Technological University`,
                 img: "k srinivas.png"
+            },{
+                name: "Dr. M Jayasimhadri",
+                rank: "Asst. Director",
+                desc: `Asst. Professor,
+                Department of Physics,
+                Delhi Technological University`,
+                img: "m jayasimhadri.jpg"
             },{
                 name: "Dr. Rajesh Yadav",
                 rank: "Asst. Director",
@@ -321,17 +321,17 @@ app.get("/curr-members", (req, res) => {
               lkdn: "http://www.linkedin.com/in/aniket-gupta-1490bb165",
               mail: "aniket.tcdav@gmail.com"
             },{
-                name: "Saurav Ahlawat",
-                rank: "Student Advisor",
-                img: "saurav sir.jpg",
-                lkdn: "https://www.linkedin.com/in/sauravahlawat",
-                mail: "sauravahlawat2000@gmail.com"
-            },{
                 name: "Joyraj Bhowmick",
                 rank: "Student Advisor",
                 img: "joyraj.jpg",
                 lkdn: "https://www.linkedin.com/in/joyraj-bhowmick-2703a8158",
                 mail: "joyrajbhowmick1998@gmail.com"
+            },{
+                name: "Saurav Ahlawat",
+                rank: "Student Advisor",
+                img: "saurav sir.jpg",
+                lkdn: "https://www.linkedin.com/in/sauravahlawat",
+                mail: "sauravahlawat2000@gmail.com"
             },{
               name: "Anurag Singh",
               rank: "Student Advisor",
