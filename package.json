@@ -17,7 +17,5 @@
     "node": "12.x"
   },
   "license": "DTU",
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
-  }
+  "devDependencies": {}
 }
