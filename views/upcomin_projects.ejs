@@ -12,6 +12,10 @@
         flex-direction: row;
     }
 
+    .upcoming_events .col{
+        padding:0 4vw;
+    }
+
     .card-panel h5{
         font-size: 20px;
         color:  #000;
@@ -23,13 +27,6 @@
         color: #555;
         font-family: 'DM Sans', sans-serif;
         padding: 0 20px;
-    }
-    div.card-container {
-        -moz-column-width: 20rem;
-        -webkit-column-width: 20rem;
-        -moz-column-gap: 5rem;
-        -webkit-column-gap: 5rem;
-        margin: 0 3rem;
     }
 
     .card-panel {
@@ -46,18 +43,30 @@
     }
 
 </style>
+<%var count=0%>
 
 <div class="main">
   <!-- Card Container -->
-  <div class="row card-container">
-    <% projs.map(p => { %>
-    <div class="card-panel">
-      <img src="/<%= p.img %>" width="100%">
-      <h5 id="title"><%= p.name %></h5>
-      <p id="description"><%= p.desc %></p>
+  <% projs.map(p => { %>
+  <%if(count%3==0){%>  
+  <div class="row card-container upcoming_events">
+  <%}%>
+  <div class="col l4 m4 s12">     
+    <div class="card">
+        <div class="card-image">
+          <img src="/<%= p.img %>">
+        </div>
+        <div class="card-content">
+            <div class="card-title"><%= p.name %></div>  
+          <p><%= p.desc %></p>
+        </div>
+      </div>
     </div>
-    <% }) %>
+    <%if((count+1)%3==0){%>   
   </div>
+  <%}%>
+  <%count = count+1;%>
+  <%})%>
 </div>
 
 <script>
