@@ -1,10 +1,13 @@
 {
   "name": "UAS-DTU",
   "version": "0.0.1",
+  "homepage":"https://japnit01.github.io/UAS-DTU/",
   "description": "A simple Node app with SQLite as a database management system, instantly up and running.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "ejs": "",
