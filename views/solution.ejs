@@ -1,0 +1,47 @@
+<%-include("partials/header")%>
+
+
+<style>
+nav.transparent {
+    position: fixed !important;
+    top: 0;
+    background-color: #000000 !important;
+}
+
+.soljumbo{
+    background-image: url("solutionbackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.soljumbo .inner{
+    padding-top: 30vh;
+}
+
+.inner .heading{
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.inner .para{
+    margin-top:15vh ;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+</style>
+
+
+<div class="soljumbo">
+    <div class="inner container">
+        <div class="heading" style="color: white; text-align: center;">Drone Solutions</div>
+        <div class="para" style="color: white; text-align: center;">Controlled and consice solutions tailored to your personal needs</div>
+    </div> 
+    
+    <div class="solutions">
+
+    </div>
+</div>
+
+<%-include("partials/footer")%>

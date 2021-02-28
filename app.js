@@ -30,6 +30,10 @@ app.get("/about-us",(req,res)=>{
     res.render("about");
 });
 
+app.get("/solutions",(req,res)=>{
+    res.render("solution");
+});
+
 app.get("/past-members", (req, res) => {
     res.render("past-members", {
         members: {
