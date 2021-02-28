@@ -39,23 +39,16 @@ app.get("/past-members", (req, res) => {
         members: {
             "2k20": [
                 {
-                    name: "Aniket Gupta",
-                    rank: "Project Manager",
-                    src: "aniketgupta.png"
+                    name: "Pranjal Shiva",
+                    rank: "Project Manager"
                 },{
-                    name: "Saurav Ahlawat",
-                    rank: "Student Advisor",
-                    src: "saurav sir.jpg"
+                    name: "Rupanjali Kukal",
+                    rank: "Student Advisor"
                 },{
-                    name: "Joyraj Bhowmick",
-                    rank: "Student Advisor",
-                    src: "joyraj.jpg"
+                    name: "Nikhil Sethi",
+                    rank: "Student Advisor"
                 },{
-                    name: "Anurag Singh",
-                    rank: "Student Advisor",
-                    src: "anurag singh sir.jpg"
-                },{
-                    name: "Parth Mahajan",
+                    name: "Anuj Agrawal",
                     rank: "Student Advisor"
                 }
             ],
@@ -67,34 +60,34 @@ app.get("/past-members", (req, res) => {
                 {
                     name: "Suvi Varshney",
                     rank: "Student Advisor",
-                    src: "Suvi Varshney_2019.png"
+                    src: "Suvi Varshney_2019.jpg"
                 },
                 {
                     name: "Akshath Singhal",
                     rank: "Student Advisor",
-                    src: "Akshath Singhal_2019.png"
+                    src: "Akshath Singhal_2019.jpg"
                 }
             ],
             "2k18": [
                 {
                     name: "Pransh Rana",
                     rank: "Project Manager",
-                    src: "Pransh Rana_2018.png"
+                    src: "Pransh Rana_2018.jpg"
                 },
                 {
                     name: "Akash Garg",
                     rank: "Student Advisor",
-                    src: "Akash Garg_2018.png"
+                    src: "Akash Garg_2018.jpg"
                 },
                 {
                     name: "Harsh Raj Chauhan",
                     rank: "Student Advisor",
-                    src: "Harsh Raj Chauhan_2018.png"
+                    src: "Harsh Raj Chauhan_2018.jpg"
                 },
                 {
                     name: "Rishabh Dagur",
                     rank: "Student Advisor",
-                    src: "Rishabh Dagur_2018.png"
+                    src: "Rishabh Dagur_2018.jpg"
                 }
             ],
             "2k17": [
@@ -107,41 +100,41 @@ app.get("/past-members", (req, res) => {
                 {
                     name: "A.L.G Prasad",
                     rank: "Student Advisor",
-                    src: "ALG Prasad_2016.png"
+                    src: "ALG Prasad_2016.jpg"
                 },
                 {
                     name: "Divya Sanghi",
                     rank: "Student Advisor",
-                    src: "Divya Sanghi_2016.png"
+                    src: "Divya Sanghi_2016.jpg"
                 },
                 {
                     name: "Parth Chopra",
                     rank: "Student Advisor",
-                    src: "Parth Chopra_2016.png"
+                    src: "Parth Chopra_2016.jpg"
                 }
             ],
             "2k15": [
                 {
                     name: "Devesh Sharma",
                     rank: "Student Advisor",
-                    src: "Devesh Sharma_2015.png"
+                    src: "Devesh Sharma_2015.jpg"
                 },
                 {
                     name: "Shivam Gautam",
                     rank: "Student Advisor",
-                    src: "Shivam Gautam_2015.png"
+                    src: "Shivam Gautam_2015.jpg"
                 },
                 {
                     name: "Vipul Aggarwal",
                     rank: "Student Advisor",
-                    src: "Vipul Aggarwal_2015.png"
+                    src: "Vipul Aggarwal_2015.jpg"
                 }
             ],
             "2k14": [
                 {
                     name: "Bhavya Narain Gupta",
                     rank: "Student Advisor",
-                    src: "Bhavya Narain Gupta_2014.png"
+                    src: "Bhavya Narain Gupta_2014.jpg"
                 },
                 {
                     name: "Harsh Aggarwal",
@@ -150,7 +143,7 @@ app.get("/past-members", (req, res) => {
                 {
                     name: "Lakshay Chauhan",
                     rank: "Student Advisor",
-                    src: "Lakshay Chauhan_2014.png"
+                    src: "Lakshay Chauhan_2014.jpg"
                 },
                 {
                     name: "Shivang Baweja",
@@ -161,7 +154,7 @@ app.get("/past-members", (req, res) => {
                 {
                     name: "Jayant Malani",
                     rank: "Student Advisor",
-                    src: "Jayant Malani_2013.png"
+                    src: "Jayant Malani_2013.jpg"
                 },
                 {
                     name: "KVSR Hareen",
@@ -170,61 +163,61 @@ app.get("/past-members", (req, res) => {
                 {
                     name: "Raghvendra Gautam",
                     rank: "Student Advisor",
-                    src: "Raghvendra Gautam_2013.png"
+                    src: "Raghvendra Gautam_2013.jpg"
                 },
                 {
                     name: "Rishi Raj Chopra",
                     rank: "Student Advisor",
-                    src: "Rishi Raj Chopra_2013.png"
+                    src: "Rishi Raj Chopra_2013.jpg"
                 },
                 {
                     name: "Vaibhav Chauhan",
                     rank: "Student Advisor",
-                    src: "Vaibhav Chauhan_2013.png"
+                    src: "Vaibhav Chauhan_2013.jpg"
                 }
             ],
             "2k12": [
                 {
                     name: "Gaurav Gupta",
                     rank: "Student Advisor",
-                    src: "Gaurav Gupta_2012.png"
+                    src: "Gaurav Gupta_2012.jpg"
                 },
                 {
                     name: "Kumar Shaurya Shankar",
                     rank: "Student Advisor",
-                    src: "Kumar Shaurya Shankar_2012.png"
+                    src: "Kumar Shaurya Shankar_2012.jpg"
                 },
                 {
                     name: "Nihar Khurana",
                     rank: "Student Advisor",
-                    src: "Nihar Khurana_2012.png"
+                    src: "Nihar Khurana_2012.jpg"
                 },
                 {
                     name: "Subhashish Sasmal",
                     rank: "Student Advisor",
-                    src: "Subhashish Sasmal_2012.png"
+                    src: "Subhashish Sasmal_2012.jpg"
                 }
             ],
             "2k11": [
                 {
                     name: "Abhay Kaul",
                     rank: "Student Advisor",
-                    src: "Abhay Kaul_2011.png"
+                    src: "Abhay Kaul_2011.jpg"
                 },
                 {
                     name: "Arjit Arora",
                     rank: "Student Advisor",
-                    src: "Arjit Arora_2011.png"
+                    src: "Arjit Arora_2011.jpg"
                 },
                 {
                     name: "Gautam Madaan",
                     rank: "Student Advisor",
-                    src: "Gautam Madaan_2011.png"
+                    src: "Gautam Madaan_2011.jpg"
                 },
                 {
                     name: "Rochak Chadha",
                     rank: "Student Advisor",
-                    src: "Rochak Chadha_2011.png"
+                    src: "Rochak Chadha_2011.jpg"
                 },
                 {
                     name: "Sahil Kapoor",
@@ -245,7 +238,14 @@ app.get("/mentors", (req, res) => {
                 desc: `Professor and HOD,
                 Department of ECE,
                 Delhi Technological University`,
-                img: "raghava sir.png"
+                img: "raghava sir.jpg"
+            },{
+                name: "Dr. K. Srinivas",
+                rank: "Dy. Director",
+                desc: `Asst. Professor,
+                Mechanical Department,
+                Delhi Technological University`,
+                img: "k srinivas.jpg"
             },{
                 name: "Dr. M Jayasimhadri",
                 rank: "Asst. Director",
@@ -253,13 +253,6 @@ app.get("/mentors", (req, res) => {
                 Department of Physics,
                 Delhi Technological University`,
                 img: "m jayasimhadri.jpg"
-            },{
-                name: "Dr. K. Srinivas",
-                rank: "Dy. Director",
-                desc: `Asst. Professor,
-                Mechanical Department,
-                Delhi Technological University`,
-                img: "k srinivas.png"
             },{
                 name: "Dr. Rajesh Yadav",
                 rank: "Asst. Director",
@@ -302,7 +295,7 @@ app.get("/mentors", (req, res) => {
             desc: `Lockheed Martin Corporate
             Engineering & Technology
             USA`,
-            img: "john sheeshan.png"
+            img: "john sheeshan.jpg"
             }, {
             name: `Guy Bradley`,
             rank: `Manager`,
@@ -315,7 +308,7 @@ app.get("/mentors", (req, res) => {
             desc: `Engineering & Technology
             Lockheed Martin Corporate
             Engineering & Technology, USA`,
-            img: "peter drewes.png"
+            img: "peter drewes.jpg"
             }
         ]
         }
@@ -328,21 +321,21 @@ app.get("/curr-members", (req, res) => {
             "4-yrs": [{
               name: "Aniket Gupta",
               rank: "Project Manager",
-              img: "aniketgupta.png",
+              img: "aniketgupta.jpg",
               lkdn: "http://www.linkedin.com/in/aniket-gupta-1490bb165",
               mail: "aniket.tcdav@gmail.com"
-            },{
-                name: "Saurav Ahlawat",
-                rank: "Student Advisor",
-                img: "saurav sir.jpg",
-                lkdn: "https://www.linkedin.com/in/sauravahlawat",
-                mail: "sauravahlawat2000@gmail.com"
             },{
                 name: "Joyraj Bhowmick",
                 rank: "Student Advisor",
                 img: "joyraj.jpg",
                 lkdn: "https://www.linkedin.com/in/joyraj-bhowmick-2703a8158",
                 mail: "joyrajbhowmick1998@gmail.com"
+            },{
+                name: "Saurav Ahlawat",
+                rank: "Student Advisor",
+                img: "saurav sir.jpg",
+                lkdn: "https://www.linkedin.com/in/sauravahlawat",
+                mail: "sauravahlawat2000@gmail.com"
             },{
               name: "Anurag Singh",
               rank: "Student Advisor",
@@ -352,9 +345,9 @@ app.get("/curr-members", (req, res) => {
             },{
                 name: "Parth Mahajan",
                 rank: "Student Advisor",
-                img: "default.jpg",
-                lkdn: "",
-                mail: ""
+                img: "parth.jpg",
+                lkdn: "https://www.linkedin.com/in/parth-mahajan-6118705b",
+                mail: "mahajanparth0@gmail.com"
             }],
             "3-yrs": [{
               name: "Aman Virmani",
@@ -523,6 +516,11 @@ app.get("/curr-members", (req, res) => {
                 img: "aryan chaudhary.jpg",
                 lkdn: "",
                 mail: "aryanchaudhary8608@gmail.com"
+              },{
+                  name: "Armaan",
+                  img: "armaan.jpg",
+                  lkdn: "https://www.linkedin.com/in/armaan-armaan-6ab951205",
+                  mail: "armaan.naman@gmail.com"
               }],
             "corporate": [{
               name: "Avyay Gupta",

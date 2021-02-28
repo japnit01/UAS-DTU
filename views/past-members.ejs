@@ -26,31 +26,38 @@
     }
     .sidebar a{
         display:block;
-        padding: 0.85rem 2rem;
         color: white;
         font-family: 'Crete Round', serif;
         cursor: pointer;
+        padding: 13px 0;
+        box-sizing: border-box;
     }
-    .sidebar{
+    .sidebar {
         background-color: #444;
         position:fixed;
         top:4rem;
         left:0;
         bottom:0;
+        text-align: center;
+        width: 7vw;
     }
     #contact {
         z-index: 1;
     }
-    .selected_yr{
+    .selected_yr {
         border-bottom: 3px solid white;
     }
     
-    @media only screen and (max-width: 993px){
-        .sidebar a {
-            padding: 0.85rem 20px !important;
-        }
+    @media only screen and (max-width: 993px) {
         .years h3 {
             font-size: 30px;
+            margin-left: 10vw;
+        }
+        .years {
+            margin-left: 10vw;
+        }
+        .sidebar {
+            width: 20vw;
         }
     }
 </style>
@@ -78,7 +85,7 @@
                 <% members[k].map(m => { %>
                 <div class="box1">
                     <div class="ctn" style="transform: translateY(-20%);">
-                        <img src="/UAS-Past/<%= m.src || '../anon.jpg' %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
+                        <img src="/past-members/<%= m.src || '../anon.jpg' %>" height="120" width="120" style="border-radius: 50%; border: 5px solid #ffffff;">
                         <div style="padding-top: 10px; color: #777;"><%= m.rank %></div>
                         <p style="font-size: 18px; font-weight: bold; text-transform: uppercase; margin: 4px 0 17px 0;"><%= m.name %></p>
                     </div>
@@ -123,7 +130,7 @@
         })
     });
 
-    document.title = "Past Members | UAS-DTU";
+    document.title = "Past Members • UAS-DTU";
 </script>
 
 <%-include("partials/footer")%>
