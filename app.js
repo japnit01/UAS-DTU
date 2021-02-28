@@ -234,14 +234,14 @@ app.get("/mentors", (req, res) => {
                 desc: `Professor and HOD,
                 Department of ECE,
                 Delhi Technological University`,
-                img: "raghava sir.png"
+                img: "raghava sir.jpg"
             },{
                 name: "Dr. K. Srinivas",
                 rank: "Dy. Director",
                 desc: `Asst. Professor,
                 Mechanical Department,
                 Delhi Technological University`,
-                img: "k srinivas.png"
+                img: "k srinivas.jpg"
             },{
                 name: "Dr. M Jayasimhadri",
                 rank: "Asst. Director",
@@ -291,7 +291,7 @@ app.get("/mentors", (req, res) => {
             desc: `Lockheed Martin Corporate
             Engineering & Technology
             USA`,
-            img: "john sheeshan.png"
+            img: "john sheeshan.jpg"
             }, {
             name: `Guy Bradley`,
             rank: `Manager`,
@@ -304,7 +304,7 @@ app.get("/mentors", (req, res) => {
             desc: `Engineering & Technology
             Lockheed Martin Corporate
             Engineering & Technology, USA`,
-            img: "peter drewes.png"
+            img: "peter drewes.jpg"
             }
         ]
         }
@@ -317,7 +317,7 @@ app.get("/curr-members", (req, res) => {
             "4-yrs": [{
               name: "Aniket Gupta",
               rank: "Project Manager",
-              img: "aniketgupta.png",
+              img: "aniketgupta.jpg",
               lkdn: "http://www.linkedin.com/in/aniket-gupta-1490bb165",
               mail: "aniket.tcdav@gmail.com"
             },{
