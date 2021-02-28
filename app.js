@@ -269,10 +269,24 @@ app.get("/mentors", (req, res) => {
             ],
             "ProjAdv": [
                 {
-                name: `Sqn. Ldr. Madhan Kumar`,
-                rank: `Senior Manager`,
-                desc: `Adani Defense`,
-                img: "madan sir.jpeg"
+                    name: "Ashish Rajvanshi",
+                    rank: "President and Head",
+                    desc: `Adani Defense and Aerospace`,
+                    img: "ashishrj.jpg"
+                },{
+                    name: "Sampathkumaran ST",
+                    rank: "Vice President",
+                    desc: "Adani Defense and Aerospace"
+                },{
+                    name: `Sqn. Ldr. Madhan Kumar`,
+                    rank: `Senior Manager`,
+                    desc: `Adani Defense and Aerospace`,
+                    img: "madan sir.jpeg"
+                },{
+                    name: "Col. Shankar",
+                    rank: '',
+                    desc: '',
+                    img: "col_shankar.jpg"
                 },/* {
             name: `Prof. P.B. Sharma`,
             rank: `Former Vice Chancellor`,
@@ -339,7 +353,7 @@ app.get("/curr-members", (req, res) => {
             },{
               name: "Anurag Singh",
               rank: "Student Advisor",
-              img: "anurag singh sir.jpg",
+              img: "anurag.jpg",
               lkdn: "https://www.linkedin.com/in/anurag-singh-81a56114b",
               mail: "anuragsingh5298016@gmail.com"
             },{
@@ -373,7 +387,7 @@ app.get("/curr-members", (req, res) => {
             {
               name: "Nishkarsh Sharma",
               rank: "Avionics Head",
-              img: "nishkarsh.jpg",
+              img: "nishu.jpg",
               lkdn: "https://www.linkedin.com/in/nishkarsh-sharma-7b9b5616b",
               mail: "nishkarshsharma16@gmail.com"
             }],
@@ -517,7 +531,7 @@ app.get("/curr-members", (req, res) => {
                 lkdn: "",
                 mail: "aryanchaudhary8608@gmail.com"
               },{
-                  name: "Armaan",
+                  name: "Armaan Kumar",
                   img: "armaan.jpg",
                   lkdn: "https://www.linkedin.com/in/armaan-armaan-6ab951205",
                   mail: "armaan.naman@gmail.com"
