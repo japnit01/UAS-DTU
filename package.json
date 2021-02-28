@@ -6,6 +6,10 @@
   "scripts": {
     "start": "node app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
