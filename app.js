@@ -720,11 +720,11 @@ app.get("/upcoming-projects", (req, res) => {
                 img: "gps-spoofing4.jpg",
                 desc: "GPS spoofing is an attack in which a radio transmitter located near the target is used to interfere with a legitimate GPS signals. The attacker can transmit no data at all or could transmit inaccurate coordinates. Recently, GPS spoofing attack on UAV has attracted widespread research interests due to the vulnerability of civilian GPS signal. GPS spoofing ensures that the UAV remains undetected and this is useful for UAV used in defense."
             },
-            {
-                name: "Aggressive Control of UAVs",
-                img: "agg_control3.jpg",
-                desc: "Well-developed features of autonomous UAV control include Aggressive Control which ensures that the UAV is able to maneuver testing conditions like constrained spaces, between trees etc. with no or  minimum human intervention. This technology is especially important since it is projected that the no of drones is going to increase exponentially and drones should be able to control themselves automatically."
-            },
+            // {
+            //     name: "Aggressive Control of UAVs",
+            //     img: "agg_control3.jpg",
+            //     desc: "Well-developed features of autonomous UAV control include Aggressive Control which ensures that the UAV is able to maneuver testing conditions like constrained spaces, between trees etc. with no or  minimum human intervention. This technology is especially important since it is projected that the no of drones is going to increase exponentially and drones should be able to control themselves automatically."
+            // },
             {
                 name: "Mechanical Arm on UGV",
                 img: "arm-ugv2.jpg",
