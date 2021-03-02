@@ -11,7 +11,6 @@ nav.transparent {
 .soljumbo{
     background-image: url("solutionbackground.jpg");
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -30,21 +29,86 @@ nav.transparent {
     font-weight: 100;
 }
 
-</style>
+.solutions{
+    display: inline-block;
 
+}
+
+
+
+.solutions .row{
+    margin: 20vh 10vw 15vh  10vw;
+}
+
+.solutions .row .col{
+    padding: 0 1vw !important;
+}
+
+.solutions #col5 .card-content{
+    margin: 5vh 6vw;
+}
+
+.solutions .card-content{
+    text-align: center;
+    padding: 5vh 3vw 2vh 3vw;
+}
+
+.solutions .card-title{
+    padding-bottom: 5vh;
+}
+
+</style>
 
 <div class="soljumbo">
     <div class="inner container">
         <div class="heading" style="color: white; text-align: center;">Drone Solutions</div>
         <div class="para" style="color: white; text-align: center;">Controlled and consice solutions tailored to your personal needs</div>
     </div> 
-    
-    <div class="solutions">
-        <div class="row">
-            <div class="col l4 m4 s4">
+</div> 
 
+<div class="solutions">        
+    <div class="row">
+        <div class="col s12 m6 l6" id="col1">
+            <div class="card large">
+            <div class="card-content">
+                <div class="card-title">
+                    Simultaneous Localization and Mapping</div>
+                <p>Stands for Simultaneous Localisation and Mapping. These are UAVs with the goal to provide a continual estimate of where the system is currently moving along with it’s posture within it’s environment. The UAVs being proficient in Indoor Navigation have a camera fitted on them that helps them in the navigation. This works on the phenomenon of marking the coordinates of the initial position in the start followed by taking the distance of consequent places from the initial position in account. Ultimately, this results in mapping of the whole area in 3 dimensional form.</p>
             </div>
-
+            </div>
+        </div>
+        <div class="col s12 m6 l6" id="col2">
+            <div class="card large">
+            <div class="card-content">
+                <div class="card-title">Surveying, Mapping and Surveillance</div>
+                <p>These are our 3 USPs and the plan is to continue evolving the existing technology in these fields. This would play a vital role in the betterment of the technology used in the Armed Forces of our country. The Military at present uses Drone Surveillance to gather intelligence and potentially would also be getting it’s hands on the 3 dimensional mapping done by drones to increase it’s efficiency.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l6" id="col3">
+            <div class="card large">
+            <div class="card-content">
+                <div class="card-title" >Site Inspections</div>
+                <p>The UAV drones are to be used for remote site inspections to avoid too many people on the ground. They can capture data in difficult locations with high quality output and offer the advantage of quick and accurate documentation at low costs and with minimal time consumption and personnel. This can also help inspectors avoid having to place themselves in dangerous situations. Usage of UAVs for site inspections can thus reduce both time and man power significantly.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l6" id="col4">
+            <div class="card large">
+            <div class="card-content">
+                <div class="card-title">Collaborative Robotic Tasks</div>
+                <p>This is also one of the most important future prospects the team plans to conquer. The term  refers to an arrangement of 2 or more systems which work together in such a manner that their abilities are complimented by each other. The team is currently also working on developing a Robotic Arm which would be mounted on an Unmanned Ground Vehicle (UGV) to revolutionize the field of agriculture by autonomously detecting and harvesting the crops and to deliver crop management interventions by automatically detecting the need. </p>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l12" id="col5">
+            <div class="card">
+            <div class="card-content">
+                <div class="card-title">Swarm</div>
+                <p>A swarm of Unmanned Aerial Vehicles (UAVs) is a set of aerial drones that work together to achieve a specific goal. These are currently being used for Mapping and Surveillance of large areas. Swarms are being aimed to be used for Humanitarian Aid and Disaster Relief (HADR) in the near future. This would include fleet of swarms being lead to search for potential humans in need for help and eventually providing them with payload releif packages of upto 1Kg. Equipping the swarm UAVs with GPS Denied Navigation and Dynamic Obstacle Avoidance with the usage of efficient algorithms is also a possibility in the future.  
+                </p>
+            </div>
+            </div>
         </div>
     </div>
 </div>
