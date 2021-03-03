@@ -40,16 +40,19 @@ app.get("/past-members", (req, res) => {
             "2k20": [
                 {
                     name: "Pranjal Shiva",
-                    rank: "Project Manager"
+                    rank: "Project Manager",
+                    src: "pranjal.jpg"
                 },{
                     name: "Rupanjali Kukal",
                     rank: "Student Advisor"
                 },{
                     name: "Nikhil Sethi",
-                    rank: "Student Advisor"
+                    rank: "Student Advisor",
+                    src: "nikhil.jpg"
                 },{
                     name: "Anuj Agrawal",
-                    rank: "Student Advisor"
+                    rank: "Student Advisor",
+                    src: "anuj.jpg"
                 }
             ],
             "2k19": [
