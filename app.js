@@ -287,8 +287,8 @@ app.get("/mentors", (req, res) => {
                     img: "madan sir.jpeg"
                 },{
                     name: "Col. Shankar",
-                    rank: '',
-                    desc: '',
+                    rank: 'Chairman and Managing Director',
+                    desc: 'Alpha Design Technologies',
                     img: "col_shankar.jpg"
                 },/* {
             name: `Prof. P.B. Sharma`,
