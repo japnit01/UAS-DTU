@@ -65,6 +65,18 @@ nav.transparent {
     background-image: url("satellitemap.png");
 }
 
+.col .background{
+    transition:1s;
+}
+
+.solutions .col{
+    overflow: hidden;
+}
+
+.col .background:hover{
+    transform: scale(1.1);
+}
+
 @media only screen and (min-width: 600px){
     .inner .heading{
     font-size: 5vw;
@@ -80,6 +92,12 @@ nav.transparent {
 .solutions .card-content{
     text-align: center;
     padding: 15vh 5vw;
+    color: white;
+}
+
+.solutions #col5 .card-content{
+    text-align: center;
+    padding: 10vh 5vw;
     color: white;
 }
 
@@ -102,7 +120,6 @@ nav.transparent {
     padding: 2vh 5vw;
     color: white;
 }
-
 
 }
 
@@ -237,7 +254,7 @@ nav.transparent {
 <div class="letusknow">
     <div class="formoresol">For more solutions</div>
     <div class="formoresol1">Contact us</div>
-    <a class="waves-effect waves-dark btn">Contact Us</a>
+    <a class="waves-effect waves-dark btn" href="/contact">Contact Us</a>
 </div>
 
 <%-include("partials/footer")%>
